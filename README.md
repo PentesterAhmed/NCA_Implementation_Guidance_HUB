@@ -1,6 +1,6 @@
 ## Roadmap
-Addition of NCA CCC
-Addition of NCA CSCC
-Addition of NCA DCC
-Addition of NCA TCC
-Addition of NCA OSMACC
+1. Addition of NCA CCC
+2. Addition of NCA CSCC
+3. Addition of NCA DCC
+4. Addition of NCA TCC
+5. Addition of NCA OSMACC
