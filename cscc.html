@@ -1,0 +1,3285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>NCA Guidance Hub</title>
+  <link rel="icon" type="image/x-icon" href="gem.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dataset" />
+</head>
+
+<body>
+
+
+  <!-- ------------------------- CONSTANT Starts--------------- -->
+  <div class="NCA-main-heading">
+    
+    <h1>Implementation Guidance for Compliance with NCA Cybersecurity Controls (KSA)</h1>
+    
+    <!-- darkmode button -->
+    <!-- <label class="ui-switch">
+      <input type="checkbox" id="themeSwitch">
+      <div class="slider">
+        <div class="circle"></div>
+      </div>
+    </label>
+  -->
+</div>
+<!-- Nav Bar for all standard Links -->
+<div class="navbar-container">
+  <div class="navb4r">
+    <a href="index.html" class="nav-item-1">ECC</a>
+    <!-- <p class="hide">Essential Cybersecurity Controls</p> -->
+
+      <a href="ccc-csp.html" class="nav-item-2">CCC CSP</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Provider)</p> -->
+      
+      <a href="ccc-cst.html" class="nav-item-3">CCC CST</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Tenant)</p> -->
+      
+      <a href="dcc.html" class="nav-item-4">DCC</a>
+      <!-- <p class="hide">Data Cybersecurity Controls</p> -->
+      
+      <a href="tcc.html" class="nav-item-5">TCC</a>
+      <!-- <p class="hide">Telework Cybersecurity Controls</p> -->
+      
+      <a href="osmacc.html" class="nav-item-6">OSMACC</a>
+      <!-- <p class="hide">Organizational Social Media Accounts Cybersecurity Controls</p> -->
+      
+      <a href="otcc.html" class="nav-item-7">OTCC</a>
+      <!-- <p class="hide">Operational Technology Cybersecurity Controls</p> -->
+      
+      <a href="cscc.html" class="nav-item-8">CSCC</a>
+      <!-- <p class="hide">Critical Systems Cybersecurity Controls</p> -->
+    </div>
+  </div>
+  <div class="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0e8b5b"><path d="M237-357h86v-246h-86v246Zm200 0h86v-246h-86v246Zm200 0h86v-246h-86v246Zm-469.13 70.13h624.26v-386.26H167.87v386.26Zm0 0v-386.26 386.26Zm29.13 177v-91h-29.13q-35.72 0-60.86-25.14t-25.14-60.86v-386.26q0-35.72 25.14-60.86t60.86-25.14H197v-91h86v91h154v-91h86v91h154v-91h86v91h29.13q35.72 0 60.86 25.14t25.14 60.86v386.26q0 35.72-25.14 60.86t-60.86 25.14H763v91h-86v-91H523v91h-86v-91H283v91h-86Z"/></svg>
+    <h1 class="Main-H">Critical Systems Cybersecurity Controls</h1>
+    
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="siteSearch" placeholder="Search..." oninput="searchSite()" />
+  </div>
+  <!-- ------------------------- CONSTANT Ends --------------- -->
+
+
+
+  <div class="main-domain">
+    <h1>1. Cybersecurity Governance</h1>
+    <div class="subdomain">
+      <h2>1-1 Cybersecurity Strategy</h2>
+      <h3>Objective:</h3>
+      <p>Ensure containment of work, objectives, projects and local projects</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-1-1</strong></p>
+        <p>In addition to the controls within sub-component 1-1 of the ECC, the cybersecurity strategy of the entity
+          must set a priority to support the protection of critical systems of the entity.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Template for Cybersecurity Strategy</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work to include the protection of the entity's critical systems within the strategic objectives of
+            cybersecurity and align it with the strategic objectives of the entity.</p>
+          <p>&#8226; Conduct workshops with stakeholders and those concerned in the entity to explain the importance of
+            giving priority to supporting the protection of the critical systems of the entity.</p>
+          <p>&#8226; Giving priority in implementing projects related to critical systems of the entity over other
+            projects.</p>
+          <p>&#8226; Giving priority to securing and protecting critical systems in cybersecurity projects and
+            initiatives and documenting this in the implementation map of the cybersecurity strategy.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Cybersecurity strategy document approved by the authorized person in the entity (electronic copy or
+            official hard copy).</p>
+          <p>&#8226; Presentation of the workshop that was held with the stakeholders and those concerned in the entity
+            to give priority to supporting the protection of the critical systems of the entity.</p>
+          <p>&#8226; A roadmap document for the implementation of the cybersecurity strategy, indicating the level of
+            achievement in the implementation of projects and initiatives related to the critical systems of the entity.
+          </p>
+          <p>&#8226; Inventory review and periodic update of the list of critical systems.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-2 Cybersecurity Risk Management</h2>
+      <h3>Objective:</h3>
+      <p>Ensure that cyber security risks are managed in a systematic manner aimed at protecting the information and
+        technical assets of the entity, in accordance with the organizational policies and procedures of the entity and
+        the relevant legislative and regulatory requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-2-1</strong></p>
+        <p>In addition to the controls under subcomponent 1-5 of the basic controls for cybersecurity, the methodology
+          for managing cybersecurity risks should include, at a minimum, the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-2-1-1</strong></p>
+            <p>Implementing a Cybersecurity risk assessment on critical systems at least once a year.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Risk Management Policy Template</p>
+              <p>&#8226; Cybersecurity Risk Management Procedure Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; conduct a cybersecurity risk assessment on critical systems (which were listed within the
+                outputs of control No. 2-1-1-1) in order to identify all potential threats that could affect the
+                integrity of those systems or expose the information they process to any cyber or computer risks or
+                potential vulnerabilities, taking into account the nature of those systems.</p>
+              <p>&#8226; Assess cybersecurity risks for each critical system periodically, so that it is done at least
+                once a year.</p>
+              <p>&#8226; Work on creating reports on cybersecurity risk assessments for each critical system, provided
+                that the following are documented in them:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Cyber risks and potential vulnerabilities</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Probability of risk occurrence</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Impact ratio</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Risk level</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Responsible for the potential risk</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Description of the risk mitigation plan</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Impacted assets</p>
+              <p>&#8226; develop a plan to address the list of cybersecurity risks for each critical system, and give
+                priority in implementation to the plan to address risks related to critical systems over other risks.
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Periodic cybersecurity risk assessment reports on the range of critical systems in the
+                organization.</p>
+              <p>&#8226; Cybersecurity risk treatment plans for each critical system.</p>
+              <p>&#8226; Reports or evidence showing the follow-up of treatment plans and verifying their
+                implementation.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-2-1-2</strong></p>
+            <p>Create a cybersecurity risk register for critical systems and follow it up at least once a month.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Risk Register Template</p>
+              <p>&#8226; Cybersecurity Risk Management Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Create a cybersecurity risk register for critical systems or include the risks related to
+                critical systems clearly within the entity’s general cybersecurity risk register, so that it contains
+                the following:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Cyber risks and potential vulnerabilities</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Probability of risk occurrence</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Impact ratio</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Risk level</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Responsible for the potential risk</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Description of the risk mitigation plan</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Impacted assets</p>
+              <p>&#8226; Work to include the cybersecurity risks of critical systems that were identified and evaluated
+                during the risk assessment process in the cybersecurity risk register for critical systems, and assign
+                them to stakeholders.</p>
+              <p>&#8226; Follow-up the cybersecurity risk register of critical systems periodically, at least once a
+                month, so that treatment plans are followed up, their implementation verified, any new risks added, and
+                changes in the register documented.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cybersecurity risk register for critical systems.</p>
+              <p>&#8226; Record of changes to the cybersecurity risk register for critical systems.</p>
+              <p>&#8226; Reports or evidence showing the follow-up of treatment plans and verifying their
+                implementation.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-3 Cybersecurity in Information Technology Project</h2>
+      <h3>Objective:</h3>
+      <p>Ensure that cybersecurity requirements are included in the entity's project management methodology and
+        procedures; To protect the confidentiality and integrity of the entity's information and technical assets, their
+        accuracy and availability; This is in accordance with the regulatory policies and procedures of the entity and
+        the relevant legislative and regulatory requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-3-1</strong></p>
+        <p>In addition to the sub-controls within Control 1-6-2 in the ECC, it must cover the cybersecurity requirements
+          for project management and changes to the information and technical assets of critical systems in the entity,
+          with a minimum of the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-3-1-1</strong></p>
+            <p>Carrying out stress testing of the technical components of critical systems (Stress Testing) to ensure
+              the capacity of the various components.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Requirements Checklist for IT Projects and Change Management Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Determine stress testing methods for the technical components of critical systems, using one of
+                the following methods:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Distributed Stress Testing: It is about distributing stress on several devices that
+                may be in different geographical areas, and testing them at the same time to examine their endurance
+                capacity.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Exploratory Stress Testing: It is a test that focuses on detecting and analyzing
+                errors in technical components after testing and analyzing them in different scenarios, which cannot be
+                easily covered in the scope of other tests.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Application Stress Testing: It is a test that focuses on detecting
+                application-related errors, related to performance, network issues, and data blocking.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Systemic Stress Testing: It tests many systems running on the server, to detect
+                errors (e.g.: One program blocking another program).</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Transactional Stress Testing: It is a stress test that is conducted during the
+                transitioning between applications, to ensure that the system is tuned and optimized.</p>
+              <p>&#8226; Document the results of stress tests for technical components of critical systems.</p>
+              <p>&#8226; Dealing with data based on its classification, so that special data and systems are specified
+                for stress testing, and system data in the production environment is not used in the stress testing
+                process.</p>
+              <p>&#8226; Define a plan for improvement based on test results and update implementation status.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Evaluation and stress test reports for technical components of critical systems.</p>
+              <p>&#8226; Document showing sample data used for stress testing of technical components of critical
+                systems and not from production environments data.</p>
+              <p>&#8226; Improvement plan and implementation status for stress testing of technical components of
+                critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-2</strong></p>
+            <p>Ensure the application of business continuity requirements.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Roles and Responsibilities Template</p>
+              <p>&#8226; Cybersecurity Requirements Checklist for IT Projects and Change Management Template</p>
+              <p>&#8226; Cybersecurity Business Continuity Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on conducting a risk assessment for risks that may affect business continuity.</p>
+              <p>&#8226; Work on vulnerability remediation to prevent incidents that may impact business continuity.</p>
+              <p>&#8226; Work on identifying the legislative and regulatory requirements that may impact business
+                continuity.</p>
+              <p>&#8226; Work on developing incident response plans that may impact business continuity.</p>
+              <p>&#8226; Develop disaster recovery plans for business continuity.</p>
+              <p>&#8226; Work to define the roles and responsibilities of third parties related to business continuity
+                in the entity.</p>
+              <p>&#8226; Reports of change requests on infrastructure assets to implement business continuity
+                requirements.</p>
+              <p>&#8226; Work to use the performance measurement indicator (KPI) to ensure the continuous development
+                and correct and effective use of cybersecurity requirements for business continuity.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Reports on the results of the risk assessment process affecting business continuity.</p>
+              <p>&#8226; Reports on the results of the vulnerability assessment and remediation process affecting
+                business continuity.</p>
+              <p>&#8226; Reports or evidence demonstrating the comprehensiveness and coverage of legislative and
+                regulatory requirements related to business continuity.</p>
+              <p>&#8226; Cybersecurity Incident Response Plans impacting business continuity.</p>
+              <p>&#8226; Disaster recovery plans.</p>
+              <p>&#8226; A document of the roles and responsibilities of the parties related to business continuity
+                within the organization.</p>
+              <p>&#8226; Reports on change requests within the organization.</p>
+              <p>&#8226; Reports on the Key Performance Indicators (KPI) related to business continuity.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>1-3-2</strong></p>
+        <p>In addition to sub controls in the ECC controls 3-6-1</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-3-2-1</strong></p>
+            <p>Security Source Code Review prior to release</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Requirements Checklist for Software Development Template</p>
+              <p>&#8226; Secure Systems Development Life Cycle Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on defining the scope of the source code to be reviewed before launching the project.</p>
+              <p>&#8226; Work on reviewing the source code either by using technical tools, or reviewing manually, and
+                that the methods of reviewing the source code be effective such as: reviewing gaps in the source code,
+                ensuring that there is no confidential information in the source code, ensuring that there are no
+                security problems in the design Source Code Ensure that unsafe algorithms are not used, and review the
+                source code using OWASP.</p>
+              <p>&#8226; Work on documenting the review results and defining a plan to address the source code comments.
+              </p>
+              <p>&#8226; Work to fully implement and follow up the treatment plan before launching the project.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Source code security review procedures, which include: determining the scope of the source
+                code, and the methods taken to conduct the source code security review.</p>
+              <p>&#8226; Reports of the results of the security source code review.</p>
+              <p>&#8226; Source code improvement plan reports.</p>
+              <p>&#8226; Reports showing the implementation and follow-up of the source code improvement plan.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-2-2</strong></p>
+            <p>Securing access, storage, and documentation of source code and its versions.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Requirements Checklist for Software Development Template</p>
+              <p>&#8226; Secure Systems Development Life Cycle Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Define and document the requirements of this ECC in the cybersecurity requirements document and
+                approve them by the representative</p>
+              <p>&#8226; Work to restrict access to the source code to developers and source code reviewers, by
+                specifying access permissions according to the needs, duration, and scope of the work.</p>
+              <p>&#8226; Work to define procedures for obtaining access permissions from responsible persons.</p>
+              <p>&#8226; Work on reviewing the access permissions to the source code, and revoking the permissions if
+                the work need or duration expires.</p>
+              <p>&#8226; Work to ensure that the source code is stored and documented in safe and reliable ways.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Procedures for securing access, storage, and documentation of the source code, which include:
+                determining the scope of the source code, and backup copies of the source code.</p>
+              <p>&#8226; Procedures for requesting access to the source code from responsible persons.</p>
+              <p>&#8226; A sample of requests for access permissions to the source code.</p>
+              <p>&#8226; Reports from reviewing source code access permissions.</p>
+              <p>&#8226; A list of restrictions applied to the level of access and storage security of the source code.
+              </p>
+              <p>&#8226; A list of previous versions of the source code and the restrictions applied to secure it.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-2-3</strong></p>
+            <p>Authenticated API.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Requirements Checklist for Software Development Template</p>
+              <p>&#8226; Secure Systems Development Life Cycle Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on securing the application interface when there is integration with other applications.
+              </p>
+              <p>&#8226; Restricting access to the API, such as giving access permissions according to the scope of
+                work.</p>
+              <p>&#8226; Verify API access permissions.</p>
+              <p>&#8226; Using secure protocols (such as TLS) in the API.</p>
+              <p>&#8226; Performing regular penetration tests on the API.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Screenshot of locking the application interface when there is integration with other
+                applications.</p>
+              <p>&#8226; Reports of restricted API access.</p>
+              <p>&#8226; Reports of API access verification.</p>
+              <p>&#8226; Screenshot of Using secure protocols in the API.</p>
+              <p>&#8226; Reports from penetration tests on the API.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-2-4</strong></p>
+            <p>Safe and reliable transfer of applications from the Testing Environment to the Production Environment,
+              with any data, identities, or passwords associated with the test environments deleted prior to transfer.
+            </p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Requirements Checklist for Software Development Template</p>
+              <p>&#8226; Secure Systems Development Life Cycle Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to delete any data, identities, or passwords related to the testing environment before
+                transferring to the production environment.</p>
+              <p>&#8226; Work to encrypt all critical systems data during transmission.</p>
+              <p>&#8226; Work to use safe, updated and approved transfer tools.</p>
+              <p>&#8226; Work on providing an action plan to clarify the scope and time of the transfer.</p>
+              <p>&#8226; Work on reviewing the implementation of the action plan for safe transportation and ensuring
+                its effectiveness.</p>
+              <p>&#8226; Work to develop and approve transportation procedures.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Reports showing the deletion of any data, identities, or passwords related to the testing
+                environment before the transfer to the production environment.</p>
+              <p>&#8226; Reports showing that all critical systems data is encrypted during transmission.</p>
+              <p>&#8226; Reports of the tools used for the transfer process.</p>
+              <p>&#8226; Action plan for the transportation process.</p>
+              <p>&#8226; Review reports on the application of the action plan for the transfer process.</p>
+              <p>&#8226; Approved procedures for the transportation process.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-4 Cybersecurity Assessment Periodical and Audit</h2>
+      <h3>Objective:</h3>
+      <p>Ensure that the entity’s cybersecurity controls are applied and operate in accordance with the entity’s
+        regulatory policies and procedures, relevant national legislative and regulatory requirements, and international
+        requirements that are regulatory approved by the entity.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-4-1</strong></p>
+        <p>Referring to officer 1-8-1 in the basic controls of cybersecurity, the department concerned with
+          cybersecurity must; Review the implementation of cyber security controls for critical systems, once a year; at
+          least.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity Review and Audit Policy Template</p>
+          <p>&#8226; Compliance with Cybersecurity Legislation and Regulations Policy Template</p>
+          <p>&#8226; Audit Plan Risk Register Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Ensure that the plan to review the implementation of cybersecurity requirements includes all
+            critical systems in the entity.</p>
+          <p>&#8226; Work on documenting the results of the cyber security review and audit and discussing them with the
+            concerned departments.</p>
+          <p>&#8226; Presenting the results to the Cyber Security Supervisory Committee and the authorized person, and
+            the results should include the scope of the review and audit, the observations discovered, recommendations
+            and corrective actions, the evaluation of cyber risks and the plan to identify the observations.</p>
+          <p>&#8226; Review the implementation of cyber security controls for critical systems on an annual basis.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Plan to review the implementation of cybersecurity requirements or controls.</p>
+          <p>&#8226; Periodic review reports on the implementation of cybersecurity controls for critical systems in the
+            entity, including a plan for addressing observations.</p>
+          <p>&#8226; Meeting notes transcript of the Cybersecurity Supervisory Committee.</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>1-4-2</strong></p>
+        <p>Referring to officer 2-8-1 in the basic controls of cybersecurity, the application of cybersecurity controls
+          for critical systems must be reviewed; By parties independent of the department concerned with cybersecurity
+          from within the entity, once; At least every three years.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity Review and Audit Policy Template</p>
+          <p>&#8226; Compliance with Cybersecurity Legislation and Regulations Policy Template</p>
+          <p>&#8226; Audit Plan Risk Register Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Ensure that the cyber security audit plan by independent parties includes all critical systems in
+            the entity.</p>
+          <p>&#8226; Auditing of cybersecurity controls for critical systems is carried out at least every three years.
+          </p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Audit reports of cybersecurity controls for critical systems; By parties independent of the
+            department concerned with cybersecurity from within the entity, once; At least every three years.</p>
+          <p>&#8226; Plan to review the implementation of cybersecurity controls requirements.</p>
+          <p>&#8226; Meeting notes transcript of the Cybersecurity Supervisory Committee</p>
+          <p>&#8226; Work on documenting reports and discussing the plan to address observations with the relevant
+            departments.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-5 Cybersecurity in Human Resources</h2>
+      <h3>Objective:</h3>
+      <p>Ensure that cybersecurity risks and requirements related to workers (employees and contractors) in the entity
+        are effectively identified before, during and at the end/termination of their work, in accordance with the
+        entity's organizational policies and procedures, and the relevant legislative and regulatory requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-5-1</strong></p>
+        <p>In addition to the sub-controls within Control 3-9-1 in the basic controls of cybersecurity, it must cover
+          the requirements of cybersecurity, before the start of the professional relationship of employees with the
+          entity, at a minimum level; the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-5-1-1</strong></p>
+            <p>Screening or Vetting for personnel working on critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Human Resources Cybersecurity Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Determine the job positions related to the critical systems for which the security scan is to
+                be conducted, which includes, e.g.:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Database Administrator for critical systems.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Network Administrator for critical systems.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Domain Administrator for critical systems.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ System Administrators from the technical and business side for critical systems.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;▹ All contract employees.</p>
+              <p>&#8226; Developing, documenting, and approving a procedure for conducting security scans on workers on
+                critical systems on a regular basis.</p>
+              <p>&#8226; Conducting security scanning for candidates to work on critical systems as part of the
+                recruitment process, which includes, e.g.:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review the recommendations of previous employers, submitted by the candidate, and
+                ensure their accuracy (for those with experience).</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Verify the validity of the applicant's CV.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure the academic and professional qualifications claimed.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Independent verification of identity (personal ID, passport, etc.).</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review criminal records from the concerned authorities.</p>
+              <p>&#8226; Verify that a security scan has been performed on existing workers on critical systems. Which
+                may include:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that the candidate is competent enough to perform his role in protecting
+                information.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that the candidate is trusted to assume the job duties.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Security scanning for personnel working on critical systems, which include e.g.:</p>
+              <p>&#8226; ▹ A list of all personnel working on critical systems from the operational and technical side,
+                indicating their nationalities, roles and responsibilities.</p>
+              <p>&#8226; ▹ Database Administrator security scanning for critical systems.</p>
+              <p>&#8226; ▹ Security scanning of Network Administrators for critical systems.</p>
+              <p>&#8226; ▹ Security scanning of Domain Administrator for critical systems.</p>
+              <p>&#8226; ▹ Security survey for System Administrators from the technical side (Custodian) and from the
+                business owner side of critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-5-1-2</strong></p>
+            <p>To occupy support functions, and technical development, for critical systems; Competent citizens.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Human Resources Cybersecurity Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; identify critical jobs for those working on critical systems, which include, but are not
+                limited to:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Administrative careers.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Support careers.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Technical development.</p>
+              <p>&#8226; Ensure that competency requirements for each job description for those working on critical
+                systems are identified and documented.</p>
+              <p>&#8226; Ensure the selection and nomination of highly qualified citizens to fill administrative
+                positions, support positions, and technical development positions related to critical systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; The job description of the current employees working on critical systems at the entity, which
+                includes, e.g.:</p>
+              <p>&#8226; ▹ Job title</p>
+              <p>&#8226; ▹ The purpose of the job</p>
+              <p>&#8226; ▹ Duties and responsibilities</p>
+              <p>&#8226; ▹ Required qualifications</p>
+              <p>&#8226; ▹ Preferred qualifications</p>
+              <p>&#8226; ▹ working conditions</p>
+              <p>&#8226; Resumes of employees working on critical systems, including administrative positions and
+                technical support and development positions.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>2. Cybersecurity Defense</h1>
+    <div class="subdomain">
+      <h2>2-1 Asset Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that the entity has an accurate and up-to-date inventory of assets that includes relevant details of
+        all informational and technical assets available to the entity, in order to support the entity’s operational
+        processes and cybersecurity requirements, to achieve the confidentiality, integrity, accuracy, and availability
+        of the informational and technical assets of the entity.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-1-1</strong></p>
+        <p>In addition to the controls under subcomponent 2-1 of the basic controls for cybersecurity, the cybersecurity
+          requirements for the management of information and technology assets should include, at a minimum; the
+          following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-1-1-1</strong></p>
+            <p>Maintain an annual updated list of all assets of critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Asset management policy template</p>
+              <p>&#8226; Asset classification standards template</p>
+              <p>&#8226; Asset management standard template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing the asset inventory of critical systems in electronic format. Several
+                methods can be applied to store and use an inventory and inventory of assets, including but not limited
+                to:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Configuration management database (CMDB).</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Asset management software.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Specialized asset management tool.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Spreadsheets.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Database.</p>
+              <p>&#8226; Ensure that the inventory of informational and technical assets for critical systems includes,
+                for example, the following:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The type of assets and the description of the assets.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Asset classification level and reclassification date.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ compliance requirements (such as recording whether the assets fall within the scope
+                of privacy, data retention, or other legal obligation).</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Asset site.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The owner of the assets (e.g. Asset Protection Custodian).</p>
+              <p>&#8226; Ensure that the inventory list is centralized between the department concerned with
+                cybersecurity, information technology, and other concerned departments, and that it is updated and
+                verified at least once a year.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; An inventory of all assets for critical systems and their technical components.</p>
+              <p>&#8226; Annual audit reports of asset inventories for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-1-1-2</strong></p>
+            <p>Identifying asset owners and involving them in the asset management life cycle of critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Asset management policy template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to identify all asset owners of critical systems and develop a list of all their roles and
+                responsibilities in terms of asset management.</p>
+              <p>&#8226; Work on an awareness program for all asset owners on how to carry out their responsibilities.
+              </p>
+              <p>&#8226; Work on implementing a mechanism to involve all owners in the asset life cycle, for example:
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that the assets are included in the inventory list and updated continuously
+                at least annually.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Classification of assets.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Description of assets.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Safe destruction of assets.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Changes that occur to assets.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that includes all the owners of the assets of the critical systems and all their
+                duties and responsibilities.</p>
+              <p>&#8226; A Document procedures for involving owners in the asset life cycle.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-2 Identity and Access Management</h2>
+      <h3>Objective:</h3>
+      <p>Ensure the protection of cyber security for logical access to the information and technical assets of the
+        entity in order to prevent unauthorized access and restrict access to what is required to complete the work
+        related to the entity.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-2-1</strong></p>
+        <p>In addition to the sub-controls under item 2-2-3 in the basic controls for cybersecurity, they must cover the
+          cybersecurity requirements related to managing access identities and the permissions for critical systems in
+          the entity, at a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-2-1-1</strong></p>
+            <p>Prohibiting remote access from outside the Kingdom of Saudi Arabia.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; The design and settings of the network must not allow remote access from outside the Kingdom to
+                critical systems that are not connected to the Internet, as well as technical support from outside the
+                Kingdom for critical systems, whether connected to the Internet or not. This does not mean that users of
+                critical systems connected to the Internet are not allowed to access them. Such as: (adjusting VPN
+                settings to prevent entry from outside Saudi Arabia).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A list of technical controls settings to prevent remote access to critical systems from outside
+                the Kingdom.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-2</strong></p>
+            <p>Restricting remote entry from inside the Kingdom; Provided that it is verified by the security operations
+              center of the entity, at every entry process; and continuously monitor remote access-related activities.
+            </p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing procedures to restrict remote entry from inside the Kingdom, for example:
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Entry from inside the Kingdom is automatically denied to all users, and when
+                needed, the reason for the need is presented, and then the necessary approvals are taken from the
+                concerned department and the cybersecurity department according to the procedures approved by the
+                entity.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Granting access for a limited period only as needed.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Grant access to the system specified in the request only.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Granting access from inside the Kingdom through specialized systems approved by the
+                entity, for example: the (VPN) or (MDM) systems.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work to save all activities and records of remote login operations and ensure that
+                they are sent to the operations and monitoring center to ensure that they are constantly monitored by
+                specialized teams by linking login logs with monitoring systems, for example: the (SEIM) system.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Procedures document for restricting remote entry from within the Kingdom to critical systems.
+              </p>
+              <p>&#8226; A document to set the configuration of remote access systems, for example, the (VPN) system.
+              </p>
+              <p>&#8226; A guide explaining the monitoring of remote access events through the entity’s security
+                operations center.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-3</strong></p>
+            <p>Multifactor authentication (MFA) for all users.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing procedures for logins that contain multi-factor authentication.</p>
+              <p>&#8226; Work to activate multi-element verification next to the username and password, which may be,
+                for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ One Time Password in a text message sent to the registered user’s mobile number.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;▹ One Time Password is displayed in a random number generator (HardToken) program or
+                device for multi-factor identity verification.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Identity verification using biometric features (e.g. fingerprint).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A guide explaining the implementation of multi-element identity verification requirements for
+                all users on critical systems, including but not limited to: A screenshot showing adjusting the settings
+                of critical systems to ensure confirmation of the multi-element identity verification request.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-4</strong></p>
+            <p>Multi-Factor Authentication (MFA) for critical users; And the systems used to manage and monitor the
+              critical systems mentioned in Control 4-1-3-2.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+              <p>&#8226; Standards template for user devices with important and critical privileges</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Determine the important and critical privileges of critical systems (System Administrative),
+                which includes at the level of infrastructure and networks such as: (Network Administrative) and
+                applications such as: (Application Administrative) and databases such as: (Database Administrative) in
+                the entity.</p>
+              <p>&#8226; Identify Personnel with Privileged Access.</p>
+              <p>&#8226; Work on developing procedures for managing Privileged Access authorities approved in the
+                entity, taking into consideration the following:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Multi-factor authentication for all users of critical systems with important and
+                critical privileges.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Privileged accounts must not be used for day-to-day operations.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Privileged accounts must not be used for internet access</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Privileged accounts must not be used for email access.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Preventing the use of Privileged accounts for remote logins, and granting the
+                authority to use after obtaining approval with a practical justification.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Default accounts must be disabled.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Workstation protection system must be installed and updated on the workstation that
+                will be used to access privileged accounts</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Secure versions of operating systems used in the organization must be built and
+                prepared in a secure manner.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Protection programs must be installed and unused services must be disabled. These
+                copies must be used to configure desktops and servers</p>
+              <p>&#8226; Work to identify modern and advanced technologies and mechanisms for managing important and
+                critical privileges.</p>
+              <p>&#8226; Ensure that important and critical privileges are granted based on job tasks after obtaining
+                the necessary approvals, taking into account the principle of separation of duties.</p>
+              <p>&#8226; Work on recording logins on accounts with important and critical privileges for follow-up and
+                monitoring.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; An inventory of the accounts of employees who have important and critical privileges.</p>
+              <p>&#8226; A guide explaining the implementation of multi-factor authentication requirements for logins,
+                including but not limited to: A screenshot showing critical system settings to ensure certainty of the
+                multi-factor identity verification request for users with important, critical permissions.</p>
+              <p>&#8226; Requests to grant important and critical privileges and approvals.</p>
+              <p>&#8226; Audit reports on important and critical account activities.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-5</strong></p>
+            <p>Prepare password standard controls taking into consideration best practices and implementation.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+              <p>&#8226; Standards template for managing login identities and permissions, which includes password
+                management.</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Ensure all employees have a unique identifier, which may be a job number, employee name, or
+                other naming mechanisms to ensure that usernames are unique.</p>
+              <p>&#8226; Prepare password standard controls taking into consideration best practices, including e.g.:
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The expiration period of the password is at least 30 days for important and
+                critical and critical privileges, and at least 90 days for the remaining privileges.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The password validity period (Expiration Period) is at least 30 days for important
+                and critical and critical, and the rest of the permissions are at least 90 days</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ password complexity</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ password lockout</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ password activation</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ password history</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The number of attempts allowed is 3</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The passwords used during the last 12 times should not be repeated</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Passwords should not be used based on the personal data of the user with
+                permissions and privileges, such as date of birth.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The password must be complex and contain at least 4 characters from the following:
+              </p>
+              <p>&#8226; ▪ Upper case letters</p>
+              <p>&#8226; ▪ Lower case letters</p>
+              <p>&#8226; ▪ Numbers(2341)</p>
+              <p>&#8226; ▪ Special characters(#%*@)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Configure configuration include secure password standards for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-6</strong></p>
+            <p>Using safe methods and algorithms to store and process passwords, e.g. using hashing functions.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+              <p>&#8226; Standards template for managing login identities and permissions, which includes password
+                management.</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Working on providing security systems and solutions for saving and processing passwords and
+                ensuring that encryption requirements are met based on national encryption standards, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Working on the use of accepted shorthand functions based on national encryption
+                standards, for example: SHA-256.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that the hashing functions are Resistant Inversion, Collision Resistant, and
+                Pre-Resistant image.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document the procedures for storing and handling passwords for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-7</strong></p>
+            <p>Secure management of Service Accounts between applications and systems; And disable interactive human
+              login through it.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing clear procedures for dealing with service accounts and ensuring that they
+                are managed securely between applications and systems, and disabling interactive human login through
+                them, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ disable all service accounts and activate only the necessary ones.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ identify the service accounts needed by the business and to be used by the entity
+                with the concerned departments.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Assigning an owner to each service account to ensure that it is managed securely.
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document the procedures for secure management of service accounts.</p>
+              <p>&#8226; A list of service accounts and their owners, showing their status (activated or disabled).</p>
+              <p>&#8226; Restrictions applicable to access these accounts.</p>
+              <p>&#8226; Requests to obtain access to service accounts.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-8</strong></p>
+            <p>With the exception of Database Administrators, access or direct interaction of any user with databases is
+              prohibited. This is done through applications only, and based on the powers conferred on them; Taking into
+              account the implementation of security solutions that limit or prevent database administrators from
+              accessing Classified Data.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Database Security Policy Template</p>
+              <p>&#8226; Database Security Standard Template</p>
+              <p>&#8226; Identity and Access Management Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing procedures for dealing with databases, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Do not grant direct access or interaction privileges except to database
+                administrators.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work to identify the users and supervisors who are required to access or interact
+                with the databases and grant them permissions due to the need to work with the concerned department.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work to develop procedures to ensure that the authorized person has access to
+                databases through protected and updated devices that contain all the required security solutions.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work to grant privileges based on need only and give privileges to implement
+                specific work requirements only.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work to determine access or interaction permissions to be through applications
+                only, with the exception of database administrators.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Working to provide security technologies and solutions to prevent access to
+                classified data, such as blocking data completely or partially (Data Masking).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Procedure document for safe handling of databases for critical systems.</p>
+              <p>&#8226; List of databases containing classified data and the classification of data stored on them.</p>
+              <p>&#8226; Mechanism for approving access requests to databases.</p>
+              <p>&#8226; Requests to obtain access to databases through database administrators.</p>
+              <p>&#8226; Restrictions applied to access classified data.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-2-2</strong></p>
+        <p>Going back to Control 2-2-3-5 in Basic Controls for Cyber Security, access identities on critical systems
+          should be reviewed, at least once, every three months.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Identity and Access Management Policy Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work to review the entry identities and privileges of the critical systems in the entity by
+            conducting a periodic evaluation (according to a documented and approved plan for the review, and based on a
+            specified period of time at least every three months).</p>
+          <p>&#8226; Work to review all entry identities and permissions in all respects, for example:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The principle of minimum permissions and privileges</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The principle of separation of duties and the principle of the need for knowledge and
+            use in cooperation with the relevant departments (such as the department concerned with information
+            technology).</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Granted validity period.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The status of the person authorized with the granted permissions, for example: if they
+            are still in the administration or have been transferred to another team, or has resigned from the
+            organization.</p>
+          <p>&#8226; Document all reviews and changes made to the entry identities and privileges of critical systems in
+            the entity, for example:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Periodic reviews of the privileges and permissions granted.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Changes made from the last revision.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Changes or modifications required to be changed to the privileges and permissions
+            granted.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; The results of reviewing the entry identities and privileges of the critical systems in the entity.
+          </p>
+          <p>&#8226; A document specifying the cycle of reviewing the access identities and privileges of the critical
+            systems in the entity (evaluation table).</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-3 Information System and Processing Facilities Protection</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of information systems and information processing facilities (including workstations
+        and infrastructures) against cyber risks.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-3-1</strong></p>
+        <p>In addition to the sub-controls under Control 2-3-3 in the Basic Controls of Cybersecurity, they must cover
+          the cybersecurity requirements to protect critical systems, and their information processing devices, at a
+          minimum; the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-3-1-1</strong></p>
+            <p>allow only a specific whitelisting of applications and programs; To work on critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Malware Protection Policy Template</p>
+              <p>&#8226; Malware Protection Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+              <p>&#8226; Advanced Persistent Threats (APT) Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to determine and approve a list of operating files for applications and programs that are
+                allowed to run on servers for critical systems, by conducting a risk assessment that results in a list
+                of allowed files.</p>
+              <p>&#8226; Work on specifying this list as files allowed through the server’s security system or directly
+                through the server settings.</p>
+              <p>&#8226; Work to link this list to the rules specified in the security information and events management
+                system that monitors server logs, so that any use of operating files outside of this list is followed
+                up.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A list of allowed and approved operating files that have been matched in the system or server
+                for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-2</strong></p>
+            <p>Protecting servers of critical systems with end-point protection technologies approved by the
+              organization.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Malware Protection Policy Template</p>
+              <p>&#8226; Malware Protection Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+              <p>&#8226; Advanced Persistent Threats (APT) Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to identify protection technologies for critical devices and ensure that it contains
+                appropriate technologies to protect against advanced and continuous attacks.</p>
+              <p>&#8226; Work to download these technologies on all servers of critical systems in the entity.</p>
+              <p>&#8226; Work on continuously monitoring the protection systems of critical systems and ensuring that
+                alerts for new version updates are activated.</p>
+              <p>&#8226; Work on linking the protection system for critical systems with the security information and
+                events management system.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; List of protection systems for critical systems.</p>
+              <p>&#8226; Special protection systems installed on critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-3</strong></p>
+            <p>Applying security fixes and updates patches, at least once a month, to critical external systems
+              connected to the Internet; and at least every three months, for internal critical systems; With following
+              the change mechanisms approved by the entity.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+              <p>&#8226; Patch Management Policy Template</p>
+              <p>&#8226; Patch Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Determine the procedures for applying security fixes and updates patch at the entity and have
+                them approved by the authority, including:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ At least once a month, apply patches and updates to critical external systems,
+                including but not limited to: external web applications.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Apply patches and updates to internal critical systems at least every three months,
+                including but not limited to: Data systems of critical applications.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that the entity's change management approval is part of the approvals
+                required to implement security fixes and update patches for critical systems.</p>
+              <p>&#8226; Monitor the application of update patches and security fixes on critical systems on an ongoing
+                basis through the use of tools and techniques for managing update patches and vulnerability management.
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Procedures for applying security patches and patch updates to critical systems.</p>
+              <p>&#8226; Patch update and patch application reports as per the planned period for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-4</strong></p>
+            <p>Allocating workstations for technical staff with privileged accounts; Provided that it is isolated in a
+              private management network and that it is not linked to any other network or service (e.g.: e-mail
+              service, the Internet).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Configuration and Hardening Policy Template</p>
+              <p>&#8226; Secure Configuration and Hardening Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; identify computers other than the user’s computer for those working in technical jobs who have
+                important and critical privileges to manage their critical systems.</p>
+              <p>&#8226; isolate these devices in their own network and not be connected to any of the other party’s
+                networks.</p>
+              <p>&#8226; isolate these devices from the Internet and other services and applications used by users,
+                including, but not limited to: e-mail service, special applications for managing employee information,
+                and applications that are accessed via the Internet.</p>
+              <p>&#8226; create accounts for these devices and monitor them continuously among the entity’s important
+                and critical accounts.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Isolated computers designated for accessing critical systems.</p>
+              <p>&#8226; A list of accounts with access to these devices and the restrictions applied to ensure that
+                they cannot be used on other devices.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-5</strong></p>
+            <p>Encrypt any Non-console administrative access to any of the technical components of critical systems,
+              using secure encryption algorithms and protocols.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+              <p>&#8226; Cryptography Policy Template</p>
+              <p>&#8226; Cryptography Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to define encryption standards for supervisory access over the network to critical systems
+                and ensure their alignment with national standards for encryption, so that:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Secure communication technologies and protocols are identified, including but not
+                limited to: SSH and TLS.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The minimum length of the key is specified.</p>
+              <p>&#8226; Allocate supervisory access over the network to critical systems and use multi-factor
+                authentication for access.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; An encryption standard for supervisory access over a network.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-6</strong></p>
+            <p>Reviewing the configuration of critical systems and their immunizations (Secure Configuration and
+              Hardening) every six months at least.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Configuration and Hardening Policy Template</p>
+              <p>&#8226; Secure Configuration and Hardening Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Working on defining safe technical standards for setting up, configuring, hardening systems and
+                ensuring that they are obtained from reliable sources, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Companies developing these systems.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Reference sources for preparation and immunization.</p>
+              <p>&#8226; Work to include safe technical standards for configuration and hardening critical systems, for
+                example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Manage privilege and access sessions.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ encryption.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Records management.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Safe system configuration.</p>
+              <p>&#8226; Periodic review of the configuration and hardening of critical systems, according to the
+                specified plan, so that it takes place at least every six months.</p>
+              <p>&#8226; document the results of reviewing the configuration and hardening of critical systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Secure standards for implementing settings up, configuring and hardening critical systems.</p>
+              <p>&#8226; Periodic configuring and hardening application reports according to the planned duration for
+                critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-7</strong></p>
+            <p>Review and modify the factory configuration (Default Configuration) and ensure that there are no
+              Hard-Coded, backdoor and default passwords as applicable.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Configuration and Hardening Policy Template</p>
+              <p>&#8226; Secure Configuration and Hardening Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; review the Default Configuration of all critical systems of the entity so that they are
+                modified as possible and the results of the review are documented.</p>
+              <p>&#8226; ensure that there are no static, background, and default passwords on critical systems, so
+                that:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The source code of the entity's applications is reviewed and any fixed passwords
+                are removed.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review access rights to critical systems and disable any accounts that are not
+                being used or whose creation has expired.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Disable or modify the default accounts for critical systems, including, but not
+                limited to: disabling the default account for databases.</p>
+              <p>&#8226; Work on documenting the results of reviewing and processing passwords for critical systems
+                based on the above.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A report on reviewing the factory settings of all critical systems.</p>
+              <p>&#8226; Password review reports for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-8</strong></p>
+            <p>Protect systems' critical records and files from unauthorized access, tampering, alteration, or deletion.
+            </p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Server Security Policy Template</p>
+              <p>&#8226; Server Security Standard Template</p>
+              <p>&#8226; Virtualization Security Standard Template</p>
+              <p>&#8226; Endpoint Detection and Response Standard Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to protect system’s' critical records and files from unauthorized access, through
+                encryption or setting a password.</p>
+              <p>&#8226; Work to allocate access rights to critical system records and files to include a specific group
+                of workers.</p>
+              <p>&#8226; Work to protect critical records and files from unauthorized tampering, alteration or deletion
+                by restricting the permissions to write, modify and delete all records and files, including but not
+                limited to: event logs, database files, and application system files.</p>
+              <p>&#8226; Work to take backup copies of all critical records and files of critical systems on an ongoing
+                basis.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Access to critical records and files of critical systems.</p>
+              <p>&#8226; Backup reports of critical logs and files of critical systems.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-4 Networks Security Management</h2>
+      <h3>Objective:</h3>
+      <p>Ensure the protection of the entity's networks from cyber risks.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-4-1</strong></p>
+        <p>In addition to the sub-controls within Control 3-5-2 in the Basic Controls of Cybersecurity, the
+          cybersecurity requirements for managing the security of networks of critical systems of the entity must cover,
+          at a minimum, the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-4-1-1</strong></p>
+            <p>Isolation and physical, or logical, partitioning of networks of critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on the application of isolation and physical or logical division of the network of
+                critical systems, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Isolation using a firewall.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Isolation of critical systems that are accessed from outside the entity in a
+                neutral zone (DMZ).</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Isolation of network segments of critical systems by means of a virtual internal
+                network (VLAN).</p>
+              <p>&#8226; Work to prevent critical systems from being connected to the Internet if these systems provide
+                an internal service to the entity and there is no need to access the service from outside the entity.
+              </p>
+              <p>&#8226; Work on adjusting firewall menu settings so that all types of communications between network
+                parts of critical systems are automatically blocked (Explicitly), and firewall menus are made available
+                based on user request and business requirements and reviewed periodically.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Planning and drawing the infrastructure of critical systems networks.</p>
+              <p>&#8226; Lists firewall for critical systems and other security configuration for networks</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-2</strong></p>
+            <p>review firewall configuration and lists; Every six months, at least.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on reviewing firewall settings and lists at least every six months for the firewall of
+                critical systems networks, for example but not limited to:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review unused/activated lists within the last 90 days to be deleted and disabled.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Update settings according to recent resource versions.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Arrange lists according to effectiveness and performance.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review and analyze VPN lists.</p>
+              <p>&#8226; Documenting the audit results to include, but not be limited to:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Changes after review.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review date.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Accreditation.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Report of reviewing firewall configuration for critical systems in the entity (evaluation
+                table).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-3</strong></p>
+            <p>Prevent direct connection of any device to the local network for critical systems; Only after examining,
+              and ensuring the availability of the verified protection elements, for the acceptable levels of critical
+              systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on providing systems to manage access control devices for networks, for example: Network
+                Access Control (NAC).</p>
+              <p>&#8226; Work on developing procedures, to check devices and directly connect any device to the local
+                network for critical systems after examining it using tools to scan and detect malicious software
+                approved by the entity (End-point protection solutions) and ensure the availability of protection
+                elements that achieve the acceptable level of critical systems, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that protection technologies and mechanisms are capable of detecting all
+                types of malicious software (such as Viruses, Trojan Horses, Worms, Spyware, Adware, and Rootkits) (Root
+                Kits) and other malwares.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document procedures for secure connection of critical systems to the local network.</p>
+              <p>&#8226; Proof showing the restrictions in place to ensure direct connection is prevented.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-4</strong></p>
+            <p>Prevent critical systems from connecting to the wireless network.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing procedures to prevent critical systems from connecting to the wireless
+                network, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Isolate the network of critical systems from the rest of the networks in the
+                organization.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Adjust configuration for critical systems or configuration for security
+                technologies to prevent access to the wireless network.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document prevention procedures for critical systems from connecting to the wireless network.
+              </p>
+              <p>&#8226; A guide showing setting critical systems configuration to prevent connection to the wireless
+                network.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-5</strong></p>
+            <p>Network Advanced persistent threat.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to provide protection systems from advanced persistent threats at the network level
+                (Network APT) and update them continuously, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Provide advanced protection systems to detect and prevent intrusions such as
+                ((Intrusion Prevention/Detection Systems (IDS/IPS, HIDS/HIPS)) on all parts of the network and update
+                them continuously.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A list of all available APT protection systems for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-6</strong></p>
+            <p>Preventing critical systems from connecting to the Internet if they provide an internal service to the
+              entity; There is no very necessary need to access the service from outside the entity.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing procedures to prevent the connection of critical systems, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work with the concerned departments to identify critical systems that do not
+                require access to a service from outside the entity.</p>
+              <p>&#8226; Working on adjusting network configuration to isolate internal critical systems from Internet
+                connection, for example, but not limited to: adjusting firewall configuration to prevent communication
+                or network design that completely isolates critical systems from Internet connection.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Procedures document for isolating critical systems on the Internet document.</p>
+              <p>&#8226; Configuration applied at the level of network devices and servers that indicate that access to
+                the Internet is prohibited.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-7</strong></p>
+            <p>Provision of critical systems services, through networks independent of the Internet, in the event that
+              the services of those systems are directed to limited parties; Not for individuals.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Working to develop procedures for providing critical systems services that are provided to
+                limited parties via networks independent of the Internet, for example but not limited to:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work with the concerned departments to identify critical systems that provide
+                services outside the entity.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work to provide security solutions to provide services to limited parties securely,
+                including but not limited to: Site-to-Site VPN.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document the procedures for providing critical systems services.</p>
+              <p>&#8226; A guide explaining the settings applied at the level of network devices and servers, which
+                describes communication through independent networks.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-8</strong></p>
+            <p>Distributed Denial of Service Attack “DDoS"</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+              <p>&#8226; Protection against Distributed Denial of Service (DDOS) attacks Standard template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Working to provide protection systems against network disruption attacks (Distributed Denial of
+                Service Attack “DDoS”) on critical systems and updating them continuously.</p>
+              <p>&#8226; Adjust firewall settings to protect against Distributed Denial of Service Attacks (DDoS).</p>
+              <p>&#8226; Working to apply the principle of multiple availability (High Availability) to the entity’s
+                critical systems that provide an external service, including, but not limited to: firewall systems, Web
+                proxy systems.</p>
+              <p>&#8226; Work on concluding an agreement with the service provider or Internet service provider to
+                implement mechanisms and ensure protection against network disruption attacks (Distributed Denial of
+                Service Attack “DDoS”).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Systems and technologies to protect against network disruption attacks for critical systems.
+              </p>
+              <p>&#8226; List of Distributed Denial of Service Attack “DDoS” configuration and controls.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-9</strong></p>
+            <p>Allow whitelisting only for firewall lists for critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network Security Policy Template</p>
+              <p>&#8226; Network Security Standard Template</p>
+              <p>&#8226; Wireless Network Security Standard Template</p>
+              <p>&#8226; Network Detection and Response Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Develop whitelisting only for firewall lists for critical systems and reviewing them
+                frequently.</p>
+              <p>&#8226; Work on adjusting the firewall list settings so that all types of communications between
+                network parts are automatically blocked (Explicitly), and firewall lists are made available based on
+                user request and business requirements and reviewed periodically.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A list showing the specific permissions for firewall lists for critical systems.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-5 Mobile Devices Security</h2>
+      <h3>Objective:</h3>
+      <p>Ensure the protection of the party's mobile devices (including laptops, smart phones, and smart tablets) from
+        cyber risks, ensuring safe handling of critical information and information related to the entity's business;
+        And protecting them during transportation and storage when using personal devices for workers in the entity
+        (BYOD principle).</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-5-1</strong></p>
+        <p>In addition to the sub-controls within Control 2-6-3 in the Basic Controls of Cybersecurity, it must cover
+          the cybersecurity requirements related to the security of mobile devices and (BYOD) devices of the entity, at
+          a minimum; the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-5-1-1</strong></p>
+            <p>Restrict access from mobile devices to critical systems, except for a temporary period only; This is
+              after conducting a risk assessment and obtaining the necessary approvals from the department concerned
+              with cyber security in the entity.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Workstations, Mobile Devices and BYOD Security Policy Template</p>
+              <p>&#8226; User device security standard template</p>
+              <p>&#8226; Mobile Devices Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to prevent access from all mobile devices to critical systems, taking into account that
+                access is intended for other purposes and not access as an end user.</p>
+              <p>&#8226; Work on developing procedures to allow access for a temporary period only when needed, for
+                example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work on developing procedures for assessing the risks of access from mobile devices
+                to critical systems based on business needs and obtaining the necessary approvals from the concerned
+                department and the cybersecurity department according to the approved procedures.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Access is allowed for a temporary period only, and access is immediately disabled
+                once the period expires.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Allow access to a specific system only upon request, not all systems.</p>
+              <p>&#8226; Record and monitor access attempts from mobile devices and activities related to accesses.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Critical systems risk assessment procedures document.</p>
+              <p>&#8226; Document procedures for granting permissions mechanisms to critical systems.</p>
+              <p>&#8226; Samples of approval requests.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-5-1-2</strong></p>
+            <p>Full Disk Encryption for mobile devices with access to critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Mobile Devices Security Standard Template</p>
+              <p>&#8226; User device security standard template</p>
+              <p>&#8226; Workstations, Mobile Devices and BYOD Security Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; End-to-end encryption of all portable drives for critical systems using accepted methods based
+                on, but not limited to, National Encryption Standards: AES-256-FIPS.</p>
+              <p>&#8226; Work to provide technical systems and security solutions that implement the required encryption
+                requirements.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A guide demonstrating the implementation of cryptographic requirements for critical systems.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-6 Data and Information Protection</h2>
+      <h3>Objective:</h3>
+      <p>Ensure the protection of the party's mobile devices (including laptops, smart phones and smart tablets) from
+        cyber risks. Ensuring secure handling of critical information and information related to the entity’s business
+        and protecting it during transportation and storage when using the personal devices of the entity’s employees
+        (the “BYOD” principle).</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-6-1</strong></p>
+        <p>In addition to the sub-controls within Control 2-7-3 in the Basic Controls of Cybersecurity, it must cover
+          the cybersecurity requirements for data and information protection; At a minimum, the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-6-1-1</strong></p>
+            <p>Not to use critical system data in a production environment other than the production environment, except
+              after using strict controls to protect that data, such as: data masking techniques or data scrambling
+              techniques.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Data Cybersecurity Policy Template</p>
+              <p>&#8226; Data Cybersecurity Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on identifying and classifying critical systems data based on the relevant legislative and
+                regulatory requirements.</p>
+              <p>&#8226; Work to identify and use techniques/mechanisms to protect critical systems data when used in a
+                non-production environment, such as: data leakage prevention techniques.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Reports on identifying and classifying critical systems data in the entity.</p>
+              <p>&#8226; A list of technologies/mechanisms used to protect the data of critical systems in the entity.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-2</strong></p>
+            <p>Categorize all critical systems data.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Data Cybersecurity Policy Template</p>
+              <p>&#8226; Data Cybersecurity Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Ensure that all critical systems data are classified based on the relevant legislative and
+                regulatory requirements.</p>
+              <p>&#8226; Work on defining mechanisms and methods for dealing with data based on its classification.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document showing the classification of all critical systems data with the rules taken based
+                on the classification of the data.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-3</strong></p>
+            <p>Protect classified data of critical systems through Data Leakage Prevention techniques.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Data Cybersecurity Policy Template</p>
+              <p>&#8226; Data Cybersecurity Standard Template</p>
+              <p>&#8226; Data Loss Prevention Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to identify and use techniques/mechanisms to prevent data leakage.</p>
+              <p>&#8226; Work on preparing a data loss prevention (DLP) solution based on the entity’s data
+                classification mechanism and based on size and type, and activate the alerts feature when an attempt is
+                made to share critical data outside the entity.</p>
+              <p>&#8226; Working to develop procedures to deal with cases of data leakage of critical systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Reports of techniques/mechanisms used to prevent critical systems data leakage.</p>
+              <p>&#8226; A screenshot showing the application of data leakage (DLP) technology and activating a feature
+                to receive alerts when an attempt is made to share critical systems data outside the entity.</p>
+              <p>&#8226; Procedures for dealing with cases of critical systems data leakage.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-4</strong></p>
+            <p>Determine the required retention period for business data related to critical systems; According to the
+              relevant legislation, and only required data is kept in production environments for critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Data Cybersecurity Policy Template</p>
+              <p>&#8226; Data Cybersecurity Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on holding a workshop with stakeholders of critical systems, in addition to other relevant
+                stakeholders from business units to determine retention periods for business data in critical systems
+                based on data quality, data need and relevant legislation.</p>
+              <p>&#8226; Work with relevant departments to delete business data whose required retention period has
+                expired according to the retention periods for business data in critical systems and using tools to
+                ensure data deletion, such as: destroying and destroying devices containing critical data, overwriting
+                critical data (Data Overwrite Method).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Reports retention periods for business data in critical systems, based on the quality and need
+                of the data.</p>
+              <p>&#8226; Reports of deletion of business data whose required retention period has expired in critical
+                systems.</p>
+              <p>&#8226; Reports of tools used to delete critical systems data.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-5</strong></p>
+            <p>Prevent the transfer of any production environment data of critical systems to any other environment.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Data Cybersecurity Policy Template</p>
+              <p>&#8226; Data Cybersecurity Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to prevent the unauthorized transfer of critical systems data from the production
+                environment to other environments (such as development and testing) through methods such as: restricting
+                access and defining access to the production environment to the team responsible for its operation only,
+                and ensuring that developers or testers do not access the environment production.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Procedures for restricting access and defining the privileges of access to the production
+                environment only to the team responsible for its operation.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-7 Cryptography</h2>
+      <h3>Objective:</h3>
+      <p>Ensuring the proper and effective use of encryption to protect the entity's electronic information assets, in
+        accordance with the entity's regulatory policies and procedures, and the relevant legislative and regulatory
+        requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-7-1</strong></p>
+        <p>In addition to the sub-controls under Control 2-8-3 of the Basic Cybersecurity Controls, the cryptographic
+          cybersecurity requirements should cover, at a minimum, the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-7-1-1</strong></p>
+            <p>encrypt all critical systems data; During the transfer (Data-In-Transit).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; No specific tools mentioned in this section, but generally:</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to identify appropriate and advanced technologies; To encrypt critical systems data in
+                transit, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Using the Transport Layer Security protocol, which is one of the most common
+                encryption protocols (TLS -Transport Layer Security).</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Applying appropriate and advanced technologies to encrypt critical systems data
+                during transmission at the advanced level in accordance with the standard of the National Cybersecurity
+                Authority.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review the effectiveness of techniques used to encrypt critical systems data in
+                transit.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Data encryption procedures during transmission at the entity.</p>
+              <p>&#8226; Encryption standards approved by the entity.</p>
+              <p>&#8226; Protocols and technologies used to encrypt critical systems data in transit.</p>
+              <p>&#8226; Reports reviewing the effectiveness of the encryption techniques used.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-7-1-2</strong></p>
+            <p>encrypt all critical systems data; While storing (Data-At-Rest) at the level of files, the database, or
+              at the level of specific columns, within the database.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; No specific tools mentioned.</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to identify appropriate and advanced technologies; To encrypt critical systems data during
+                storage, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Use transparent data encryption that is used on limited systems with restricted
+                resources (TDE Transparent Data Encryption), including but not limited to: block encryption algorithms.
+              </p>
+              <p>&#8226; Apply appropriate and advanced technologies to encrypt critical systems data during storage.
+              </p>
+              <p>&#8226; Review the techniques used to encrypt critical systems data during storage.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Procedures for encrypting critical systems data during storage, whether at the level of files,
+                the database, or at the level of specific columns within the database, in the entity.</p>
+              <p>&#8226; Protocols and technologies used to encrypt critical systems data during storage.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-7-1-3</strong></p>
+            <p>Using updated and secure methods, algorithms, keys, and encryption devices in accordance with what is
+              issued by the NCA in this regard.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cryptography Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Working on defining secure encryption algorithms, keys, and devices by adhering to the correct
+                and updated application standards by reviewing them annually and ensuring that they are in line with the
+                encryption standards issued by the Cybersecurity Authority.</p>
+              <p>&#8226; Using the advanced level of encryption methods and algorithms based on national encryption
+                standards.</p>
+              <p>&#8226; Review the techniques used for the secure management of algorithms, keys, and cryptographic
+                devices.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cybersecurity procedures that cover the safe management of encryption algorithms, keys, and
+                devices at the entity (example: an electronic copy or an official hard copy).</p>
+              <p>&#8226; A document defining the cycle of reviewing the effectiveness of the techniques used; For the
+                secure management of algorithms, keys and encryption devices during their life cycle operations at the
+                entity.</p>
+              <p>&#8226; Protocols and technologies used to encrypt critical systems data.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-8 Backup and Recovery Management</h2>
+      <h3>Objective:</h3>
+      <p>Ensure the protection of the entity's data, information, and technical configuration of the entity's systems
+        and applications from damages resulting from cyber risks, in accordance with the entity's regulatory policies
+        and procedures, and relevant legislative and regulatory requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-8-1</strong></p>
+        <p>In addition to the sub-controls under Control 3-9-2 in the Basic Cyber Security Controls, it should cover the
+          cyber security requirements for managing backups, at a minimum; the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-8-1-1</strong></p>
+            <p>The scope of online and offline backups to include all critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Backup Standard Template</p>
+              <p>&#8226; Backup Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on identifying databases for critical systems.</p>
+              <p>&#8226; Work on identifying applications for critical systems.</p>
+              <p>&#8226; Work on identifying servers for critical systems.</p>
+              <p>&#8226; Work on identifying network devices for critical systems.</p>
+              <p>&#8226; Defining technologies for backing up critical systems.</p>
+              <p>&#8226; Apply backups to all critical systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Online and Offline Backup reports, which includes all critical systems that contain: the scope
+                of the backup, the techniques used for the backup process in the entity.</p>
+              <p>&#8226; Reports from applying backups for all critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-8-1-2</strong></p>
+            <p>make backups at planned intervals; Based on the entity's risk assessment, the Commission recommends that
+              backup copies of critical systems be made on a daily basis.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Backup Standard Template</p>
+              <p>&#8226; Backup Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on the entity's risk assessment in accordance with the entity's regulatory policies and
+                procedures, and in accordance with the relevant legislative and regulatory requirements.</p>
+              <p>&#8226; Work to determine the sensitivity of the system and the need for data and its recentness,
+                depending on the result of the risk assessment.</p>
+              <p>&#8226; Work on defining an action plan for the periods of making backup copies of critical systems.
+              </p>
+              <p>&#8226; Work on implementing the action plan for backing up critical systems at agreed time periods.
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Reports from the entity's risk assessment.</p>
+              <p>&#8226; An action plan for backing up critical systems according to the time plan based on the entity's
+                risk assessment.</p>
+              <p>&#8226; screenshot of a backup tool showing the latest backups taken of critical systems at agreed time
+                intervals.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-8-1-3</strong></p>
+            <p>Secure access, storage, and transmission of backup content and media for critical systems, and protect
+              them from unauthorized destruction, modification, or viewing.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Storage Media Security Policy Template</p>
+              <p>&#8226; Physical Security Policy Template</p>
+              <p>&#8226; Backup Standard Template</p>
+              <p>&#8226; Backup Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Working to secure unauthorized access, modification, and viewing of the content of backup
+                copies of critical systems and their media, through, but not limited to: limiting access according to
+                need and scope of work, and reviewing access permissions at regular intervals.</p>
+              <p>&#8226; Working to secure the storage of backup content and media for critical systems through, but not
+                limited to: storing off-site and physical backup media off-site in a safe and reliable location, and
+                storing online backups separately from production environments. Testing and development.</p>
+              <p>&#8226; Work to determine procedures for the safe transfer of the content of backup copies of critical
+                systems and their media, through, but not limited to: encrypting backup data during transfer, and using
+                safe, updated and approved transfer tools.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Reports of access to storage media for critical systems.</p>
+              <p>&#8226; Reports of review of access rights at regular intervals.</p>
+              <p>&#8226; Backup procedures.</p>
+              <p>&#8226; Reports of encrypted backups in transit.</p>
+              <p>&#8226; Reports of tools used to transfer security to backups.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-8-2</strong></p>
+        <p>Referring to Control 2-9-3-3 in Basic Cyber Security Controls, a periodic check is required; At least every
+          three months, to determine the effectiveness of restoring backups of critical systems.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Backup Standard Template</p>
+          <p>&#8226; Backup Policy Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on developing a plan to conduct a periodic examination at least every three months; To measure
+            the effectiveness of restoring backups of critical systems.</p>
+          <p>&#8226; Work to ensure the effectiveness of recovery procedures, by conducting a test to restore backup
+            copies of critical systems periodically; At least every three months.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; An action plan to test the effectiveness of backups for critical systems.</p>
+          <p>&#8226; Backup Restoration Testing reports for critical systems at least every three months.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-9 Vulnerabilities Management</h2>
+      <h3>Objective:</h3>
+      <p>Ensuring the protection of the entity's data and information and the technical configuration of the entity's
+        systems and applications from damages resulting from cyber risks, in accordance with the entity's regulatory
+        policies and procedures, and the relevant legislative and regulatory requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-9-1</strong></p>
+        <p>In addition to the sub-controls under Control 2-10-3 in the Cybersecurity Core Controls, the cybersecurity
+          requirements for vulnerability management for critical systems should cover, at a minimum, the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-9-1-1</strong></p>
+            <p>Use reliable means and tools to find vulnerabilities.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Risk Management Procedure Template</p>
+              <p>&#8226; Vulnerability Register Template</p>
+              <p>&#8226; Vulnerabilities Management Policy Template</p>
+              <p>&#8226; Vulnerabilities Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on identifying the tools used to discover vulnerabilities and review them to ensure their
+                effectiveness</p>
+              <p>&#8226; Work on using more than one way to discover vulnerabilities in critical systems, including:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Using more than one tool approved by trusted parties to detect vulnerabilities,
+                including open source tools.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Use of globally recognized vulnerability tools that have independent reports on
+                tool effectiveness testing</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review vulnerabilities alerts from suppliers related to critical systems</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Review vulnerability alerts from the National Cybersecurity Authority and the
+                National Cybersecurity Guidance Center</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Manual scanning to discover vulnerabilities in critical systems</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Updating the tools used to discover vulnerabilities</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; List of methods and tools used to discover vulnerabilities.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-9-1-2</strong></p>
+            <p>Vulnerability assessment and remediation (by installing updates and fixes packages) on technical
+              components of critical systems, at least once a month, for critical external systems connected to the
+              Internet; And at least every three months, for critical internal systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Risk Management Procedure Template</p>
+              <p>&#8226; Vulnerability Register Template</p>
+              <p>&#8226; Vulnerabilities Management Policy Template</p>
+              <p>&#8226; Vulnerabilities Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to identify external critical systems (i.e. connected to the Internet) and internal
+                critical systems and their technical components according to the entity’s inventory of critical systems.
+              </p>
+              <p>&#8226; Evaluating vulnerabilities on all components of critical systems, determining their type,
+                classifying their level of severity, and assigning an owner to them to be addressed by installing update
+                and fix packages.</p>
+              <p>&#8226; Ensure that the vulnerability treatment plan includes addressing the vulnerabilities discovered
+                on external critical systems and their technical components within one month from the time they are
+                discovered.</p>
+              <p>&#8226; Ensure that the vulnerability treatment plan includes addressing discovered vulnerabilities on
+                internal critical systems and their technical components within three months from the time they are
+                discovered.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Assessment reports and plans to identify the vulnerabilities discovered in critical systems and
+                reports on the implementation of these plans.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-9-1-3</strong></p>
+            <p>immediate remediation of newly discovered critical vulnerabilities; Following the change management
+              mechanisms approved by the entity.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Risk Management Procedure Template</p>
+              <p>&#8226; Vulnerability Register Template</p>
+              <p>&#8226; Vulnerabilities Management Policy Template</p>
+              <p>&#8226; Vulnerabilities Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Ensure that the vulnerability treatment plan includes addressing critical vulnerabilities
+                discovered on critical systems and their technical components as soon as they are discovered or as soon
+                as they are announced by approved system developers, and identify gaps by following up on treatment
+                plans while following the approved procedures for emergency changes by submitting requests and obtaining
+                the necessary approvals.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A plan for the critical vulnerabilities discovered in critical systems.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-9-2</strong></p>
+        <p>Referring to Control 2-10-3-1 in Basic Cyber Security Controls, vulnerabilities on technical components, of
+          critical systems, should be scanned and discovered once a month; at least.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity Risk Management Procedure Template</p>
+          <p>&#8226; Vulnerability Register Template</p>
+          <p>&#8226; Vulnerabilities Management Policy Template</p>
+          <p>&#8226; Vulnerabilities Management Standard Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Ensure that schedule scans and discovering vulnerabilities of critical systems components
+            (including but not limited to applications, encryption devices, databases, network devices) are scheduled at
+            least once a month.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Schedule scan reports and find vulnerabilities for critical systems.</p>
+          <p>&#8226; 2-10 Penetration Testing</p>
+          <p>&#8226; Objective:</p>
+          <p>&#8226; Ensuring that technical vulnerabilities are discovered in a timely manner and addressed
+            effectively, in order to prevent or reduce the possibility of exploiting these vulnerabilities by
+            cyber-attacks and reduce the effects of the entity's business.</p>
+          <p>&#8226; Controls:</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-10-1</strong></p>
+        <p>In addition to the sub-controls under Control 2-11-3 in the Basic Cyber Security Controls, the cyber security
+          requirements for penetration testing of critical systems should cover, at a minimum; the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-10-1-1</strong></p>
+            <p>The scope of penetration testing work, to include all technical components of critical systems, and all
+              services provided internally and externally.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Penetration Testing Policy Template</p>
+              <p>&#8226; Penetration Testing Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Ensure that penetration testing activities include all critical systems and all their technical
+                components, for example:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Infrastructure</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ websites</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ web applications</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Smartphone and tablet applications</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ E-mail</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Remote entry</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; List the scope of work for penetration testing activities.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-10-1-2</strong></p>
+            <p>Penetration testing done by a qualified team.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Penetration Testing Policy Template</p>
+              <p>&#8226; Penetration Testing Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Attracting qualified human resources to perform penetration tests on critical systems, and
+                among these qualifications:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Professional certifications in penetration testing (such as CEH, GPEN, OSCP, eCPPT,
+                etc.)</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Practical experience in penetration testing</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Saudi citizen</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Hold an academic degree in a related field</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Critical vulnerability finder within vulnerability bounty programs</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Penetration testing team resume for critical systems.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-10-2</strong></p>
+        <p>Referring to officer 2-11-3-2 in Basic Controls for Cyber Security, penetration testing must be done on
+          critical systems, every six months; at least.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Penetration Testing Policy Template</p>
+          <p>&#8226; Penetration Testing Standard Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Ensure that the penetration testing plan includes conducting penetration tests every six months (at
+            least) on all critical systems and their technical components, which include:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Applications</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Devices and servers</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Databases</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Network devices such as routers, switches, and firewalls</p>
+          <p>&#8226; Work to address the observations discovered during the penetration test</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Penetration testing work plan for critical systems.</p>
+          <p>&#8226; Periodic reports of penetration tests on critical systems.</p>
+          <p>&#8226; A guide explaining the follow-up treatment of discovered observations.</p>
+          <p>&#8226; 2-11 Cybersecurity Event Logs and Monitoring Management</p>
+          <p>&#8226; Objective:</p>
+          <p>&#8226; Ensure timely collection, analysis and monitoring of cyber security event logs; For the proactive
+            detection of cyber-attacks and effective risk management; To prevent or reduce the effects of the entity's
+            business.</p>
+          <p>&#8226; Controls:</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-11-1</strong></p>
+        <p>In addition to the subcontrols in ECC control 2-12-3, cybersecurity requirements for event logs and
+          monitoring management for critical systems must include at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-11-1-1</strong></p>
+            <p>activate event logs for cybersecurity; on all technical components of critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to provide monitoring systems compatible with the level of risk that collect and analyze
+                the necessary event records, to collect records of cyber events for the technical assets of critical
+                systems, and these records must contain the following information as a minimum:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Event Type.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Event originator (IIS, EDR, AV, Sysmon, security logs, etc...)</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The system from which the event was executed (e.g. mailserver)</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Date and Time of Event.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The user or tool used to carry out the event.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The status or outcome of the event (Success vs. Failure).</p>
+              <p>&#8226; Activate and collect Event Logs, Audit Trial, and Login processes for all technical assets of
+                critical systems.</p>
+              <p>&#8226; Create alerts for information and technology assets when predefined security monitoring events
+                occur and/or indicator levels of potential malicious activity are met.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Event logs configuration for critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-11-1-2</strong></p>
+            <p>Enable alerts and event logs related to File Integrity Management and monitor them.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work to identify and install appropriate technologies to manage and monitor file changes.</p>
+              <p>&#8226; Work on activating alerts and recording events related to managing and monitoring file changes
+                continuously.</p>
+              <p>&#8226; Work to protect cyber security event logs from alteration, disclosure, corruption, unauthorized
+                access and unauthorized release for example: applying encryption and passwords to logs.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Appropriate techniques for managing and controlling file changes</p>
+              <p>&#8226; Configuration event logs to send file change alerts to critical systems for dedicated teams so
+                they can be assured they are constantly monitored and not tampered with.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-11-1-3</strong></p>
+            <p>"User Behavior Analytics" UBA</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on providing specialized systems to monitor and analyze user behaviour.</p>
+              <p>&#8226; Work with the concerned departments in the entity to determine the acceptable behaviour of the
+                user on critical systems in order to determine the suspicious behaviour.</p>
+              <p>&#8226; Work on developing security procedures (Incident response playbook) to be taken for cases that
+                have been studied and identified with the concerned departments under the framework of suspicious
+                behaviour.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A list of all systems and configuration to monitor user behaviour to ensure continuous
+                analysis.</p>
+              <p>&#8226; A list of all the cases studied and analyzed.</p>
+              <p>&#8226; Security measures (Incident response playbook).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-11-1-4</strong></p>
+            <p>Monitor event logs of critical systems around the clock.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Working on monitoring all cyber security events for critical systems around the clock
+                (24/7/365) through specialized teams.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Monitor event logs of systems around the clock, for example: a table showing the times of
+                specialized teams for monitoring around the clock.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-11-1-5</strong></p>
+            <p>maintaining and protecting logs of cybersecurity incidents related to critical systems; Provided that it
+              is comprehensive and includes full details (e.g.: time, date, identity, affected system).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on developing procedures for maintaining records of events, and that they be comprehensive
+                and include full details, with a minimum of the following:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Event log type: System, Security, Audit, Kernel, Authorization, Mail, etc.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The location and system of the event or record source.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The date and timestamp of the event log.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ affected system.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The identity of the user or tool used to perform the event.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Event status: successful, failed, active, inactive, allowed, denied, etc.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Event Severity Level: Such as Emergency, Alert, Critical, Error, Warning,
+                Informational Notice, or Corrective Notice.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Event message: an actual message from the event.</p>
+              <p>&#8226; Work to restrict the archiving and deletion of event records and restrict it to authorized
+                users only after the end of the time period specified for keeping the records, and allow the managers
+                concerned with information and technical assets to carry out the process of archiving and deleting event
+                records.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document procedures for maintaining event logs for critical systems.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-11-2</strong></p>
+        <p>Referring to Control 2-12-3-5 in Basic Controls for Cyber Security, the period of retention of event logs
+          related to cyber security, on critical systems, must not be less than 18 months; According to the relevant
+          legislative and regulatory requirements.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+          <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Develop procedures for maintaining event records for a minimum of 18 months for critical assets or
+            for a longer period.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document event log retention procedures for critical systems.</p>
+          <p>&#8226; 2-12 Web Application Security</p>
+          <p>&#8226; Objective:</p>
+          <p>&#8226; Ensure the protection of external web applications of the entity from cyber risks.</p>
+          <p>&#8226; Controls:</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-12-1</strong></p>
+        <p>In addition to the sub-controls under Control 2-15-3 in Basic Controls for Cybersecurity, they must cover the
+          cybersecurity requirements, to protect external web applications of the entity's critical systems, at a
+          minimum; the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-12-1-1</strong></p>
+            <p>Secure Session Management, including authenticity, lockout, and timeout.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Web Application Protection Policy Template</p>
+              <p>&#8226; Web Application Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Defining and documenting a secure session management process, which includes:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Authentication of sessions</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Access</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Control</p>
+              <p>&#8226; Use a trusted server to generate session identifiers.</p>
+              <p>&#8226; Ensure that the logout function completely terminates the connection/session.</p>
+              <p>&#8226; Ensure that the session inactivity timeout is as short as possible, and it is recommended that
+                the session timeout be less than several hours.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A report of a secure session, which includes:</p>
+              <p>&#8226; ▹ Session reliability.</p>
+              <p>&#8226; ▹ Lockout session.</p>
+              <p>&#8226; ▹ Session timeout.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-12-1-2</strong></p>
+            <p>Implementing application security and protection standards (OWASP Top Ten) at a minimum.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Web Application Protection Policy Template</p>
+              <p>&#8226; Web Application Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on establishing a methodology to verify the application of security standards for system
+                applications on a regular basis, with no less than annual updates, according to the OWASP organization.
+              </p>
+              <p>&#8226; Work to implement and protect each application security standard, which includes:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Broken Access Control service.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Cryptographic Failures.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Injection</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Insecure design.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Security Misconfiguration error.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Vulnerable and Outdated Components.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Identification and Authentication Failures.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Software and Data Integrity Failures.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Security Logging and Monitoring Failures.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Server-Side Request Forgery.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document explaining the application of application security standards, clarifying the minimum
+                and the extent of the entity’s compliance with the standards.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-12-2</strong></p>
+        <p>Referring to officer 2-15-3-2 in Basic Controls for Cybersecurity, the principle of Multi-tier Architecture
+          must be used, provided that the number of levels is not less than 3 (3-Tier Architecture).</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Web Application Protection Policy Template</p>
+          <p>&#8226; Web Application Security Standard Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on the use of the multi-tier architecture principle, where critical web application components
+            are separated on at least three levels, which consist of:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Presentation/client tier.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Application/business tier.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Database layer.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Diagram of the entity's applications, showing the use of the multi-level architecture principle.
+          </p>
+          <p>&#8226; 2-13 Application Security</p>
+          <p>&#8226; Objective:</p>
+          <p>&#8226; Ensuring the protection of internal applications of the entity's critical systems from cyber risks.
+          </p>
+          <p>&#8226; Controls:</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-13-1</strong></p>
+        <p>Cybersecurity requirements must be identified, documented and approved to protect the internal applications
+          of the entity's critical systems from cyber risks.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Web Application Security Standard Template</p>
+          <p>&#8226; Procedure for Development of Cybersecurity Documents Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work to include and document cybersecurity requirements to protect internal web applications in the
+            entity from cyber risks. These requirements include, for example:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Using the multi-tier architecture principle.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Use secure protocols such as HTTPS.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Clarify the acceptable use policy for users.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Secure Session Management, including authenticity, lockout, and timeout.</p>
+          <p>&#8226; Developing an action plan to implement all cybersecurity requirements related to the protection of
+            internal web applications.</p>
+          <p>&#8226; Include cybersecurity requirements related to the protection of internal applications in the
+            application protection procedures in the entity to ensure compliance with the cybersecurity requirements of
+            all internal and external stakeholders.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; The cybersecurity policy document that covers the requirements for protecting the entity’s internal
+            applications from cyber risks (electronic copy or official paper copy).</p>
+          <p>&#8226; Official approval of the document by the head of the entity or his representative (for example: via
+            the entity’s official e-mail, or by paper or electronic signature).</p>
+          <p>&#8226; An action plan document to implement cybersecurity requirements to protect the entity’s internal
+            applications.</p>
+          <p>&#8226; Evidence confirming the periodic review of the implementation of cybersecurity requirements to
+            protect the entity’s internal applications.</p>
+          <p>&#8226; A guide explaining the application of the entity’s internal application protection controls,
+            including but not limited to:</p>
+          <p>&#8226; ▹ A sample of an application design that demonstrates the use of the multi-level architecture
+            principle.</p>
+          <p>&#8226; ▹ A screenshot of an app demonstrating the use of HTTPS.</p>
+          <p>&#8226; ▹ A screenshot of the application showing the deployment of the safe usage policy to users.</p>
+          <p>&#8226; ▹ A screenshot of a secure session with it being trusted, locked, and timed out.</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-13-2</strong></p>
+        <p>Cybersecurity requirements must be applied; To protect the internal applications of the party's critical
+          systems.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; No specific tools, but generally from context.</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work to implement all cybersecurity requirements when applying application protection measures in
+            the entity, and the entity's application protection measures must cover, at a minimum, the following, for
+            example:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Multi-tier Architecture.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Use secure protocols such as HTTPS.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Clarify the acceptable use policy for users.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Secure Session Management, including authenticity, lockout, and timeout.</p>
+          <p>&#8226; Developing an action plan to implement all cybersecurity requirements related to application
+            protection.</p>
+          <p>&#8226; Include cybersecurity requirements related to application protection in the entity's application
+            protection procedures to ensure compliance with cybersecurity requirements for all internal and external
+            stakeholders.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Application security procedures document.</p>
+          <p>&#8226; Documents confirming the application of cybersecurity requirements related to the protection of
+            applications that are documented in the policy document.</p>
+          <p>&#8226; An action plan document to implement cyber security requirements to protect applications</p>
+          <p>&#8226; Evidence showing the application of application protection controls, for example:</p>
+          <p>&#8226; ▹ Screenshot showing the use of the multi-level architecture principle in applications.</p>
+          <p>&#8226; ▹ Screenshot of an application showing the use of the HTTPS protocol.</p>
+          <p>&#8226; ▹ A screenshot of the application showing the deployment of the Acceptable use policy to users.</p>
+          <p>&#8226; ▹ Screenshot of a secure session including authoritative, locking, and timing out.</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-13-3</strong></p>
+        <p>Cybersecurity requirements must cover; To protect the internal applications of the party's critical systems,
+          at a minimum, the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-13-3-1</strong></p>
+            <p>Using the principle of multi-tier architecture, provided that the number of levels is not less than 3
+              (3-Tier Architecture).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Web Application Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; In the case of internal applications purchased and operated by a third party, must be:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that the supplier adheres to cyber security policies and standards, which
+                include the use of the multi-level architecture principle.</p>
+              <p>&#8226; In the event that there are applications that are developed internally or internal applications
+                that were purchased from a third party but are operated by the entity, must be:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Determine the architectural principle levels appropriate to the nature of the web
+                application, which should not be less than three levels:</p>
+              <p>&#8226; ▪ Presentation/client tier.</p>
+              <p>&#8226; ▪ Application/business tier.</p>
+              <p>&#8226; ▪ Database tier.</p>
+              <p>&#8226; Work to identify the relevant departments to apply the principle of multi-level architecture.
+              </p>
+              <p>&#8226; Work on applying the principle of multi-level architecture, which must not be less than three
+                levels for all internal applications of the entity.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Design an internal application that demonstrates the use of the multi-level architecture
+                principle for an internally developed entity-specific application.</p>
+              <p>&#8226; Design an internal application that demonstrates the use of the multi-level architecture
+                principle for an application purchased from an external party.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-13-3-2</strong></p>
+            <p>Use secure protocols (such as HTTPS).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Web Application Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; In the case of internal applications purchased and operated by a third party, it must:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Ensure that the supplier adheres to cyber security policies and standards, which
+                include the use of secure protocols.</p>
+              <p>&#8226; In the event that there are applications that are developed internally or internal applications
+                that were purchased from a third party but are operated by the entity, it must:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Determine the secure communications protocol to be applied to the internal
+                applications of the entity, which include, for example:</p>
+              <p>&#8226; ▪ Hypertext Transfer Protocol Security (HTTPS)</p>
+              <p>&#8226; ▪ Secure File Transfer Protocol (SFTP)</p>
+              <p>&#8226; ▪ Transport Layer Security protocol (TLS)</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Implementing and downloading secure communication protocols in the internal
+                applications of the entity to protect them.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Work to include the application and download of secure communication protocols in
+                the application development life cycle to ensure the protection of applications to be developed in the
+                future.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; List of secure protocols used in applications</p>
+              <p>&#8226; An internal application demonstrating the use of the HTTPS protocol.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-13-3-3</strong></p>
+            <p>Clarify the acceptable use policy for users.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Web Application Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work on documenting the policy for the safe use of the entity’s internal applications for
+                users.</p>
+              <p>&#8226; Work to include a safe usage policy on the application login page.</p>
+              <p>&#8226; Ensure that the safe use policy for users is shared on the entity’s internal applications.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Acceptable use policy for users of internal applications.</p>
+              <p>&#8226; A guide explaining the publication of the Acceptable use policy for App users.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-13-3-4</strong></p>
+            <p>Secure Session Management, including authenticity, lockout, and timeout.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Web Application Security Standard Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Defining and documenting a secure session management process, which includes:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Authentication.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Access</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Control.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Authorization.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Lockout.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Timeout.</p>
+              <p>&#8226; Use a trusted server to generate session identifiers.</p>
+              <p>&#8226; Ensure that the logout function completely terminates the connection/session.</p>
+              <p>&#8226; Ensure that the session inactivity timeout is as short as possible, and it is recommended that
+                the session timeout be less than several hours.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Screenshot of one of the secure sessions, including:</p>
+              <p>&#8226; ▹ Session reliability.</p>
+              <p>&#8226; ▹ Lockout the session.</p>
+              <p>&#8226; ▹ Session times out.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-13-4</strong></p>
+        <p>Periodically review the cybersecurity requirements to protect the internal applications of the entity's
+          critical systems.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Procedure for Development of Cybersecurity Documents Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on reviewing the application of cybersecurity requirements to protect the applications of the
+            entity by conducting a periodic assessment (according to a documented and approved plan for review, and
+            based on a specific period of time “for example, on a quarterly basis”) to protect the applications by the
+            department concerned with cybersecurity and in cooperation with relevant departments The relationship (such
+            as the department concerned with information technology).</p>
+          <p>&#8226; Application review may be done through traditional channels (such as email) or it may be automated
+            using a compliance management system. The entity may develop a review plan in which it clarifies the
+            schedule for reviewing the application of cybersecurity requirements to protect the applications of the
+            entity.</p>
+          <p>&#8226; Periodically review and update the cybersecurity requirements to protect the applications of the
+            entity according to a documented and approved plan for review based on a specific period of time or in the
+            event of changes in the relevant legislative and regulatory requirements.</p>
+          <p>&#8226; Documenting the review and changes made to the cybersecurity requirements to protect applications
+            in the entity and having them approved by the head of the entity or his representative.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; The policy document indicates that it has been reviewed and updated, and the changes have been
+            documented and approved by the head of the entity or his representative.</p>
+          <p>&#8226; Official approval and approval by the head of the entity or his representative on the updated
+            policy (for example: via the entity’s official e-mail, or by paper or electronic signature).</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>3. Cybersecurity Resilience</h1>
+    <p>3-1 Cybersecurity Resilience aspects of Business Continuity Management “BCM”</p>
+    <h3>Objective:</h3>
+    <p>Ensuring the availability of cyber security resilience requirements in managing the entity’s business continuity.
+      And ensuring that the effects of disturbances in the entity's critical electronic services and its information
+      processing systems and devices are addressed and minimized as a result of disasters resulting from cyber risks.
+    </p>
+    <p><strong>Controls:</strong></p>
+    <div class="control">
+      <p><strong>3-1-1</strong></p>
+      <p>In addition to the sub-controls within Control 3-1-3 in Basic Controls for Cyber Security, they must cover
+        business continuity management in the entity, at a minimum; the following:</p>
+      <div class="subcontrols">
+        <div class="subcontrol">
+          <p><strong>3-1-1-1</strong></p>
+          <p>Develop a disaster recovery center for critical systems.</p>
+          <div class="relevant-tools">
+            <p><strong>Relevant cybersecurity tools:</strong></p>
+            <p>&#8226; No specific tools mentioned.</p>
+          </div>
+
+          <div class="impl-guidelines">
+            <p><strong>Control implementation guidelines:</strong></p>
+            <p>&#8226; Develop a disaster recovery center for critical systems, which includes:</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Determine whether the recovery center is established by the entity or is a cloud
+              service provided by a third party, if the service is provided by a third party:</p>
+            <p>&#8226; ▪ The service provider must be located in the Kingdom of Saudi Arabia.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ In the event that the entity wanted to establish its own recovery center, it is
+              necessary to prepare and equip the recovery center, which includes, for example:</p>
+            <p>&#8226; ▪ Separate the disaster recovery center of critical systems from other systems.</p>
+            <p>&#8226; ▪ Total storage of hardware, software, and other equipment.</p>
+            <p>&#8226; ▪ Documenting business objectives.</p>
+            <p>&#8226; ▪ Define and specify the time/limit for failure and data loss.</p>
+            <p>&#8226; ▪ Recovery center team.</p>
+            <p>&#8226; ▪ Alternate/backup workspaces.</p>
+            <p>&#8226; ▪ Activate the remote access option.</p>
+            <p>&#8226; Define a geographic area and scope for the disaster recovery center for critical systems away
+              from the data center for critical systems.</p>
+          </div>
+
+          <div class="expected-deliverables">
+            <p><strong>Expected deliverables:</strong></p>
+            <p>&#8226; Entity network diagram.</p>
+            <p>&#8226; Designing the entity's recovery center.</p>
+          </div>
+
+        </div>
+
+        <div class="subcontrol">
+          <p><strong>3-1-1-2</strong></p>
+          <p>inclusion of critical systems; within disaster recovery plans.</p>
+          <div class="relevant-tools">
+            <p><strong>Relevant cybersecurity tools:</strong></p>
+            <p>&#8226; No specific tools.</p>
+          </div>
+
+          <div class="impl-guidelines">
+            <p><strong>Control implementation guidelines:</strong></p>
+            <p>&#8226; Working to include critical systems; Within disaster recovery plans, it includes:</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Identify a team for critical systems to activate procedures in disaster recovery
+              plans.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Identify and evaluate risks affecting critical systems.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Define backup and external storage procedures for critical systems.</p>
+          </div>
+
+          <div class="expected-deliverables">
+            <p><strong>Expected deliverables:</strong></p>
+            <p>&#8226; Disaster recovery plans documented and approved by the entity, which include critical systems.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="subcontrol">
+          <p><strong>3-1-1-3</strong></p>
+          <p>conduct periodic examinations; Once a year, to ensure the effectiveness of disaster recovery plans for
+            critical systems; at least.</p>
+          <div class="relevant-tools">
+            <p><strong>Relevant cybersecurity tools:</strong></p>
+            <p>&#8226; No specific tools.</p>
+          </div>
+
+          <div class="impl-guidelines">
+            <p><strong>Control implementation guidelines:</strong></p>
+            <p>&#8226; conduct periodic examinations; Once a year, to ensure the effectiveness of disaster recovery
+              plans for critical systems; At a minimum, it includes:</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Define and document a periodic testing schedule to ensure the effectiveness of
+              disaster recovery plans for critical systems.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Determine the documentation of the period of conducting the test periodically, not
+              less than once a year.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Adopting a schedule of periodic tests to ensure the effectiveness of recovery plans
+              by those with authority.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Defining and documenting a plan to address feedback discovered during periodic
+              testing to ensure the effectiveness of recovery plans.</p>
+          </div>
+
+          <div class="expected-deliverables">
+            <p><strong>Expected deliverables:</strong></p>
+            <p>&#8226; Updated report for effective testing of disaster recovery plans for critical systems.</p>
+            <p>&#8226; A plan to conduct tests of the effectiveness of disaster recovery plans for critical systems in
+              the entity.</p>
+          </div>
+
+        </div>
+
+        <div class="subcontrol">
+          <p><strong>3-1-1-4</strong></p>
+          <p>The NCA recommends periodic live testing; Disaster recovery (Live DR Test) for critical systems.</p>
+          <div class="relevant-tools">
+            <p><strong>Relevant cybersecurity tools:</strong></p>
+            <p>&#8226; No specific tools.</p>
+          </div>
+
+          <div class="impl-guidelines">
+            <p><strong>Control implementation guidelines:</strong></p>
+            <p>&#8226; NCA recommends conducting periodic live testing; For disaster recovery (Live DR Test) for
+              critical systems, which includes:</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Determine the Objective, intent and actions to be taken to create the post-test
+              analysis.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Determine the scope of the test.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Confirm that the test environment is ready, and will not impact production systems or
+              interfere with other activities.</p>
+            <p>&nbsp;&nbsp;&nbsp;▹ Stop and review testing when problems arise and reschedule it if necessary.</p>
+          </div>
+
+          <div class="expected-deliverables">
+            <p><strong>Expected deliverables:</strong></p>
+            <p>&#8226; The live DR Testing Schedule for critical systems approved by the entity.</p>
+            <p>&#8226; A recent report of a live disaster recovery test for critical systems.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>4. Third-Party and Cloud Computing Cybersecurity</h1>
+    <div class="subdomain">
+      <h2>4-1 Third Party Cybersecurity</h2>
+      <h3>Objective:</h3>
+      <p>Ensure the protection of the entity's assets from cybersecurity risks related to third parties (including
+        outsourcing and managed services). In accordance with the entity's regulatory policies and procedures, and
+        relevant legislative and regulatory requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>4-1-1</strong></p>
+        <p>In addition to the controls under subcomponent 4-1 of the Basic Cyber Security Controls, they must cover, at
+          a minimum, the cyber security requirements related to third parties; the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>4-1-1-1</strong></p>
+            <p>Screening or Vetting for outsourcing companies, outsourcing personnel, and managed services working on
+              critical systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Third-Party Cybersecurity Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Work with the relevant departments to ensure that a security scan (screening or vetting) is
+                conducted for external parties operating on critical systems, by communicating with the concerned
+                authorities (Presidency of State Security, Ministry of Interior, etc...) to verify the criminal record
+                of companies and workers, including:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Outsourcing companies.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Outsourcing personnel</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Managed services companies for critical systems.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Managed services personnel working on critical systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; An official document from the competent authorities explaining the security scanning procedure
+                for workers on critical systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>4-1-1-2</strong></p>
+            <p>to be backup services, managed services on critical systems; Through companies and national destinations;
+              In accordance with the relevant legislative and regulatory requirements.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Third-Party Cybersecurity Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Ensuring that outsourcing services and operations centers for cybersecurity services managed
+                for the operation and monitoring of critical systems are managed by national companies through due
+                diligence and by obtaining the companies recommendation from the National Cybersecurity Authority, and
+                ensuring that local companies and entities comply with the relevant legislative and regulatory
+                requirements.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Service Level Agreements (SLA) contracts and agreements with third party outsourcing services
+                and managed cybersecurity services operations centers for the operation and monitoring of critical
+                systems.</p>
+              <p>&#8226; An official document proving that the managed cybersecurity services operations centers for
+                operation and monitoring of critical systems are entirely located within the Kingdom of Saudi Arabia
+                (example: its existence as one of the terms of the signed contract, the existence of a service level
+                agreement (SLA) signed between the external party and the entity, or the entity’s visit to the service
+                provider’s workplace).</p>
+              <p>&#8226; An acknowledgment from the provider of support services and the operations centers of
+                cybersecurity services managed to operate and monitor critical systems to adhere to all internal
+                policies and procedures for support services and managed services for the entity and to adhere to the
+                relevant legislative and regulatory requirements.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>4-2 Cloud Computing and Hosting Cybersecurity</h2>
+      <h3>Objective:</h3>
+      <p>Ensure that cyber risks are addressed and that cyber security requirements for cloud computing and hosting are
+        implemented in an appropriate and effective manner, in accordance with the entity’s regulatory policies and
+        procedures, legislative and regulatory requirements, and related orders and decisions. And ensuring the
+        protection of the entity's information and technical assets on cloud computing services that are hosted,
+        processed, or managed by third parties.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>4-2-1</strong></p>
+        <p>In addition to the sub-controls under Control 4-2-3 in the Basic Cyber Security Controls, they must cover the
+          cyber security requirements for the use of cloud computing services and hosting, at a minimum; the following:
+        </p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>4-2-1-1</strong></p>
+            <p>The site for hosting critical systems, or any part of its technical components, must be inside the
+              entity, or in cloud computing services provided by government agencies, or national companies that fulfil
+              the cloud computing controls issued by the NCA, taking into account the classification of the hosted data.
+            </p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cloud Computing and Hosting Cybersecurity Policy Template</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Ensure the classification and coding of data in accordance with the classification and coding
+                mechanism in the entity and the relevant legislative and regulatory requirements before hosting it with
+                cloud computing and hosting service providers.</p>
+              <p>&#8226; Ensuring that the entity's critical systems, or any part of its technical components, are
+                hosted in a reliable and safe place within the Kingdom of Saudi Arabia, and these places include the
+                following:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The data must be hosted within the entity.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The data is hosted by cloud computing service providers provided by government
+                agencies in the Kingdom of Saudi Arabia.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ That the data be hosted by cloud computing service providers provided by private
+                companies, such that they are Saudi companies that have verified cloud computing controls (CCC) issued
+                by the National Cybersecurity Authority.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Adding a feasibility study and risk assessment for private companies and obtaining
+                a recommendation from the National Cybersecurity Authority.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Contracts and agreements of the entity with the cloud computing and hosting service provider
+                for critical systems.</p>
+              <p>&#8226; An acknowledgment from the cloud computing service provider that it adheres to all internal
+                policies and procedures for the entity’s cloud computing and hosting services and adheres to the
+                relevant legislative and regulatory requirements.</p>
+              <p>&#8226; A list of data that was classified before being hosted with cloud computing service providers,
+                including but not limited to: (a file) showing the data that was classified before sharing it with the
+                cloud computing and hosting service provider.</p>
+              <p>&#8226; An official document proving that the entity’s critical systems, or any part of its technical
+                components, are hosted in a reliable and secure place within the Kingdom of Saudi Arabia.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

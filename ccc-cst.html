@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>NCA Guidance Hub</title>
+  <link rel="icon" type="image/x-icon" href="gem.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ------------------------- CONSTANT Starts--------------- -->
+  <div class="NCA-main-heading">
+    
+    <h1>Implementation Guidance for Compliance with NCA Cybersecurity Controls (KSA)</h1>
+    
+    <!-- darkmode button -->
+    <!-- <label class="ui-switch">
+      <input type="checkbox" id="themeSwitch">
+      <div class="slider">
+        <div class="circle"></div>
+      </div>
+    </label>
+  -->
+</div>
+<!-- Nav Bar for all standard Links -->
+<div class="navbar-container">
+  <div class="navb4r">
+    <a href="index.html" class="nav-item-1">ECC</a>
+    <!-- <p class="hide">Essential Cybersecurity Controls</p> -->
+
+      <a href="ccc-csp.html" class="nav-item-2">CCC CSP</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Provider)</p> -->
+      
+      <a href="ccc-cst.html" class="nav-item-3">CCC CST</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Tenant)</p> -->
+      
+      <a href="dcc.html" class="nav-item-4">DCC</a>
+      <!-- <p class="hide">Data Cybersecurity Controls</p> -->
+      
+      <a href="tcc.html" class="nav-item-5">TCC</a>
+      <!-- <p class="hide">Telework Cybersecurity Controls</p> -->
+      
+      <a href="osmacc.html" class="nav-item-6">OSMACC</a>
+      <!-- <p class="hide">Organizational Social Media Accounts Cybersecurity Controls</p> -->
+      
+      <a href="otcc.html" class="nav-item-7">OTCC</a>
+      <!-- <p class="hide">Operational Technology Cybersecurity Controls</p> -->
+      
+      <a href="cscc.html" class="nav-item-8">CSCC</a>
+      <!-- <p class="hide">Critical Systems Cybersecurity Controls</p> -->
+    </div>
+  </div>
+  <div class="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0e8b5b"><path d="m413.8-285.76 222.63-222.63-56.39-56.39-166.5 166.5-84.24-84.24-55.89 56.13L413.8-285.76ZM263.72-160.87q-91.46 0-156.29-63.12-64.84-63.12-64.84-154.29 0-78.25 46.86-139.84 46.85-61.6 122.53-77.58 24.93-90.95 99.44-147.19 74.52-56.24 168.58-56.24 114.85 0 195.58 79.74 80.72 79.74 83.35 193.69v3.5q67.72 7.63 113.1 59.81 45.38 52.17 45.38 120.61 0 75.11-52.9 128.01-52.9 52.9-128.51 52.9H263.72Zm0-86h471.67q39.96 0 67.99-27.87 28.03-27.88 28.03-67.85 0-39.98-27.92-67.76-27.92-27.78-67.96-27.78h-62.12v-81.59q0-80.32-56.54-136.86-56.55-56.55-136.87-56.55-80.8 0-137.11 57.86-56.3 57.86-56.3 139.14h-22.74q-56.44 0-95.85 39.16-39.41 39.17-39.41 95.47T168-286.03q39.41 39.16 95.72 39.16ZM480-480Z"/></svg>
+    <h1 class="Main-H">Cloud Cybersecurity Controls (Tenant)</h1>
+    
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="siteSearch" placeholder="Search..." oninput="searchSite()" />
+  </div>
+  <!-- ------------------------- CONSTANT Ends --------------- -->
+
+
+
+
+  <div class="main-domain">
+    <h1>1. Cybersecurity Governance</h1>
+    <div class="subdomain">
+      <h2>1-1 Cybersecurity Roles and Responsibilities</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that roles and responsibilities are defined for all parties participating in implementing the cloud
+        cybersecurity controls, including the roles and responsibilities of the head of the CSP and CST or his/her
+        delegate, referred to in this controls as “Authorizing Official”.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-1-T-1</strong></p>
+        <p>In addition to the ECC control 1-4-1, the Authorizing Official shall also identify, document and approve:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-1-T-1-1</strong></p>
+            <p>Cybersecurity roles and RACI assignment for all stakeholders of the cloud services including Authorizing
+              Official’s roles and responsibilities.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Roles and Responsibilities</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify cloud services in use and related cybersecurity stakeholders both internal and
+                external (e.g. CSPs and their Cybersecurity units, corporate Cloud Cybersecurity Architecture,
+                Engineering, Operations teams, Cloud Security Managed Services representatives, Cloud Security SaaS
+                representatives, Authorizing Office).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cloud Cybersecurity Roles and Responsibilitiesand RACI matrix defined and approved and
+                documented within the related Service Level Agreements (SLAs) between CSP and CSTs.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-2 Cybersecurity Risk Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure managing cybersecurity risks in a methodological approach in order to protect the CSP’s and CST’s
+        information and technology assets as per organizational policies and procedures, and related laws and
+        regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-2-T-1</strong></p>
+        <p>Cybersecurity risk management methodology mentioned in the ECC Subdomain 1-5 shall also include for the CST,
+          as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-2-T-1-1</strong></p>
+            <p>Defining acceptable risk levels for the cloud services.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Risk Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; In addition to the ECC control 1-5implementation guidelines:</p>
+              <p>&#8226; Identify cloud services in use and analyse their business impact in a defined process (e.g.:
+                Business Impact Analysis) to understand and assess (at least) service disruptions, data leaks and
+                exposures, unauthenticated access risks and blast radius of damage one cloud issue may cause.</p>
+              <p>&#8226; Define risk levels for cloud services (e.g.: critical, high, medium, low)based on the
+                organization’s cybersecurity risk management methodology, and implementing necessary measures according
+                to the risk level.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Catalogue of cloud services with assigned acceptable risk level.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-2-T-1-2</strong></p>
+            <p>Considering data and information classification accredited by CST in cybersecurity risk management
+              methodology.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Risk Management Policy</p>
+              <p>&#8226; Templates for Cybersecurity Risk Management Processes</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify data processed/stored in the organization and classify it intoagreed upon categories
+                (e.g.public, restricted, secret, top secret) based on value to the organization, and include them in the
+                cybersecurity risk management methodology.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cybersecurity Risk Management Methodology with unique approach to data classes.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-2-T-1-3</strong></p>
+            <p>Developing cybersecurity risk register for cloud services, and monitoring it periodically according to
+              the risks.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Risk Management Policy</p>
+              <p>&#8226; Template for Cybersecurity Risk Register</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify risks related to cloud services and CSPs –use Threat Intelligence feeds and Incident
+                Response registries to analyse risk applicable to cloud services (e.g. data leakage due to misconfigured
+                public cloud storage service or due to weak authentication)and periodically monitoring them according to
+                nature and classification of the risk, ensuring they are addressed with appropriate priority.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cybersecurity Cloud Services Risk Register.</p>
+              <p>&#8226; Cybersecurity Cloud Services Risk Registerreview plan.</p>
+              <p>&#8226; 1-3 Compliance with Cybersecurity Standards, Laws and Regulations</p>
+              <p>&#8226; Objective:</p>
+              <p>&#8226; To ensure that the CSPs’ and CSTs’ cybersecurity program is in compliance with related laws and
+                regulations.</p>
+              <p>&#8226; Controls:</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>1-3-T-1</strong></p>
+        <p>In addition to the ECC control 1-7-1, the CST legislative and regulatory compliance should include as a
+          minimum with the following requirements:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-3-T-1-1</strong></p>
+            <p>Continuous or real-time compliance monitoring of the CSP with relevant cybersecurity legislation and
+              contract clauses.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Compliance with Laws and Regulations Policy</p>
+              <p>&#8226; Template forReviewing and Auditing Policy</p>
+              <p>&#8226; Template for Audit Plan Record</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify national legislation and regulations related to cybersecurity of cloud services and
+                Cloud Service Providers</p>
+              <p>&#8226; Review the contract with CSP regarding cybersecurity obligations. Define the way how to
+                monitor/verify it regularly (e.g.: CSP’s obligation to report to CSTs vulnerabilities can be verified
+                with if these reports are delivered or justified)</p>
+              <p>&#8226; Request CSP's compliance reports (e.g.: by making it a contractual requirement)</p>
+              <p>&#8226; Monitor CSP’s compliance in a continuous manner (like daily or weekly verification) or in
+                real-time (e.g. automated checks)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; CSP’s compliance reports verified periodically.</p>
+              <p>&#8226; Reports or evidence demonstrating the monitoring of compliance within contracts.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-4 Cybersecurity in Human Resources</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that cybersecurity risks and requirements related to personnel (employees and contractors) are
+        managed efficiently prior to employment, during employment and after termination/separation as per
+        organizational policies and procedures, and related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-4-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 1-9-3, the following requirements should be covered prior the
+          professional relationship of staff with the CST shall cover, at a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-4-T-1-1</strong></p>
+            <p>Screening or vetting candidates of personnel with access to Cloud Service sensitive functions (Key
+              Management, Service Administration, Access Control).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Human Resources Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Review job titles and descriptions for duties in areas of Key Management (including
+                encryption), technical Cloud Service Management, Identity and Access Management) and make sure
+                candidates for these jobs are under screening/vetting (e.g.: Cloud Access Provisioning Engineer, Cloud
+                Service Administrator, Key Vault Security Engineer)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Catalogue of privileged user roles (including Key Management, Service Administration, Access
+                control)</p>
+              <p>&#8226; Screening/Vetting process defined for candidates that use these user roles.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>2. Cybersecurity Defense</h1>
+    <div class="subdomain">
+      <h2>2-1 Asset Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that the CSP and CST has an accurate and detailed inventory of information and technology assets in
+        order to support the organization’s cybersecurity and operational requirements to maintain the confidentiality,
+        integrity and availability of information and technology assets.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-1-T-1</strong></p>
+        <p>In addition to controls in the ECC control 2-1, the CST shall cover the following additional controls for
+          cybersecurity requirements for cybersecurity event logs and monitoring management, as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-1-T-1-1</strong></p>
+            <p>Inventory of all cloud services and information and technology assets related to the cloud services.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Asset Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify cloud services in use (e.g.: via contract review, solution architecture review, active
+                network connections monitoring)</p>
+              <p>&#8226; Identify data stored or processed in cloud (e.g. review cloud services for data flows and data
+                storages)</p>
+              <p>&#8226; Identify cloud technology assets or group of assets (e.g. review cloud services for technical
+                components in use). Consider fluent nature of IaaS components and auto scalability functions.</p>
+              <p>&#8226; Maintain Inventories of cloud services, data and technical assets (e.g. build a database of
+                cloud services and data stored and/or processed and technical assets involved in these operations);</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Inventory of cloud services and related data and assets.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-2 Identity and Access Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the secure and restricted logical access to information and technology assets in order to prevent
+        unauthorized access and allow only authorized access for users which are necessary to accomplish assigned tasks.
+      </p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-2-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-2-3, the CST shall cover the following additional sub
+          controls for cybersecurity requirements for identity and access management requirements, as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-2-T-1-1</strong></p>
+            <p>Identity and access management for all cloud credentials along their full lifecycle.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+              <p>&#8226; Template for Identity and Access Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; In addition to sub controls in the ECC control 2-2-3implementation guideline:</p>
+              <p>&#8226; Analyse and adapt the Identity and Access model relevant to cloud services (e.g.: RBAC, roles,
+                service principals, policies, resources, resource groups, accounts, accounts groups)</p>
+              <p>&#8226; Manage accesses granularly</p>
+              <p>&#8226; Make use of Federated Authentication</p>
+              <p>&#8226; Enable strong/multifactor authentication</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cloud Identity Lifecycle process defined</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-T-1-2</strong></p>
+            <p>Confidentiality of cloud user identification, cloud credential and cloud access rights information,
+              including the requirement on users to keep them private (for employed, third party and CST personnel).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+              <p>&#8226; Template for Identity and Access Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Restrict Access to Identity Management and Access Management systems to the dedicated staff
+                (e.g.: IAM Operations personnel)</p>
+              <p>&#8226; Make authentication technical methods encrypted (e.g.: TLS in place)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Login screens only via encrypted channels (e.g. TLS)</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-T-1-3</strong></p>
+            <p>Secure session management, including session authenticity, session lockout, and session timeout
+              termination.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+              <p>&#8226; Template for Identity and Access Management Policy</p>
+              <p>&#8226; Template for Configuration and Hardening Policy</p>
+              <p>&#8226; Template for Secure Configuration and Hardening Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Tunnel sessions through authenticated proxies with capability to lockout sessions and terminate
+                due to inactivity (e.g.: use of cloud native bastion services, when applicable)</p>
+              <p>&#8226; Configure session management system for session lockouts and session timeouts (e.g.: the
+                session lockout after 5 minutes and timeout after 10 minutes of inactivity)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Session management system with session lockouts and session timeouts configured.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-T-1-4</strong></p>
+            <p>Multi-factor authentication for privileged cloud users.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+              <p>&#8226; Template for Identity and Access Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Define privileged cloud entitlements (e.g.: modifications in functions: Key Management,
+                Identity and Access Management, Service Management/Administration)</p>
+              <p>&#8226; Define privileged roles and identities that use these privileged entitlements (e.g. Role of IAM
+                Engineer for Artificial Intelligence Cloud Solutions)</p>
+              <p>&#8226; Build a mandatory multi-factor authentication (e.g. using software/mobile authenticator) policy
+                and assign it to privileged users or groups of users.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Multi-factor authentication policy assigned to privileged users or groups of users.</p>
+              <p>&#8226; List of privileged cloud users.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-T-1-5</strong></p>
+            <p>Formal process to detect and prevent unauthorized access to cloud (such as a threshold of unsuccessful
+              login attempts).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+              <p>&#8226; Template for Identity and Access Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; In addition to sub controls in the ECC control 2-2-3implementation guideline:</p>
+              <p>&#8226; Enable self-service password to reset and password management</p>
+              <p>&#8226; Configure e-mail/mobile notifications for cloud account authentications to make sure the
+                account owner is notified about account authentications</p>
+              <p>&#8226; Prevent using the same account from various locations (e.g. impossible travel).</p>
+              <p>&#8226; Setting up alerts and notifications for unsuccessful login attempts and monitoring them as part
+                of event monitoring activities.</p>
+              <p>&#8226; Restricting user access after exceeding the maximum number of unsuccessful login attempts.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Impossible travel scenarios detected and prevented</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-3 Information System and Information Processing Facilities Protection</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of information systems and information processing facilities (including workstations
+        and infrastructures) against cyber risks.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-3-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-3-3, the CST shall cover the following additional sub
+          controls for cybersecurity requirements for information system and processing facilities protection
+          requirements, as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-3-T-1-1</strong></p>
+            <p>Verifying that the CSP isolates the community cloud services provided to CSTs (government organizations
+              and CNI organizations) from any other cloud computing provided to organizations outside the scope of work.
+            </p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template forReviewing and Auditing Policy</p>
+              <p>&#8226; Template for Audit Plan Log</p>
+              <p>&#8226; TemplateforServer Security Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Review CSP's independent audits and assurance for proves of effective isolation of community
+                clouds from public and other community clouds (e.g.: review physical isolation controls, logical
+                isolation controls, multi-tenancy).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; CSP's community cloud isolation verifiedby agreed upon means between the CST and CSP.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-4 Networks Security Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of CSP’s and CST’s network from cyber risks.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-4-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-5-3, the CST shall cover the following additional sub
+          controls for cybersecurity requirements for networks security management requirements, as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-4-T-1-1</strong></p>
+            <p>Protecting the connection channel with CSP.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template forNetwork Security Policy</p>
+              <p>&#8226; Template for Network Security Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Define security requirements for connectivity with CSPs in terms of confidentiality, integrity
+                and availability of data transferred through these connections (e.g. encryption in transit, connection
+                redundancy, fail-over connectivity, volumetric DDoS protection, channel/VPN authentication)</p>
+              <p>&#8226; Design and implement the network connection accordingly (e.g.: use two separate ISPs to two
+                regions where CSP operates, use VPNs)</p>
+              <p>&#8226; Define Disaster Recovery Plan for cloud connectivity.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Disaster Recovery Plan for CST to CSPs connections.</p>
+              <p>&#8226; A network diagram document illustrating the implementation of cybersecurity practices to
+                protect network communication between CSTs and CSPs.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-5 Mobile Devices Security</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of mobile devices (including laptops, smartphones, and tablets) from cyber risks and
+        to ensure the secure handling of the CSPs’ and CSTs’ information (including sensitive information) while
+        utilizing mobile devices.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-5-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-6-3, the CST shall cover the following additional sub
+          controls for cybersecurity requirements for mobile device security, as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-5-T-1-1</strong></p>
+            <p>Data sanitation and secure disposal for end-user devices with access to the cloud services.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for User Devices, Mobile Devices, and Personal Devices Security Policy</p>
+              <p>&#8226; Template for User Devices Security Standard</p>
+              <p>&#8226; Template for Mobile Devices Security Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify end-user devices with access to the cloud services (e.g.: mobile, desktop, laptop)</p>
+              <p>&#8226; Select effective data sanitation and disposal methods relevant to these technologies (e.g.
+                device to wipe out using Mobile Device Management systems)</p>
+              <p>&#8226; Build processes and capabilities to securely sanitize these devices (e.g.: use MDM with desired
+                device sanitation features).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Approved and implemented data sanitation and device disposal tools and methods.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-6 Data and Information Protection</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the confidentiality, integrity and availability of CSPs’ and CSTs’ data and information as per
+        organizational policies and procedures, and related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-6-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-7-3, the CST shall cover the following additional sub
+          controls for cybersecurity requirements for protecting CST’s data and information in cloud computing, as a
+          minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-6-T-1-1</strong></p>
+            <p>Exit Strategy to ensure means for secure disposal of data on termination or expiry of the contract with
+              the CSP.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Data Cybersecurity Policy</p>
+              <p>&#8226; Template for Data Cybersecurity Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Analyse cloud technical capabilities to securely dispose data stored in cloud storage (e.g.:
+                data encryption using CST managed key including that key disposal)</p>
+              <p>&#8226; Define Cloud Exit strategy including cryptographic key disposal to make CST’s data encrypted
+                inCSP’s infrastructure after leaving.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cloud Exit Strategy documented.</p>
+              <p>&#8226; Evidence confirming the existence of a service provided by the CSP that allow the CST to
+                securely dispose of data or, at the very least, within the contract between the CST and the CSP, grants
+                the CST the ability to dispose of the data.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-T-1-2</strong></p>
+            <p>Using secure means to export and transfer data and virtual infrastructure.</p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Analyse portability of solutions deployed to CSPs (e.g.: dependency on CSP’s native services,
+                features, technologies)</p>
+              <p>&#8226; Ensure the formatting of dataand export technical capabilities of data in cloud services (e.g.:
+                usage of standardized data formats, protocols)</p>
+              <p>&#8226; Ensure the virtual assets and data can be transferred out securely (e.g.: through encrypted
+                channels) on demand.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Defined requirements and applied security measures relevant to export and transfer of data and
+                virtual infrastructure.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-7 Cryptography</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the proper and efficient use of cryptography to protect information assets as per policies,
+        procedures, and related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-7-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-8-3, the CST shall cover the following additional sub
+          controls for cryptography, as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-7-T-1-1</strong></p>
+            <p>Technical mechanisms and cryptographic primitives for strong encryption, in according to the advanced
+              level in the National Cryptographic Standards (NCS-1:2020).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Encryption Standard</p>
+              <p>&#8226; Template for Encryption Key Management Standard</p>
+              <p>&#8226; Template for Encryption Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Develop a Cryptographic Standard aligned with National Cryptographic Standards (NCS-1:2020).
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cryptographic standard document.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-7-T-1-2</strong></p>
+            <p>Encryption of data and information transferred to or transferred out of the cloud according to the
+              relevant law and regulatory requirements.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Encryption Standard</p>
+              <p>&#8226; Template for Encryption Policy</p>
+              <p>&#8226; Template for Encryption Key Management Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify law and regulations related to cloud data flows (e.g.: National Cryptographic
+                Standards) and verify compliance with these regulations.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Hybrid cloud connectivity encryption.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-9 Vulnerabilities Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure timely detection and effective remediation of technical vulnerabilities to prevent or minimize the
+        probability of exploiting these vulnerabilities to launch cyber-attacks against the CSP and CST.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-9-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-10-3, the CST shall cover the following additional sub
+          controls for cybersecurity requirements for vulnerability management requirements, as a minimum:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-9-T-1-1</strong></p>
+            <p>Assessing and remediating vulnerabilities cloud services and at least once every three months.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Security Vulnerability Assessment Procedure</p>
+              <p>&#8226; Template for Vulnerability Management Policy</p>
+              <p>&#8226; Template for Vulnerability Management Standard</p>
+              <p>&#8226; Template for Vulnerability Log</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Define and implement the Threat and Vulnerability Management control policy that includes the
+                intent, purpose, and governance of how a CST must address threats and vulnerabilities for their
+                respective scope under the Security Shared Responsibility Model.At a minimum, the policy should specify:
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The frequency of assessments (e.g. quarterly assessments),</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Acceptable periods of remediation of threats and vulnerabilities -three months.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The vulnerability detection methods are in use (e.g. end-point threat detection
+                agent)</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ What components to be covered under the scope considering applicable laws,
+                regulations, and contractual requirements.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ The vulnerability severity levels relevant to the organization.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ When and how and to whom vulnerabilities should be reported and reviewed,
+                especially significant vulnerabilities.</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ How remediating actions are tracked for timely and effective closure.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document outlining the establishment and assurance of the implementation of a Vulnerability
+                Management Policy encompassing cloud computing.</p>
+              <p>&#8226; Report assessing and addressing vulnerabilities related to cloud services at least once every
+                three months.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-9-T-1-2</strong></p>
+            <p>Management of CSP-notified vulnerabilities safeguards in place.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Security Vulnerability Assessment Procedure</p>
+              <p>&#8226; Template for Vulnerability Management Policy</p>
+              <p>&#8226; Template for Vulnerability Management Standard</p>
+              <p>&#8226; Template for Vulnerability Log</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Define and implement a Threat and Vulnerability Management policy that includes the intent,
+                purpose, and governance of how a CST must address threats and vulnerabilities for their respective scope
+                under the Security Shared Responsibility Model.At a minimum, the policy should specify:</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ how a CST is notified about vulnerabilities detected by CSP</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ Assessment methods for these vulnerabilities</p>
+              <p>&nbsp;&nbsp;&nbsp;▹ How remediating actions are tracked for timely and effective closure</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document outlining the establishment and assurance of the implementation of a Vulnerability
+                Management Policy encompassing cloud computing.</p>
+              <p>&#8226; Report on managing vulnerabilities notified to the CST by the CSP, including the remediation
+                process.</p>
+              <p>&#8226; 2-11 Cybersecurity Event Logs and Monitoring Management</p>
+              <p>&#8226; Objective:</p>
+              <p>&#8226; Ensure timely collection, analysis and monitoring of cybersecurity event logs for the proactive
+                detection and effective management of cyber-attacks to prevent or minimize the impact on the CSPs’ and
+                CSTs’ business.</p>
+              <p>&#8226; Controls:</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-11-T-1</strong></p>
+        <p>In addition to sub controls in the ECC control 2-12-3, the CST shall cover the following additional sub
+          controls for cybersecurity requirements for cybersecurity event logs and monitoring management, as a minimum:
+        </p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-11-T-1-1</strong></p>
+            <p>Activating and collecting of login event logs, and cybersecurity event logs on assets related to cloud
+              services.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Event Log Management and Cybersecurity Monitoring Policy</p>
+              <p>&#8226; Template for Event Log Management and Cybersecurity Monitoring Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Enable logging of account authentication and other cybersecurity events in cloud services
+                (e.g.: use cloud native logging service and related agents)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cloud Services cybersecurity event log</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-9-T-1-2</strong></p>
+            <p>Monitoring shall include all activated cybersecurity logs on the cloud services of the CST.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Event Log Management and Cybersecurity Monitoring Policy</p>
+              <p>&#8226; Template for Event Log Management and Cybersecurity Monitoring Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Define monitoring use-cases relevant to cloud services (e.g.: monitoring of modifications of
+                user accesses)</p>
+              <p>&#8226; Collect cybersecurity logs relevant to defined monitoring use-cases across cloud services
+                (e.g.: API calls relevant to user accesses modifications are captured)</p>
+              <p>&#8226; Monitor cloud service cybersecurity logs (e.g. use cloud native or on-prem SIEM class
+                technologies to analyse logs do detect security incidents)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cybersecurity event logs monitored</p>
+              <p>&#8226; 2-15 Key Management</p>
+              <p>&#8226; Objective:</p>
+              <p>&#8226; Ensure secure management of CSPs’ and CSTs’ cryptographic keys to protect confidentiality,
+                integrity and availability of information and technical assets.</p>
+              <p>&#8226; Controls:</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-15-T-1</strong></p>
+        <p>Cybersecurity requirements for key management within the CST shall be identified, documented and approved.
+        </p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Template for Cybersecurity Cloud Computing and Hosting</p>
+          <p>&#8226; Template for Cybersecurity Documentation Development Procedure</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify cybersecurity requirements for Key Management aspects (e.g.: key exchange, storage, usage,
+            ownership) -use questionnaires and conduct workshops with relevant stakeholders.</p>
+          <p>&#8226; Define, approve and regularly review (e.g. annually) the Key Management standard to define
+            cybersecurity requirements.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Key Management Cybersecurity requirements documented and formally approved.</p>
+          <p>&#8226; Results of the periodic review.</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-15-T-2</strong></p>
+        <p>Cybersecurity requirements for key management within the CST shall applied.</p>
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Enforce defined Key Management standard (e.g. Key Management service hardening, access control
+            restriction, monitoring)</p>
+          <p>&#8226; Control the effective implementation of the standard.</p>
+          <p>&#8226; Report violations to the standard.</p>
+          <p>&#8226; Document and manage exceptions.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Cybersecurity requirementsfor Encryption Key Managementdocumented and formally approved.</p>
+          <p>&#8226; Document outlining procedures for reporting standard violations.</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-15-T-3</strong></p>
+        <p>In addition to the ECC sub control 2-8-3-2, cybersecurity requirements for key management within the CST
+          shall cover, at minimum, the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-15-T-3-1</strong></p>
+            <p>Ensure well-defined ownership for cryptographic keys.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Encryption Key Management Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Define responsibilities that come with cryptographic keys ownership during entire key lifecycle
+                (e.g.: create a key, authorize to use the key, dispose the key)</p>
+              <p>&#8226; Assign ownership for cryptographic keys to CST employees.</p>
+              <p>&#8226; Review regularly cryptographic keys for orphans (every key must have an assigned active owner)
+              </p>
+              <p>&#8226; Assign owners to new cryptographic keys as a mandatory step when creating keys.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Identified Cryptographic keys and owners</p>
+              <p>&#8226; Results of the periodic review</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-15-T-3-2</strong></p>
+            <p>A secure data retrieval mechanism in case of cryptographic encryption key lost (such as backup of keys
+              and enforcement of trusted key storage, strictly external to cloud).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Encryption Key Management Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Develop and test cryptographic key recovery plans for cryptographic key loss or damage (e.g.
+                print cryptographic keys, put into tagged envelopes and store in physical safes in trusted and safe
+                external locations like deposit boxes or secure containers in banks)</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cryptographic key retrieval plan</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-15-T-4</strong></p>
+        <p>Cybersecurity requirements for key management within the CST shall be applied and reviewed periodically.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Template for the Lifecycle Management of Cybersecurity Policies, Procedures, and Standards,
+            covering Development, Implementation, Assessment and Periodic Reviews</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Review periodically cybersecurity requirements for key management, at least annually.</p>
+          <p>&#8226; Maintain records of periodical reviews (e.g.: who and when reviewed and a change log).</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Cybersecurity requirements for Key Management reviewed regularly.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>3. Cybersecurity Resilience</h1>
+    <p>3-1 Cybersecurity Resilience Aspects of Business Continuity Management (BCM)</p>
+    <h3>Objective:</h3>
+    <p>To ensure the inclusion of the cybersecurity resiliency requirements within the CSPs’ and CSTs’ business
+      continuity management and to remediate and minimize the impacts on systems, information processing facilities and
+      critical e-services from disasters caused by cybersecurity incidents.</p>
+    <p><strong>Controls:</strong></p>
+    <div class="control">
+      <p><strong>3-1-T-1</strong></p>
+      <p>In addition to sub controls in the ECC control 3-1-3, the CST shall cover the following additional sub controls
+        for cybersecurity requirements for cybersecurity resilience aspects of business continuity management, as a
+        minimum:</p>
+      <div class="subcontrols">
+        <div class="subcontrol">
+          <p><strong>3-1-T-1-1</strong></p>
+          <p>Developing and implementing disaster recovery and business continuity procedures related to cloud
+            computing, in a secure manner.</p>
+          <div class="relevant-tools">
+            <p><strong>Relevant cybersecurity tools:</strong></p>
+            <p>&#8226; Template for Cybersecurity Policy within Business Continuity</p>
+          </div>
+
+          <div class="impl-guidelines">
+            <p><strong>Control implementation guidelines:</strong></p>
+            <p>&#8226; Define requirements for disaster recovery and business continuity procedures, taking account of
+              identified risks related to cloud computing (e.g. data leakage or unintentional exposure)</p>
+            <p>&#8226; Develop, approve and implement disaster recovery and business continuity procedures/plans for
+              cloud computing based on requirements.</p>
+            <p>&#8226; Test the procedures regularly and upon significant changes to ensure its applicability.</p>
+          </div>
+
+          <div class="expected-deliverables">
+            <p><strong>Expected deliverables:</strong></p>
+            <p>&#8226; Disaster Recovery Procedure/Plan for cloud computing.</p>
+            <p>&#8226; Business Continuity Procedure/Plan for cloud computing.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

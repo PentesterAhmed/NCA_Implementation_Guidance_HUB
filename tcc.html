@@ -1,0 +1,2325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>NCA Guidance Hub</title>
+  <link rel="icon" type="image/x-icon" href="gem.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ------------------------- CONSTANT Starts--------------- -->
+  <div class="NCA-main-heading">
+    
+    <h1>Implementation Guidance for Compliance with NCA Cybersecurity Controls (KSA)</h1>
+    
+    <!-- darkmode button -->
+    <!-- <label class="ui-switch">
+      <input type="checkbox" id="themeSwitch">
+      <div class="slider">
+        <div class="circle"></div>
+      </div>
+    </label>
+  -->
+</div>
+<!-- Nav Bar for all standard Links -->
+<div class="navbar-container">
+  <div class="navb4r">
+    <a href="index.html" class="nav-item-1">ECC</a>
+    <!-- <p class="hide">Essential Cybersecurity Controls</p> -->
+
+      <a href="ccc-csp.html" class="nav-item-2">CCC CSP</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Provider)</p> -->
+      
+      <a href="ccc-cst.html" class="nav-item-3">CCC CST</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Tenant)</p> -->
+      
+      <a href="dcc.html" class="nav-item-4">DCC</a>
+      <!-- <p class="hide">Data Cybersecurity Controls</p> -->
+      
+      <a href="tcc.html" class="nav-item-5">TCC</a>
+      <!-- <p class="hide">Telework Cybersecurity Controls</p> -->
+      
+      <a href="osmacc.html" class="nav-item-6">OSMACC</a>
+      <!-- <p class="hide">Organizational Social Media Accounts Cybersecurity Controls</p> -->
+      
+      <a href="otcc.html" class="nav-item-7">OTCC</a>
+      <!-- <p class="hide">Operational Technology Cybersecurity Controls</p> -->
+      
+      <a href="cscc.html" class="nav-item-8">CSCC</a>
+      <!-- <p class="hide">Critical Systems Cybersecurity Controls</p> -->
+    </div>
+  </div>
+  <div class="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0e8b5b"><path d="M274.5-320.54h257.61q40.95 0 69.22-29.14 28.28-29.14 28.28-70.35 0-40.49-28.43-68.86-28.43-28.37-68.92-29.57h-2l-.5-2.5q-10.63-47.39-48.47-77.28-37.85-29.89-86.63-29.89-39.44 0-72.58 20.78-33.15 20.78-50.62 56.09l-.5 1.5h-1.5q-46.23 2.68-78.15 35.5-31.92 32.83-31.92 78.81 0 47.9 33.57 81.4 33.58 33.51 81.54 33.51Zm2.63-78.83q-16.39 0-27.65-10.89-11.26-10.89-11.26-27.26t11.26-27.31q11.26-10.93 27.65-10.93l47.02-2.5v-2.61q1.2-28.6 21.59-48.52 20.38-19.91 48.97-19.91 29.24 0 49.93 20.95t20.69 50.59v37.22h64.87q8.73 0 14.66 5.93 5.92 5.94 5.92 14.69t-5.92 14.65q-5.93 5.9-14.66 5.9H277.13Zm-4.11 358.94v-86h59.48v-72.44H126.43q-35.72 0-60.86-25.14t-25.14-60.86v-377.69q0-35.73 25.14-60.87t60.86-25.14h536.13q35.73 0 60.87 25.14t25.14 60.87v377.69q0 35.72-25.14 60.86t-60.87 25.14H458v72.44h58.98v86H273.02ZM833.57-399.2v-434.37H201.02v-86h632.55q35.72 0 60.86 25.14t25.14 60.86v434.37h-86ZM126.43-284.87h536.13v-378.19H126.43v378.19ZM394.5-474.22Z"/></svg>
+    <h1 class="Main-H">Telework Cybersecurity Controls</h1>
+    
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="siteSearch" placeholder="Search..." oninput="searchSite()" />
+  </div>
+  <!-- ------------------------- CONSTANT Ends --------------- -->
+
+
+
+
+  <div class="main-domain">
+    <h1>1. Cybersecurity Governance</h1>
+    <div class="subdomain">
+      <h2>1-1 Cybersecurity Policies and Procedures</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that cybersecurity requirements are documented, communicated and complied with by the organization as
+        per related laws and regulations, and organizational requirements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-1-1</strong></p>
+        <p>Referring to control 1-3-1 in the ECC, cybersecurity policies and procedures must cover, at a minimum, the
+          following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Procedure for Development of Cybersecurity Documents Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Develop and document cybersecurity policies for telework, which may include, but is not limited to:
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Assess cybersecurity risks of telework systems, at least once a year.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Assess cybersecurity risks when planning and before allowing telework for any service
+            or system.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Include cybersecurity risks related to telework systems, services, and systems allowed
+            to work remotely, in the entity’s cybersecurity risk register, and follow up on it at least once a year.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Secure usage and protection of devices designated for telework.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Secure handling of login ID’s and passwords.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Protecting data that is saved on devices used for telework and handling it according to
+            its classification and the entity’s procedures and policies.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Secure handling of applications and solutions used for telework, such as virtual
+            meetings, collaboration and file sharing.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Secure handling of home networks and ensuring their protection settings.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Avoid working remotely using unreliable public devices or networks or while in public
+            places.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Avoid unauthorized physical access, loss, theft and vandalism of technical assets and
+            telework systems.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Communicate directly with the department concerned with cybersecurity in the entity if
+            a cybersecurity threat is suspected.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Training workers on the technical skills necessary to ensure the application of
+            cybersecurity requirements and practices when dealing with telework systems.</p>
+          <p>&#8226; Ensure that the entity’s requirements are supported by executive management. This is through the
+            approval of the head of the entity or their representative.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document demonstrating the cybersecurity requirements for telework approved by the entity in line
+            with basic cybersecurity controls. (For example: electronic copy or official hard copy).</p>
+          <p>&#8226; Official approval by the head of the entity or his representative on the requirements (For example:
+            via the entity’s official e-mail, or by paper or electronic signature).</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-1-1-1</strong></p>
+            <p>Defining and documenting the telework cybersecurity requirements and controls as part of the
+              organization’s cybersecurity policies.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Procedure for Development of Cybersecurity Documents Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Develop and document cybersecurity policies for telework, which may include, but is not limited
+                to:</p>
+              <p>&#8226; ▹ Assess cybersecurity risks of telework systems, at least once a year.</p>
+              <p>&#8226; ▹ Assess cybersecurity risks when planning and before allowing telework for any service or
+                system.</p>
+              <p>&#8226; ▹ Include cybersecurity risks related to telework systems, services, and systems allowed to
+                work remotely, in the entity’s cybersecurity risk register, and follow up on it at least once a year.
+              </p>
+              <p>&#8226; ▹ Secure usage and protection of devices designated for telework.</p>
+              <p>&#8226; ▹ Secure handling of login ID’s and passwords.</p>
+              <p>&#8226; ▹ Protecting data that is saved on devices used for telework and handling it according to its
+                classification and the entity’s procedures and policies.</p>
+              <p>&#8226; ▹ Secure handling of applications and solutions used for telework, such as virtual meetings,
+                collaboration and file sharing.</p>
+              <p>&#8226; ▹ Secure handling of home networks and ensuring their protection settings.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document demonstrating the cybersecurity requirements for telework approved by the entity in
+                line with basic cybersecurity controls. (For example: electronic copy or official hard copy).</p>
+              <p>&#8226; Official approval by the head of the entity or his representative on the requirements (For
+                example: via the entity’s official e-mail, or by paper or electronic signature).</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-2 Cybersecurity Risk Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure managing cybersecurity risks in a methodological approach in order to protect the organization’s
+        information and technology assets as per organizational policies and procedures, and related laws and
+        regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-2-1</strong></p>
+        <p>In addition to the controls within subdomain 1-5 in the ECC, requirements for cybersecurity risk management
+          should include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity risk management policy.</p>
+          <p>&#8226; Cybersecurity risk management procedure.</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Conduct a cybersecurity risk assessment on telework systems in order to identify all potential
+            threats that could affect the integrity of those systems or expose the information they process to any cyber
+            risks or potential vulnerabilities, taking into account the nature of those systems.</p>
+          <p>&#8226; Assess the cybersecurity risks of each system periodically, at least once a year.</p>
+          <p>&#8226; Create reports on the cybersecurity risk assessment processes for each system, provided that the
+            following is documented:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Cyber risks and potential vulnerabilities.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The probability of the risk occurring.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Impact ratio.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Risk level.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Responsible for the potential risk.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Description of the risk treatment plan.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Affected assets.</p>
+          <p>&#8226; Work on developing a plan to address the list of cybersecurity risks for each system.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Periodic cybersecurity risk assessment reports on the entity’s telework systems.</p>
+          <p>&#8226; Treatment plans for cybersecurity risks for all telework systems.</p>
+          <p>&#8226; Follow up on treatment plans and verify their implementation.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-2-1-1</strong></p>
+            <p>Assessment of the cybersecurity risks for telework systems, once per year at least.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity risk management policy.</p>
+              <p>&#8226; Cybersecurity risk management procedure.</p>
+              <p>&#8226; Cybersecurity risk register.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Conduct a cybersecurity risk assessment on telework systems in order to identify all potential
+                threats that could affect the integrity of those systems or expose the information they process to any
+                cyber risks or potential vulnerabilities, taking into account the nature of those systems.</p>
+              <p>&#8226; Assess the cybersecurity risks of each system periodically, at least once a year.</p>
+              <p>&#8226; Create reports on the cybersecurity risk assessment processes for each system, provided that
+                the following is documented:</p>
+              <p>&#8226; ▹ Cyber risks and potential vulnerabilities.</p>
+              <p>&#8226; ▹ The probability of the risk occurring.</p>
+              <p>&#8226; ▹ Impact ratio.</p>
+              <p>&#8226; ▹ Risk level.</p>
+              <p>&#8226; ▹ Responsible for the potential risk.</p>
+              <p>&#8226; ▹ Description of the risk treatment plan.</p>
+              <p>&#8226; ▹ Affected assets.</p>
+              <p>&#8226; Work on developing a plan to address the list of cybersecurity risks for each system.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Periodic cybersecurity risk assessment reports on the entity’s telework systems.</p>
+              <p>&#8226; Treatment plans for cybersecurity risks for all telework systems.</p>
+              <p>&#8226; Follow up on treatment plans and verify their implementation.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-2-1-2</strong></p>
+            <p>Assessment of cybersecurity risks during planning and before permitting telework for any service or
+              system.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity risk management policy.</p>
+              <p>&#8226; Cybersecurity risk management procedure.</p>
+              <p>&#8226; Cybersecurity risk register.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Include cybersecurity requirements within the entity’s IT change management” cycle.</p>
+              <p>&#8226; Implement cybersecurity risk assessment procedures when planning and before allowing telework
+                for any service or system.</p>
+              <p>&#8226; Work on addressing all cybersecurity risks identified according to the cybersecurity risk
+                management methodology.</p>
+              <p>&#8226; Work on developing a treatment plan for the list of cybersecurity risks for each system, while
+                following up the treatment plan periodically.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control(such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; A report detailing the identification, assessment, and remediation of cybersecurity risks
+                related to planning and prior allowing telework for any service or system.</p>
+              <p>&#8226; Cybersecurity risk register for teleworking includes (during planning, upon implementation and
+                before use).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-2-1-3</strong></p>
+            <p>Including the cybersecurity risks related to telework systems and its related services and systems in the
+              entity's cybersecurity risk register, and monitoring it at least once a year.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity risk management policy.</p>
+              <p>&#8226; Cybersecurity risk management procedure.</p>
+              <p>&#8226; Cybersecurity risk register.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on creating a cybersecurity risk register for telework systems, services and systems that
+                are allowed to work remotely, or include the risks related to them clearly within the entity’s general
+                cybersecurity risk register, so that it contains the following:</p>
+              <p>&#8226; ▹ Cyber risks and potential vulnerabilities.</p>
+              <p>&#8226; ▹ The probability of the risk occurring.</p>
+              <p>&#8226; ▹ Impact ratio.</p>
+              <p>&#8226; ▹ Risk level.</p>
+              <p>&#8226; ▹ Responsible for the potential risk.</p>
+              <p>&#8226; ▹ Description of the risk treatment plan.</p>
+              <p>&#8226; ▹ Affected assets.</p>
+              <p>&#8226; Include the cybersecurity risks of telework systems, services and systems allowed for telework
+                that were identified and evaluated during the evaluation process, and assign them to stakeholders.</p>
+              <p>&#8226; Follow up the cybersecurity risk register for telework systems, services and systems allowed to
+                work remotely periodically, at least once a year, so that treatment plans are followed up, their
+                implementation is verified, any new risks are added, and changes are documented in the register.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Cybersecurity risk register for telework and services and systems permitted to work remotely.
+              </p>
+              <p>&#8226; Changes log of the cybersecurity risk register for telework systems, services, and authorized
+                telework.</p>
+              <p>&#8226; Follow up on treatment plans and verify their implementation.</p>
+              <p>&#8226; Periodically review cybersecurity risks related to telework systems.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-3 Cybersecurity Awareness and Training Program</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that the entity’s employees are aware of their cybersecurity responsibilities and have the essential
+        cybersecurity awareness. It is also to ensure that entity’s employees are provided with the required
+        cybersecurity training, skills and credentials needed to accomplish their cybersecurity responsibilities and to
+        protect the organization’s information and technology assets.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-3-1</strong></p>
+        <p>In addition to the sub-controls within control 1-10-3 in the ECC, the cybersecurity awareness program must
+          cover the awareness about the potential cyber risks and threats related to telework, including the following:
+        </p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity awareness program.</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Provide cybersecurity awareness programs that cover the secure usage of telework devices and how to
+            protect them.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this policy (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Document of providing awareness content of the secure use of telework devices and how to protect
+            them.</p>
+          <p>&#8226; Proof of providing awareness content on the safe use of telework devices and how to protect them.
+          </p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-3-1-1</strong></p>
+            <p>Secure use of telework devices and how to protect them.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide cybersecurity awareness programs that cover the secure usage of telework devices and
+                how to protect them.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this policy (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Document of providing awareness content of the secure use of telework devices and how to
+                protect them.</p>
+              <p>&#8226; Proof of providing awareness content on the safe use of telework devices and how to protect
+                them.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-2</strong></p>
+            <p>Secure handling of identities and passwords.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide cybersecurity awareness programs that cover secure handling of identities and password.
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this policy (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Action plan to implement the cybersecurity awareness program that covers the secure handling of
+                identities and password.</p>
+              <p>&#8226; Proof of providing awareness content of the secure handling of identities and password.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-3</strong></p>
+            <p>Protection of the stored data on the telework devices, and to be handled based on its classification.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work to define the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide awareness programs in cybersecurity that cover the protection of data that is saved on
+                devices used for telework and dealing with them according to their classification and the entity’s
+                procedures and policies.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control(such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; An action plan to implement a cybersecurity awareness program that covers the protection of
+                data that is saved on devices used for telework and dealing with it according to its classification and
+                the entity’s procedures and policies.</p>
+              <p>&#8226; Proof of providing awareness content to protect the data that is saved on devices used for
+                telework and dealing with it according to its classification and the entity’s procedures and policies.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-4</strong></p>
+            <p>Secure handling of applications and solutions used for telework such as: virtual conferencing and
+              collaboration, and file sharing solutions.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide cybersecurity awareness programs that cover the secure handling of applications and
+                solutions used for telework such as: virtual conferencing and collaboration, and file sharing solutions.
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Action plan to implement the cybersecurity awareness program that cover the secure handling of
+                applications and solutions used for telework such as: virtual conferencing and collaboration, and file
+                sharing solutions.</p>
+              <p>&#8226; Proof of providing awareness content to avoid working remotely using unreliable public devices
+                or networks or while in public places.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-5</strong></p>
+            <p>Secure handling of home networks, making sure it is configured in a secure way.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide cybersecurity awareness programs that cover the secure handling of home networks,
+                making sure it is configured in a secure way.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Action plan to implement the cybersecurity awareness program that cover secure handling of home
+                networks, making sure it is configured in a secure way.</p>
+              <p>&#8226; Proof of providing awareness content to avoid working remotely using unreliable public devices
+                or networks or while in public places.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-6</strong></p>
+            <p>Avoidance of teleworking using unreliable public devices or networks or while in public places.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide cybersecurity awareness programs that cover the secure handling of home networks,
+                making sure it is configured in a secure way.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Action plan to implement the cybersecurity awareness program that cover the avoidance of
+                teleworking using unreliable public devices or networks or while in public places.</p>
+              <p>&#8226; Proof of providing awareness content to avoid working remotely using unreliable public devices
+                or networks or while in public places.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-7</strong></p>
+            <p>Unauthorized physical access, loss, theft, and sabotage of technical assets and telework systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide cybersecurity awareness programs that cover the unauthorized physical access, loss,
+                theft, and sabotage of technical assets and telework systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Action plan to implement the cybersecurity awareness program that cover the unauthorized
+                physical access, loss, theft, and damage of technical assets and telework systems.</p>
+              <p>&#8226; Proof of providing awareness content on unauthorized physical access, loss, theft and damage of
+                technical assets and teleworking systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-8</strong></p>
+            <p>To Communicate directly with the cybersecurity department If a cybersecurity threat is suspected.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity awareness program.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide cybersecurity awareness programs that cover how to communicate directly with the
+                cybersecurity department If a cyber threat is suspected.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Action plan to implement the cybersecurity awareness program on how to communicate directly
+                with the cybersecurity department if a cyber threat is suspected.</p>
+              <p>&#8226; Proof of providing awareness content and communicating directly with the department concerned
+                with cybersecurity in if a cyber threat is suspected.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>1-3-2</strong></p>
+        <p>In addition to the sub-controls within control 1-10-4 in the ECC, employees must be trained with the required
+          technical skills to ensure the implementation of the cybersecurity requirements when handling telework
+          systems.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity awareness program.</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Develop and implement training program for employees working in cybersecurity team or other team
+            members wherever required, to ensure implementation of cybersecurity requirements with required technical
+            skills for teleworking systems.</p>
+          <p>&#8226; Periodic awareness programs to be conducted to ensure safe handling of the cyber security incidents
+            and implementation/services requirements.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Approved training program and its periodic implementation for handling cyber security services and
+            support for teleworking requirements.</p>
+          <p>&#8226; Training certificates for workers on the technical skills necessary to ensure the application of
+            cybersecurity requirements and practices when dealing with telework systems.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>2. Cybersecurity Defense</h1>
+    <div class="subdomain">
+      <h2>2-1 Asset Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that the organization has an accurate and detailed inventory of information and technology assets in
+        order to support the organization’s cybersecurity and operational requirements to maintain the confidentiality,
+        integrity and availability of information and technology assets.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-1-1</strong></p>
+        <p>In addition to the controls within subdomain 2-1 in the ECC, cybersecurity requirements for asset management
+          related to telework systems should include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Asset management policy</p>
+          <p>&#8226; Asset classification standards template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Develop an inventory of information and technical assets for telework systems in an electronic
+            format, specifying the inventory date, several methods can be applied to store and use an inventory and
+            inventory of assets, including but not limited to:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Configuration Management Database (CMDB).</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Asset management programs.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ A specialized tool for asset management.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Spreadsheets.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Database</p>
+          <p>&#8226; Identify all the information and technical assets (hardware &amp; software) used in teleworking
+            system and document them.</p>
+          <p>&#8226; Ensure that the inventory is centralized between the department concerned with cybersecurity and
+            information technology and other concerned departments, and that it is updated and ensured its accuracy at
+            least once a year.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Detailed telework asset inventory.</p>
+          <p>&#8226; Periodic plan for asset inventory update with latest information and approved.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-1-1-1</strong></p>
+            <p>Identifying and maintaining an annually-updated inventory of information and technology assets of the
+              telework systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Asset management policy</p>
+              <p>&#8226; Asset classification standards template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Develop an inventory of information and technical assets for telework systems in an electronic
+                format, specifying the inventory date, several methods can be applied to store and use an inventory and
+                inventory of assets, including but not limited to:</p>
+              <p>&#8226; ▹ Configuration Management Database (CMDB).</p>
+              <p>&#8226; ▹ Asset management programs.</p>
+              <p>&#8226; ▹ A specialized tool for asset management.</p>
+              <p>&#8226; ▹ Spreadsheets.</p>
+              <p>&#8226; ▹ Database</p>
+              <p>&#8226; Identify all the information and technical assets (hardware &amp; software) used in teleworking
+                system and document them.</p>
+              <p>&#8226; Ensure that the inventory is centralized between the department concerned with cybersecurity
+                and information technology and other concerned departments, and that it is updated and ensured its
+                accuracy at least once a year.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Detailed telework asset inventory.</p>
+              <p>&#8226; Periodic plan for asset inventory update with latest information and approved.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-2 Identity and Access Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure secure and restricted logical access to information and technology assets in order to prevent
+        unauthorized access and allow only authorized access for users which are necessary to accomplish assigned tasks.
+      </p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-2-1</strong></p>
+        <p>In addition to the sub-controls within control 2-2-3 in the ECC, cybersecurity requirements for identity and
+          access management related to telework systems shall include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Identity and access management policy</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Develop telework access management procedures by the organization, taking into account the
+            following:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ System sensitivity.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Level of access.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Type of devices used by employees to work remotely.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Validity period.</p>
+          <p>&#8226; Implement the required technological controls to provide and manage identities and access rights of
+            telework assets.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; A list of all permissions and accesses used for telework.</p>
+          <p>&#8226; Requests for granting permissions and access to users to enable telework, along with the necessary
+            approvals.</p>
+          <p>&#8226; Audit reports on the activities of authorized accounts.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-2-1-1</strong></p>
+            <p>Managing telework access rights based on need, considering the sensitivity of the systems, the level of
+              access rights and the type of devices used by employees for telework.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and access management policy</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Develop telework access management procedures by the organization, taking into account the
+                following:</p>
+              <p>&#8226; ▹ System sensitivity.</p>
+              <p>&#8226; ▹ Level of access.</p>
+              <p>&#8226; ▹ Type of devices used by employees to work remotely.</p>
+              <p>&#8226; ▹ Validity period.</p>
+              <p>&#8226; Implement the required technological controls to provide and manage identities and access
+                rights of telework assets.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; A list of all permissions and accesses used for telework.</p>
+              <p>&#8226; Requests for granting permissions and access to users to enable telework, along with the
+                necessary approvals.</p>
+              <p>&#8226; Audit reports on the activities of authorized accounts.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-2</strong></p>
+            <p>Restricting remote access for the same user from multiple computers at the same time (Concurrent Logins).
+            </p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and access management policy</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Implement secure session management by setting a maximum number of session allowed by one user.
+              </p>
+              <p>&#8226; When there is a need for an exception to this requirement, procedures are determined to obtain
+                the necessary approval from the relevant department and the department concerned with cybersecurity.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; A screenshot of the remote access restriction for the same user from multiple computers at the
+                same time, including the maximum number of sessions the user is allowed.</p>
+              <p>&#8226; Procedures adopted for exceptions to this requirement.</p>
+              <p>&#8226; A formal approval for any exception.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-3</strong></p>
+            <p>Using secure standards to manage identities and passwords used in the telework systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Identity and access management policy</p>
+              <p>&#8226; Identity and access management standards</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Develop password standard taking into consideration best practices, including but not limited
+                to:</p>
+              <p>&#8226; ▹ A The minimum number of password symbols for important and sensitive privileges is 10 and for
+                the rest of the privileges is 8.</p>
+              <p>&#8226; ▹ Password expiration period is at least 30 days for important and high privileged permissions,
+                and at least 90 days for the remaining permissions.</p>
+              <p>&#8226; ▹ Password complexity.</p>
+              <p>&#8226; ▹ Password and account Lockout.</p>
+              <p>&#8226; ▹ Password activation.</p>
+              <p>&#8226; ▹ Password history log.</p>
+              <p>&#8226; ▹ Number of attempts allowed is 3.</p>
+              <p>&#8226; ▹ Passwords used during the last 12 times must not be repeated.</p>
+              <p>&#8226; ▹ Passwords should not be used based on the personal data of the user with privileges, such as
+                date of birth.</p>
+              <p>&#8226; ▹ The password must be complex and include at least 4 of the following characters:</p>
+              <p>&#8226; ▪ Upper case letters</p>
+              <p>&#8226; ▪ Lower case letters</p>
+              <p>&#8226; ▪ Numbers (1234)</p>
+              <p>&#8226; ▪ Special symbols (#%*@)</p>
+              <p>&#8226; Activate two-factor authentication for telework systems in addition to the user name and
+                password, which may be, for example:</p>
+              <p>&#8226; ▹ One Time Password in a text message sent to the mobile number registered to the end user.</p>
+              <p>&#8226; ▹ One Time Password is displayed in a hard token program or device for multi factor
+                authentication.</p>
+              <p>&#8226; ▹ Use biometrics to verify identities (example: fingerprint).</p>
+              <p>&#8226; Use Virtual Private Network (VPN) to encrypt traffic between user and systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Proof of using secure standards to manage identities and passwords used in the telework systems
+                for example but not limited, a screenshot of password configuration policy and screenshot of MFA
+                implementation.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-2-2</strong></p>
+        <p>With reference to the ECC sub-control 2-2-3-5, user’s identities and access rights used for teleworking must
+          be reviewed at least once every year.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Identity and access management policy</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Review the login identities and access permissions used for telework by conducting a periodic
+            evaluation (according to a documented and approved review plan, and based on a specific time period of at
+            least once a year).</p>
+          <p>&#8226; Review all login identities and access permissions used for telework in all aspects, including but
+            not limited to:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The principle of minimum permissions and privileges</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The principle of separation of duties, and the principle of the need for knowledge and
+            use in cooperation with relevant departments (such as the department concerned with information technology
+            “IT”).</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The validity period granted.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The status of the person entitled to the granted privileges ,for example but not
+            limited to: if he is still present in the administration, or has been transferred to another team, or has
+            resigned from the entity, or the user’s work does not require access to telework and take the necessary
+            measures according to the status of the person granted the authority to work.</p>
+          <p>&#8226; Document all reviews and changes made to the login identities and access permissions used for
+            telework in the entity, including, but not limited to:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Periodic reviews of granted privileges</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Changes that occurred from the last version.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Changes required on the granted privileges</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Results of reviewing login identities and access permissions for sensitive systems in the entity.
+          </p>
+          <p>&#8226; Documented periodic plan to review the identities of telework users and their access rights.</p>
+          <p>&#8226; Proof of periodic identity and access review requirements, for example: an official, approved
+            document demonstrating the periodic review of identities and access permissions for telework users.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-3 Information System and Processing Facilities Protection</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of information systems and information processing facilities (including workstations
+        and infrastructures) against cyber risks.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-3-1</strong></p>
+        <p>In addition to the sub controls in the ECC control 2-3-3, cybersecurity requirements for protecting telework
+          systems and information processing facilities must include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Patch Management Policy.</p>
+          <p>&#8226; Configuration and Hardening Standard.</p>
+          <p>&#8226; Patch Management Standard.</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Define procedures for patch management on systems, devices and applications, which include:</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ The scope of systems where patches are implemented must be defined to include:</p>
+          <p>&#8226; ▪ Workstations.</p>
+          <p>&#8226; ▪ Operating Systems.</p>
+          <p>&#8226; ▪ Network Devices.</p>
+          <p>&#8226; ▪ Databases.</p>
+          <p>&#8226; ▪ Applications.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Time period required to implement patches must be at least once every month.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Patches procedures must be included in change management methodology or change
+            management must be included into patch management policy.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Change management approval must be included as part of patch approval form for all
+            systems, devices and applications, including but not limited to: requesting approvals via e-mail, paper, or
+            through an internal system.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Patches must be implemented to the defined scope after obtaining the necessary
+            approval.</p>
+          <p>&nbsp;&nbsp;&nbsp;▹ Continuously review the application of update packages and patches to ensure that all
+            necessary updates have been applied to all devices, systems and applications for remote work.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Approved procedures indicate that change management approval is required for patches.</p>
+          <p>&#8226; Reports that the scope of patches covers all devices and applications of telework systems.</p>
+          <p>&#8226; Reports that the patches are performed according to the period specified in the procedures
+            (including but not limited to: a screenshot or direct example that displays the date and scope for several
+            samples of patches approved by e-mail, internal system or paper that are performed in advance to include
+            devices, systems and applications periodically).</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-3-1-1</strong></p>
+            <p>Applying updates and security patches for telework systems at least once every month.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Patch Management Policy.</p>
+              <p>&#8226; Configuration and Hardening Standard.</p>
+              <p>&#8226; Patch Management Standard.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Define procedures for patch management on systems, devices and applications, which include:</p>
+              <p>&#8226; ▹ The scope of systems where patches are implemented must be defined to include:</p>
+              <p>&#8226; ▪ Workstations.</p>
+              <p>&#8226; ▪ Operating Systems.</p>
+              <p>&#8226; ▪ Network Devices.</p>
+              <p>&#8226; ▪ Databases.</p>
+              <p>&#8226; ▪ Applications.</p>
+              <p>&#8226; ▹ Time period required to implement patches must be at least once every month.</p>
+              <p>&#8226; ▹ Patches procedures must be included in change management methodology or change management
+                must be included into patch management policy.</p>
+              <p>&#8226; ▹ Change management approval must be included as part of patch approval form for all systems,
+                devices and applications, including but not limited to: requesting approvals via e-mail, paper, or
+                through an internal system.</p>
+              <p>&#8226; ▹ Patches must be implemented to the defined scope after obtaining the necessary approval.</p>
+              <p>&#8226; ▹ Continuously review the application of update packages and patches to ensure that all
+                necessary updates have been applied to all devices, systems and applications for remote work.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Approved procedures indicate that change management approval is required for patches.</p>
+              <p>&#8226; Reports that the scope of patches covers all devices and applications of telework systems.</p>
+              <p>&#8226; Reports that the patches are performed according to the period specified in the procedures
+                (including but not limited to: a screenshot or direct example that displays the date and scope for
+                several samples of patches approved by e-mail, internal system or paper that are performed in advance to
+                include devices, systems and applications periodically).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-2</strong></p>
+            <p>Reviewing telework systems’ configurations and hardening at least once every year.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Patch Management Policy.</p>
+              <p>&#8226; Configuration and Hardening Standard</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Define technical standard to Review telework systems’ configurations and hardening from trusted
+                sources for example but not limited, the vendor of telework system.</p>
+              <p>&#8226; Define a procedure for reviewing configuration and hardening of telework system.</p>
+              <p>&#8226; Review the configuration and hardening of telework system based on approved standard at least
+                once a year, this include but not limited: access management, encryption and secure system setting.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Telework configuration and hardening standard approved by the organization (e.g., electronic
+                copy or official hard copy).</p>
+              <p>&#8226; Reports that telework systems configuration and hardening are reviewed at least every year.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-3</strong></p>
+            <p>Reviewing and changing default configurations, and ensuring the removal of hard-coded, backdoor and/or
+              default passwords.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Patch Management Policy.</p>
+              <p>&#8226; Configuration and Hardening Standard</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Ensure that there are no hard-coded, backdoor or default passwords on telework systems based on
+                approved standard and document the results.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Reports of reviewing and changing default configurations, and ensuring the removal of
+                hard-coded, backdoor and/or default passwords.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-4</strong></p>
+            <p>Securing Session Management which includes the session authenticity, lockout, and timeout.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; None specified in text, assuming similar.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Implement secure session management process that includes:</p>
+              <p>&#8226; ▹ Authentication.</p>
+              <p>&#8226; ▹ Authorization.</p>
+              <p>&#8226; ▹ Access.</p>
+              <p>&#8226; ▹ Control.</p>
+              <p>&#8226; ▹ Lockout.</p>
+              <p>&#8226; ▹ Timeout.</p>
+              <p>&#8226; Define session duration by ensuring no impact on availability of the services and information
+                while teleworking.</p>
+              <p>&#8226; Document and approve the session lockout and session timeout duration in telework systems from
+                stakeholders.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Documented and approved telework policy on having defined session management process, and
+                duration for session lock out and session time out.</p>
+              <p>&#8226; Screenshot of session management that include:</p>
+              <p>&#8226; ▹ Session authentication.</p>
+              <p>&#8226; ▹ Session lockout.</p>
+              <p>&#8226; ▹ Session timeout.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-5</strong></p>
+            <p>Restricting the activation of the features and services of the telework systems based on needs, provided
+              that potential cyber risks are analyzed in case there is a need to activate them.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; None specified.</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Documenting and specifying restrictions in telework systems, after clarifying and accepting the
+                risks, to ensure safe activation over the Internet to activate technical features and services based on
+                the user’s need, while specifying the duration of activation.</p>
+              <p>&#8226; Develop and document workflow for appropriate approval of a user request for specific
+                feature/services required for a particular business operations and specify the duration of activation.
+              </p>
+              <p>&#8226; Perform analysis of potential cyber risk before approving and activating specific user request
+                for certain technical features or services in telework systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; An approved procedures document to restrict the activation of features and services in telework
+                systems as needed.</p>
+              <p>&#8226; Reports analyzing potential cyber risks before activation.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-4 Network Security Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of organization’s network from cyber risks.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-4-1</strong></p>
+        <p>In addition to the sub controls in the ECC control 2-5-3, cybersecurity requirements of telework systems’
+          network security management must include at least the following</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Network security policy</p>
+          <p>&#8226; Network security standard</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Implement the requirements of restrictions on network services, protocols and ports used to access
+            remotely by using appropriate and advanced technologies including but not limited to restriction by firewall
+            systems.</p>
+          <p>&#8226; Establishment of approval procedures to update the Firewall Rules to ensure that no update or
+            change is made without the approval of the representative.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Sample showing the implementation of requirements related to network services, protocols, and ports
+            restrictions, including but not limited to:</p>
+          <p>&#8226; ▹ Template showing the implementation of network services, protocols, and ports restrictions
+            requirements (e.g., screenshot showing evidence of subscription and use of modern and advanced technologies
+            to apply restrictions network services, protocols, and ports through firewall system)</p>
+          <p>&#8226; Sample showing approval procedures form to update the Firewall. In addition, a sample showing what
+            has been updated on the Firewall Rules.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-4-1-1</strong></p>
+            <p>Restrictions on network services, protocols and ports used to access remotely, specifically to internal
+              systems and to only be opened based on need.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network security policy</p>
+              <p>&#8226; Network security standard</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Implement the requirements of restrictions on network services, protocols and ports used to
+                access remotely by using appropriate and advanced technologies including but not limited to restriction
+                by firewall systems.</p>
+              <p>&#8226; Establishment of approval procedures to update the Firewall Rules to ensure that no update or
+                change is made without the approval of the representative.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Sample showing the implementation of requirements related to network services, protocols, and
+                ports restrictions, including but not limited to:</p>
+              <p>&#8226; ▹ Template showing the implementation of network services, protocols, and ports restrictions
+                requirements (e.g., screenshot showing evidence of subscription and use of modern and advanced
+                technologies to apply restrictions network services, protocols, and ports through firewall system)</p>
+              <p>&#8226; Sample showing approval procedures form to update the Firewall. In addition, a sample showing
+                what has been updated on the Firewall Rules.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-2</strong></p>
+            <p>Reviewing firewall rules and configurations, at least once every year.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network security policy</p>
+              <p>&#8226; Network security standard</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Work on reviewing firewall settings, lists and rules related to telework systems; At least once
+                a year, for example but not limited to:</p>
+              <p>&#8226; ▹ Review unused/activated lists within the last 90 days to be deleted and disabled.</p>
+              <p>&#8226; ▹ Update settings according to recent resource versions.</p>
+              <p>&#8226; ▹ Arrange lists according to effectiveness and performance.</p>
+              <p>&#8226; ▹ Review and analyze VPN lists</p>
+              <p>&#8226; Documenting the audit results to include, but not be limited to:</p>
+              <p>&#8226; ▹ Changes after review.</p>
+              <p>&#8226; ▹ Review date.</p>
+              <p>&#8226; ▹ Accreditation</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Review report of firewall settings for sensitive systems in the entity (evaluation table).</p>
+              <p>&#8226; Documented process to periodic review of firewall rules &amp; configurations.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-3</strong></p>
+            <p>Protecting against Distributed Denial of Service Attack (DDoS) attacks to limit risks arising from these
+              attacks.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network security policy</p>
+              <p>&#8226; Network security standard</p>
+              <p>&#8226; Protection against Distributed Denial of Service (DDOS) attacks Standard template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide protection systems from Distributed Denial of Service Attacks (DDoS) on telework
+                systems to reduce the risks resulting from network disruption attacks and update them on an ongoing
+                basis.</p>
+              <p>&#8226; Adjust firewall settings to protect against Distributed Denial of Service Attacks (DDoS).</p>
+              <p>&#8226; Apply the principle of multiple availability (High Availability) to the entity’s telework
+                systems, including, but not limited to: firewall systems, web proxy systems.</p>
+              <p>&#8226; Work on concluding an agreement with the service provider or Internet service provider to
+                implement mechanisms and ensure protection against network disruption attacks (Distributed Denial of
+                Service Attack “DDoS”).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Systems and techniques for protecting against network disruption attacks on telework systems.
+              </p>
+              <p>&#8226; A list of settings and controls for protection against network disruption attacks (Distributed
+                Denial of Service Attack “DDoS”).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-4</strong></p>
+            <p>Protecting against Advanced Persistent Threats (APT) at the network layer.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Network security policy</p>
+              <p>&#8226; Network security standard</p>
+              <p>&#8226; Advanced Persistent Threats (APT) Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Working to provide protection systems against advanced persistent threats at the network level
+                for telework systems (Network APT) and updating them continuously, for example but not limited to:</p>
+              <p>&#8226; ▹ Provide advanced protection systems to detect and prevent intrusions, such as: Intrusion
+                Prevention/Detection Systems (IDS/IPS, HIDS/HIPS) on all parts of the network and updating them
+                continuously.</p>
+              <p>&#8226; ▹ Update continuous monitoring procedures at the network level to protect against threats.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; A list of all systems available to protect against advanced persistent threats to teleworking
+                systems.</p>
+              <p>&#8226; Documented procedures for continuous monitoring, as well as applying and using advanced
+                persistent threat protection tools.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-5 Mobile Device Security</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of mobile devices (including laptops, smartphones, tablets) from cyber risks and to
+        ensure the secure handling of the organization’s information (including sensitive information) while utilizing
+        Bring Your Own Device (BYOD) policy.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-5-1</strong></p>
+        <p>In addition to the sub-controls within control 2-6-3 in the ECC, cybersecurity requirements for mobile device
+          security related to telework systems shall include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Workstations, Mobile Devices and BYOD Security Policy Template</p>
+          <p>&#8226; Mobile Devices Security Standard Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Ensure that mobile devices and BYOD devices are managed centrally using the Mobile Device
+            Management system to maintain confidentiality, integrity, and availability of organization’s information.
+          </p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Documented procedures for implementing the mobile device management system on all BYOD devices
+            using MDM provided by the entity.</p>
+          <p>&#8226; Sample of MDM implementation.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-5-1-1</strong></p>
+            <p>Central management of mobile devices and BYODs using a Mobile Device Management system (MDM).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Workstations, Mobile Devices and BYOD Security Policy Template</p>
+              <p>&#8226; Mobile Devices Security Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Ensure that mobile devices and BYOD devices are managed centrally using the Mobile Device
+                Management system to maintain confidentiality, integrity, and availability of organization’s
+                information.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Documented procedures for implementing the mobile device management system on all BYOD devices
+                using MDM provided by the entity.</p>
+              <p>&#8226; Sample of MDM implementation.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-5-1-2</strong></p>
+            <p>Applying updates and security patches on mobile devices, at least once every month.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Workstations, Mobile Devices and BYOD Security Policy Template</p>
+              <p>&#8226; Mobile Devices Security Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Ensure that the approval of the change management in the entity is part of the approvals
+                required to implement security updates and patches for mobile device security for telework in the
+                entity.</p>
+              <p>&#8226; Define a documented, periodic plan to implement mobile security updates and patches and mobile
+                device management (MDM) solutions for telework at least once a month.</p>
+              <p>&#8226; Follow up on the implementation of mobile security patch and update packages for telework
+                continuously through the use of patch and update management tools and technologies.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Documented process to apply technical updates &amp; security patches on mobile devices.</p>
+              <p>&#8226; Reports showing the patches performed according to the period specified in the procedures.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-6 Data and Information Protection</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the confidentiality, integrity and availability of organization’s data and information as per
+        organizational policies and procedures, and related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-6-1</strong></p>
+        <p>In addition to the sub controls in the ECC control 2-7-3, cybersecurity requirements for protecting and
+          handling data and information must include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Data Loss Prevention Standard Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Identify data in storage and data in transit in private telework systems in accordance with the
+            entity’s data policies and Data Cybersecurity Controls (DCC) issued by the National Cybersecurity Authority.
+          </p>
+          <p>&#8226; Determine the classification of data at each stage according to data cybersecurity controls (DCC).
+          </p>
+          <p>&#8226; Ensure that all data that may be used, accessed or handled through teleworking systems is
+            classified based on relevant regulatory and legislative requirements.</p>
+          <p>&#8226; Determine mechanisms and methods for dealing with data based on its classification.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Documented and approved process for the data types their classification in telework systems.</p>
+          <p>&#8226; A guide to applying technical systems in cybersecurity to classify data within telework system.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-6-1-1</strong></p>
+            <p>Identifying classified data, according to the relevant regulations, that can be used, accessed or dealt
+              with through telework systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Data Loss Prevention Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Identify data in storage and data in transit in private telework systems in accordance with the
+                entity’s data policies and Data Cybersecurity Controls (DCC) issued by the National Cybersecurity
+                Authority.</p>
+              <p>&#8226; Determine the classification of data at each stage according to data cybersecurity controls
+                (DCC).</p>
+              <p>&#8226; Ensure that all data that may be used, accessed or handled through teleworking systems is
+                classified based on relevant regulatory and legislative requirements.</p>
+              <p>&#8226; Determine mechanisms and methods for dealing with data based on its classification.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Documented and approved process for the data types their classification in telework systems.
+              </p>
+              <p>&#8226; A guide to applying technical systems in cybersecurity to classify data within telework system.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-2</strong></p>
+            <p>Protecting classified data, which was identified in control 2-6-1-1, using controls such as: not allowing
+              the use of a specific type of classified data, or by the use of technology (e.g. Data leakage Prevention),
+              such controls and technologies can be determined by analyzing the cyber risks of the organization.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Data Loss Prevention Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Identify and classify telework systems data based on relevant regulatory and legislative
+                requirements.</p>
+              <p>&#8226; Conduct a cybersecurity risk analysis on the classified data (which was included in the outputs
+                of control No. 2-6-1-1) in order to identify all potential threats that could affect the integrity of
+                that data or expose it to any cyber risks or potential vulnerabilities. Taking into account the nature
+                of this data.</p>
+              <p>&#8226; Based on the results of cyber risk analysis reports, work is done to identify controls or
+                techniques that contribute to preventing the use of a type of classified data or preventing data leakage
+                in the entity.</p>
+              <p>&#8226; Review, approve and implement controls necessary to prevent data loss, using data leakage
+                prevention tools and others, which are determined based on identified use cases and risk factors.</p>
+              <p>&#8226; Data blocking use cases can be controlled at different levels, but are not limited to: email,
+                sending documents with an external party, transferring data via physical devices such as: (USB, hard
+                disk, etc.), and sharing data via hard drives. Network, transmission via Bluetooth connection, unwanted
+                access to internal database server for telework users, use of remote sharing applications.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; An approved document with a guide to implementing controls for data protection (preventing data
+                leakage).</p>
+              <p>&#8226; A guide to implementing cybersecurity controls and techniques to prevent access, use, and
+                transfer of restricted information to an internal or external user.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-7 Cryptography</h2>
+      <h3>Objective:</h3>
+      <p>In addition to the sub-controls within control 2-8-3 in the ECC, cybersecurity requirements for cryptography
+        related to telework systems shall include at least the following:</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-7-1</strong></p>
+        <p>In addition to the sub-controls within control 2-8-3 in the ECC, cybersecurity requirements for cryptography
+          related to telework systems shall include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Encryption policy</p>
+          <p>&#8226; Encryption standard</p>
+          <p>&#8226; Encryption key management standards</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Identify secure algorithms, keys, and encryption devices by adhering to correct application
+            standards and updating them by reviewing them annually and ensuring that they are in line with the
+            encryption standards issued by the Cybersecurity Authority.</p>
+          <p>&#8226; Use of advanced level encryption methods and algorithms based on the National Encryption Standards
+            (NCS 1:2020) across the entire network used for telework.</p>
+          <p>&#8226; Review the effectiveness of techniques used for secure management of algorithms, keys and
+            cryptographic devices</p>
+          <p>&#8226; Strong algorithms and encryption tools to be used wherever possible, such as but not limited to:
+            telework device password encryption, data files encryption while transferring outside organization,
+            encryption of secret information stored in telework systems.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Cybersecurity procedures that cover the secure management of the entity’s algorithms, keys, and
+            encryption devices (for example: an electronic copy or an official hard copy).</p>
+          <p>&#8226; A document defining the cycle of reviewing the effectiveness of the techniques used; for the secure
+            management of algorithms, keys and encryption devices during their lifecycle operations at the organization.
+          </p>
+          <p>&#8226; A list of protocols and technologies used to encrypt the entire network connection used for
+            telework.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-7-1-1</strong></p>
+            <p>The use of updated and secure methods and algorithms for encryption over the entire network connection
+              used for telework, according to the Advanced level within the National Cryptography Standards (NCS
+              1:2020).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Encryption policy</p>
+              <p>&#8226; Encryption standard</p>
+              <p>&#8226; Encryption key management standards</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Identify secure algorithms, keys, and encryption devices by adhering to correct application
+                standards and updating them by reviewing them annually and ensuring that they are in line with the
+                encryption standards issued by the Cybersecurity Authority.</p>
+              <p>&#8226; Use of advanced level encryption methods and algorithms based on the National Encryption
+                Standards (NCS 1:2020) across the entire network used for telework.</p>
+              <p>&#8226; Review the effectiveness of techniques used for secure management of algorithms, keys and
+                cryptographic devices</p>
+              <p>&#8226; Strong algorithms and encryption tools to be used wherever possible, such as but not limited
+                to: telework device password encryption, data files encryption while transferring outside organization,
+                encryption of secret information stored in telework systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Cybersecurity procedures that cover the secure management of the entity’s algorithms, keys, and
+                encryption devices (for example: an electronic copy or an official hard copy).</p>
+              <p>&#8226; A document defining the cycle of reviewing the effectiveness of the techniques used; for the
+                secure management of algorithms, keys and encryption devices during their lifecycle operations at the
+                organization.</p>
+              <p>&#8226; A list of protocols and technologies used to encrypt the entire network connection used for
+                telework.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-8 Backup and Recovery Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of organization’s data and information including information systems and software
+        configurations from cyber risks as per organizational policies and procedures, and related laws and regulations.
+      </p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-8-1</strong></p>
+        <p>In addition to the sub controls in the ECC control 2-9-3, cybersecurity requirements for backup and recovery
+          management must include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Backups policy template</p>
+          <p>&#8226; Backups standard template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; In line with the organization risk assessment policy, define the plan for periodic planned backup
+            of data and settings of telework systems.</p>
+          <p>&#8226; Review the backup performance within planned internals</p>
+          <p>&#8226; Ensure to have business continuity via backup plans of telework systems.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; A documented and approved plan for making backup copies of telework systems.</p>
+          <p>&#8226; A guide to implementing the technical controls required to perform planned backups of teleworking
+            systems and ensure business continuity.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-8-1-1</strong></p>
+            <p>Performing backup within planned intervals, according to the organization’s risk assessment.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Backups policy template</p>
+              <p>&#8226; Backups standard template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; In line with the organization risk assessment policy, define the plan for periodic planned
+                backup of data and settings of telework systems.</p>
+              <p>&#8226; Review the backup performance within planned internals</p>
+              <p>&#8226; Ensure to have business continuity via backup plans of telework systems.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; A documented and approved plan for making backup copies of telework systems.</p>
+              <p>&#8226; A guide to implementing the technical controls required to perform planned backups of
+                teleworking systems and ensure business continuity.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-8-2</strong></p>
+        <p>With reference to the ECC sub control 2-9-3-3, a periodical test must be conducted at least once every six
+          months in order to determine the efficiency of recovering telework systems backups.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Backups policy template</p>
+          <p>&#8226; Backups standard template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Based on defined backup periodicity and business continuity plan, define and approve the periodic
+            testing of telework backup systems at least once every six months.</p>
+          <p>&#8226; Ensure the effectiveness of the recovery procedures by conducting a test to restore backups
+            periodically to ensure the ability to restore data and telework systems according to the period specified in
+            the procedures and according to the period that has been identified for the completion of restoring backups.
+          </p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Document a business plan and procedures for implementing cybersecurity requirements for backup
+            management.</p>
+          <p>&#8226; Test reports that examine the effectiveness of backups for telework systems, so that it clarifies
+            the difference between the expected duration and the test duration for restoring all backups.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-9 Vulnerabilities Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure timely detection and effective remediation of technical vulnerabilities to prevent or minimize the
+        probability of exploiting these vulnerabilities to launch cyber attacks against the organization.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-9-1</strong></p>
+        <p>In addition to the sub controls in the ECC control 2-10-3, cybersecurity requirements for technical
+          vulnerabilities management of telework systems must include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Vulnerability management policy</p>
+          <p>&#8226; Vulnerability management standard</p>
+          <p>&#8226; Vulnerability assessment procedure</p>
+          <p>&#8226; Vulnerability register</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Installing and linking techniques and tools for examining and discovering vulnerabilities in
+            information and technical assets of the telework systems in the organization.</p>
+          <p>&#8226; Develop a periodic plan (at least once every three months) and procedures for examining and
+            discovering vulnerability in the information and technical assets of the telework systems in the
+            organization.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy and/or
+            procedure approved by the authority holder).</p>
+          <p>&#8226; Approved vulnerabilities management procedures and a periodic plan (at least once every three
+            months) to scan and discover vulnerabilities in telework systems.</p>
+          <p>&#8226; Periodic reports to examine and discover vulnerability in telework systems.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-9-1-1</strong></p>
+            <p>Assessing vulnerabilities on technical components of telework systems, and to be classified based on
+              criticality at least once every three months.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Vulnerability management policy</p>
+              <p>&#8226; Vulnerability management standard</p>
+              <p>&#8226; Vulnerability assessment procedure</p>
+              <p>&#8226; Vulnerability register</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Installing and linking techniques and tools for examining and discovering vulnerabilities in
+                information and technical assets of the telework systems in the organization.</p>
+              <p>&#8226; Develop a periodic plan (at least once every three months) and procedures for examining and
+                discovering vulnerability in the information and technical assets of the telework systems in the
+                organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; A document that identifies and documents the requirements of this control (such as a policy
+                and/or procedure approved by the authority holder).</p>
+              <p>&#8226; Approved vulnerabilities management procedures and a periodic plan (at least once every three
+                months) to scan and discover vulnerabilities in telework systems.</p>
+              <p>&#8226; Periodic reports to examine and discover vulnerability in telework systems.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-9-1-2</strong></p>
+            <p>Remediating vulnerabilities for telework systems, at least once every three months.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Vulnerability management policy</p>
+              <p>&#8226; Vulnerability management standard</p>
+              <p>&#8226; Vulnerability assessment procedure</p>
+              <p>&#8226; Vulnerability register</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Sharing reports of the vulnerabilities inspected and discovered in the information and
+                technical assets of teleworking system of the organization with the concerned departments, which
+                include, but are not limited to:</p>
+              <p>&#8226; ▹ Department concerned with managing applications</p>
+              <p>&#8226; ▹ Department of Management of user devices</p>
+              <p>&#8226; ▹ Infrastructure Department</p>
+              <p>&#8226; ▹ Department concerned with database management</p>
+              <p>&#8226; ▹ Network management</p>
+              <p>&#8226; Ensure that the shared vulnerability reports of teleworking system contain:</p>
+              <p>&#8226; ▹ A description of the vulnerabilities.</p>
+              <p>&#8226; ▹ Relevant asset’s name which vulnerabilities were scanned and discovered in.</p>
+              <p>&#8226; ▹ Classification of vulnerabilities.</p>
+              <p>&#8226; Work with the concerned departments to define a timeline and a plan to address the
+                vulnerabilities, taking into account the classification of the vulnerabilities and the classification of
+                the assets concerned</p>
+              <p>&#8226; Develop a mechanism to ensure that gaps are addressed according to the plan.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Vulnerability management procedures.</p>
+              <p>&#8226; Procedures for managing security fixes and updates patches for telework systems.</p>
+              <p>&#8226; Reports of vulnerabilities for telework systems (before and after treatment).</p>
+              <p>&#8226; 2-10 Penetration Testing</p>
+              <p>&#8226; Objective:</p>
+              <p>&#8226; To assess and evaluate the efficiency of the organization’s cybersecurity defense capabilities
+                through simulated cyber-attacks to discover unknown weaknesses within the technical infrastructure that
+                may lead to a cyber breach.</p>
+              <p>&#8226; Controls:</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-10-1</strong></p>
+        <p>In addition to the sub-controls within control 2-11-3 in the ECC, cybersecurity requirements for penetration
+          testing related to telework systems shall include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Penetration testing policy template</p>
+          <p>&#8226; Penetration testing standard template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Identify all technical components that support telework services.</p>
+          <p>&#8226; Define the appropriate pre-requisites and stakeholder approvals required before performing
+            penetration testing in telework systems and its technical components.</p>
+          <p>&#8226; Document the penetration testing scope, and level allowed for penetration testers by the
+            organization to ensure no impact on business operations.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Documented scope for the penetration testing of all telework systems and technical components.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-10-1-1</strong></p>
+            <p>Scope of penetration tests must cover all of the telework systems’ technical components.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Penetration testing policy template</p>
+              <p>&#8226; Penetration testing standard template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Identify all technical components that support telework services.</p>
+              <p>&#8226; Define the appropriate pre-requisites and stakeholder approvals required before performing
+                penetration testing in telework systems and its technical components.</p>
+              <p>&#8226; Document the penetration testing scope, and level allowed for penetration testers by the
+                organization to ensure no impact on business operations.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Documented scope for the penetration testing of all telework systems and technical components.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-10-2</strong></p>
+        <p>With reference to the ECC sub control 2-11-3-2, penetration tests must be conducted on telework systems at
+          least once every year.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Penetration testing policy template</p>
+          <p>&#8226; Penetration testing standard template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Based on the penetration scope, document the pre-requisites and required stakeholder approvals
+            before performing penetration testing on telework system and technical components.</p>
+          <p>&#8226; Get plan approval to conduct penetration testing, and inform relevant stakeholders prior to testing
+            to ensure there is no impact on operational processes.</p>
+          <p>&#8226; Ensure planned penetration testing is conducted at least once a year on teleworking systems and
+            technical components.</p>
+          <p>&#8226; Prepare penetration testing report for audit, compliance and remediation purpose.</p>
+          <p>&#8226; Prepare a plan to address the gaps discovered in telework systems and follow up on it periodically.
+          </p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Documented and approved plan to conduct periodic penetration testing of telework systems and
+            technical components at least once every year.</p>
+          <p>&#8226; Detailed Penetration testing report of telework systems.</p>
+          <p>&#8226; 2-11 Cybersecurity Events Logs and Monitoring Management</p>
+          <p>&#8226; Objective:</p>
+          <p>&#8226; To ensure timely collection, analysis and monitoring of cybersecurity events for early detection of
+            potential cyber-attacks in order to prevent or minimize the negative impacts on the organization’s
+            operations.</p>
+          <p>&#8226; Controls:</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-11-1</strong></p>
+        <p>In addition to the sub controls in the ECC control 2-12-3, cybersecurity requirements for event logs and
+          monitoring management for telework systems must include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+          <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Based on the cyber security policies of the organization and ECC controls, a scope is defined for
+            event logs and monitoring management of telework systems and its technical components.</p>
+          <p>&#8226; Activate and review logging of all cyber security events of telework environment.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Screenshot or a direct example showing the activation of logs through SIEM.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-11-1-1</strong></p>
+            <p>Activating cybersecurity events logs on all technical components of telework systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Based on the cyber security policies of the organization and ECC controls, a scope is defined
+                for event logs and monitoring management of telework systems and its technical components.</p>
+              <p>&#8226; Activate and review logging of all cyber security events of telework environment.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Screenshot or a direct example showing the activation of logs through SIEM.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-11-1-2</strong></p>
+            <p>Monitoring and analyzing user behavior (UBA).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Provide specialized systems to monitor and analyze user behaviour.</p>
+              <p>&#8226; Work with the relevant departments in the entity to determine acceptable user behaviour on
+                telework systems in order to identify suspicious behaviour.</p>
+              <p>&#8226; Develop security procedures (Incident response playbook) to be taken for cases that have been
+                studied and identified with the relevant departments for suspicious behaviour cases.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; A list of systems and settings to monitor user behaviour to ensure continuous analysis.</p>
+              <p>&#8226; A list of all the cases that have been studied and analysed.</p>
+              <p>&#8226; Incident response playbook.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-11-1-3</strong></p>
+            <p>Monitoring telework systems events around the clock.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Monitor all cybersecurity events for telework systems around the clock (24/7/365/365) through
+                specialized teams.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Monitor event logs of technical assets and teleworking systems around the clock, including but
+                not limited to: a table showing the allocated times around the clock for the specialized team.</p>
+              <p>&#8226; A contract demonstrating the followed monitoring template in case the security operations
+                center or monitoring was provided by a service provider.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-11-1-4</strong></p>
+            <p>Updating and implementing cybersecurity monitoring procedures around the clock, to include monitoring
+              remote access operations, especially remote access from outside the Kingdom of Saudi Arabia, after
+              checking their authenticity.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Policy Template</p>
+              <p>&#8226; Cybersecurity Event Logs and Monitoring Management Standard Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Review and verify cybersecurity monitoring procedures, update them and implement controls to
+                monitor them around the clock.</p>
+              <p>&#8226; Monitoring and analysis of event logs may include but not limited to: remote access operations
+                within or from outside KSA after checking their authenticity, application event logs, system event logs,
+                storage event logs, antivirus event logs, incident logs and others.</p>
+              <p>&#8226; Work to save all activities and records of remote login operations and ensure that they are
+                sent to the operations and monitoring center to ensure that they are constantly monitored by specialized
+                teams by linking login logs with monitoring systems, for example: the (SEIM) system.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Cybersecurity monitoring procedures document to include monitoring remote access operations,
+                especially remote access operations from outside the Kingdom, and verifying their authenticity.</p>
+              <p>&#8226; A guide demonstrating the monitoring of remote login events around the clock through the
+                organization’s security operations center.</p>
+              <p>&#8226; A screenshot or live evidence of an example of alerts on telework systems that were previously
+                dealt with according to the necessary procedures.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-11-2</strong></p>
+        <p>With reference to the ECC sub-control 2-12-3-5, retention period of cybersecurity’s telework systems event
+          logs must be 12 months minimum, in accordance with relevant legislative and regulatory requirements.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; None specified.</p>
+          <p>&#8226; Controls implementation guidelines:</p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Identify and develop a mechanism to store all cybersecurity event logs for teleworking systems and
+            technical components for a retention period of at least 12 months or more, in accordance with relevant
+            legislative and regulatory requirements.</p>
+          <p>&#8226; Identify, document, and approve security controls for archiving or deleting stored records in
+            accordance with the designated organization’s retention and cybersecurity policy for telework systems.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; A screenshot or direct proof from the SIEM system showing record logs period for at least 12
+            months.</p>
+          <p>&#8226; A sample of stored logs extracted from the SIEM system where records have been kept for at least 12
+            months.</p>
+          <p>&#8226; 2-12 Cybersecurity Incident and Threat Management</p>
+          <p>&#8226; Objective:</p>
+          <p>&#8226; To ensure timely identification, detection, effective management and handling of cybersecurity
+            incidents and threats to prevent or minimize negative impacts on organization’s operation taking into
+            consideration the Royal Decree number 37140, dated 14/8/1438H.</p>
+          <p>&#8226; Controls:</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-12-1</strong></p>
+        <p>In addition to the sub-controls within control 2-13-3 in the ECC, cybersecurity requirements for incident and
+          threat management related to telework systems shall include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cybersecurity Incident and Threat Management Policy Template</p>
+          <p>&#8226; Cybersecurity Incident and Threat Management Standards Template</p>
+          <p>&#8226; Detailed plans templates for responding to cybersecurity incidents</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Based on organization's cyber security incident and threat management policies, define and update
+            response plans and relevant information for telework systems.</p>
+          <p>&#8226; Prepare and plan to run appropriate programs to communicate cyber incidents and threat management
+            policies, to prevent mislead actions by telework users.</p>
+          <p>&#8226; Notify users about how to raise cyber incidents in case of suspected activity or actual event and
+            to show preparedness of the organization's incident response team.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Updated response plans for telework systems.</p>
+          <p>&#8226; Documented and approved plan to run campaigns to communicate cyber incident and threat management
+            policies.</p>
+          <p>&#8226; Sample cyber incidents report raised by telework users.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-12-1-1</strong></p>
+            <p>Updating cyber security incidents response plans and contact information within the organization in a way
+              that is compatible with the telework situation and to ensure the ability to communicate and the
+              preparedness of the incident response teams.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Incident and Threat Management Policy Template</p>
+              <p>&#8226; Cybersecurity Incident and Threat Management Standards Template</p>
+              <p>&#8226; Detailed plans templates for responding to cybersecurity incidents</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Based on organization's cyber security incident and threat management policies, define and
+                update response plans and relevant information for telework systems.</p>
+              <p>&#8226; Prepare and plan to run appropriate programs to communicate cyber incidents and threat
+                management policies, to prevent mislead actions by telework users.</p>
+              <p>&#8226; Notify users about how to raise cyber incidents in case of suspected activity or actual event
+                and to show preparedness of the organization's incident response team.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Updated response plans for telework systems.</p>
+              <p>&#8226; Documented and approved plan to run campaigns to communicate cyber incident and threat
+                management policies.</p>
+              <p>&#8226; Sample cyber incidents report raised by telework users.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-12-1-2</strong></p>
+            <p>Periodically obtaining and dealing with threat intelligence information related to telework systems.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Incident and Threat Management Policy Template</p>
+              <p>&#8226; Cybersecurity Incident and Threat Management Standards Template</p>
+              <p>&#8226; Detailed plans templates for responding to cybersecurity incidents</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work to define the requirements of this control and document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Work to partner with the platforms responsible for sending proactive information (Threat
+                Intelligence) via email or other technical platforms, and these platforms include:</p>
+              <p>&#8226; ▹ Saudi Computer Emergency Response Team (CERT).</p>
+              <p>&#8226; ▹ Haseen’s information sharing platform.</p>
+              <p>&#8226; ▹ Newsletter of the communication and information technology authority.</p>
+              <p>&#8226; ▹ Bulletins or announcements provided by companies specialized in cybersecurity.</p>
+              <p>&#8226; ▹ Bulletins or announcements provided by security and technical service providers that were
+                previously contracted by the entity.</p>
+              <p>&#8226; Work to deal with alerts sent by these platforms through:</p>
+              <p>&#8226; ▹ Send it to the relevant team to deal with it (for example, but not limited to: the
+                Information Technology Department, the Security Operations Center, the Department for Updates and
+                Repairs).</p>
+              <p>&#8226; ▹ Determine a period of time for dealing with these alerts according to the level of severity.
+              </p>
+              <p>&#8226; ▹ Continuous follow-up to ensure that the alerts sent to the relevant team have been dealt with
+                securely (for example, but not limited to: ensuring that the update for the vulnerabilities sent has
+                been applied).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; A screenshot or direct evidence showing the entity’s subscription to one of the platforms.</p>
+              <p>&#8226; A screenshot or live evidence of an example of alerts on telework systems that were previously
+                dealt with according to the necessary procedures.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-12-1-3</strong></p>
+            <p>Addressing and implementing the recommendations and alerts for cyber security incidents and threats
+              issued by the Sector regulator or by the National Cybersecurity Authority (NCA).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Incident and Threat Management Policy Template</p>
+              <p>&#8226; Cybersecurity Incident and Threat Management Standards Template</p>
+              <p>&#8226; Detailed plans templates for responding to cybersecurity incidents</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work to define the requirements of this control and document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Develop a mechanism to continuously receive information from proactive information platforms
+                and information issued by the National Authority.</p>
+              <p>&#8226; Develop, adopt and implement a mechanism to address incoming recommendations for cyber
+                alerts/incidents/threats.</p>
+              <p>&#8226; Communicate identified cyber risks/threats/incidents with the Cyber Security team and Risk
+                Committee to ensure proactive decision making to minimize impact on operational processes.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; An approved document to address recommendations related to incidents and threats by the sector
+                supervisor or the National Cybersecurity Authority.</p>
+              <p>&#8226; A document for the process of reporting cyber incidents/threats to the organization’s cyber
+                security team and dealing with them.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>3. Third-Party and Cloud Computing Cybersecurity</h1>
+    <div class="subdomain">
+      <h2>3-1 Cloud Computing and Hosting Cybersecurity</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the proper and efficient remediation of cyber risks and the implementation of cybersecurity
+        requirements related to hosting and cloud computing as per organizational policies and procedures, and related
+        laws and regulations. It is also to ensure the protection of the organization’s information and technology
+        assets hosted on the cloud or processed/ managed by third-parties.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>3-1-1</strong></p>
+        <p>In addition to the sub-controls in the ECC control 4-2-3, cybersecurity requirements related to the use of
+          hosting and cloud computing services must include at least the following:</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Cloud Computing and Hosting Cybersecurity Policy Template</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Work to define the requirements of this control and document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; Ensure that the organization’s telework systems, or any part of its technical components, are
+            hosted in a reliable and secure place within the Kingdom of Saudi Arabia.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity requirements
+            document, and have them approved by the authority holder.</p>
+          <p>&#8226; An official document proving that the organization’s telework systems, or any part of its technical
+            components, are hosted in a reliable and secure place within the Kingdom of Saudi Arabia.</p>
+        </div>
+
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>3-1-1-1</strong></p>
+            <p>The location of the hosted telework systems must be inside the Kingdom of Saudi Arabia</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cloud Computing and Hosting Cybersecurity Policy Template</p>
+              <p>&#8226; Controls implementation guidelines:</p>
+              <p>&#8226; Work to define the requirements of this control and document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; Ensure that the organization’s telework systems, or any part of its technical components, are
+                hosted in a reliable and secure place within the Kingdom of Saudi Arabia.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Work on defining the requirements for this control, document them in the cybersecurity
+                requirements document, and have them approved by the authority holder.</p>
+              <p>&#8226; An official document proving that the organization’s telework systems, or any part of its
+                technical components, are hosted in a reliable and secure place within the Kingdom of Saudi Arabia.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

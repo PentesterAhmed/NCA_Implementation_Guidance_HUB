@@ -1,0 +1,2058 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>NCA Guidance Hub</title>
+  <link rel="icon" type="image/x-icon" href="gem.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ------------------------- CONSTANT Starts--------------- -->
+  <div class="NCA-main-heading">
+    
+    <h1>Implementation Guidance for Compliance with NCA Cybersecurity Controls (KSA)</h1>
+    
+    <!-- darkmode button -->
+    <!-- <label class="ui-switch">
+      <input type="checkbox" id="themeSwitch">
+      <div class="slider">
+        <div class="circle"></div>
+      </div>
+    </label>
+  -->
+</div>
+<!-- Nav Bar for all standard Links -->
+<div class="navbar-container">
+  <div class="navb4r">
+    <a href="index.html" class="nav-item-1">ECC</a>
+    <!-- <p class="hide">Essential Cybersecurity Controls</p> -->
+
+      <a href="ccc-csp.html" class="nav-item-2">CCC CSP</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Provider)</p> -->
+      
+      <a href="ccc-cst.html" class="nav-item-3">CCC CST</a>
+      <!-- <p class="hide">Cloud Cybersecurity Controls (Tenant)</p> -->
+      
+      <a href="dcc.html" class="nav-item-4">DCC</a>
+      <!-- <p class="hide">Data Cybersecurity Controls</p> -->
+      
+      <a href="tcc.html" class="nav-item-5">TCC</a>
+      <!-- <p class="hide">Telework Cybersecurity Controls</p> -->
+      
+      <a href="osmacc.html" class="nav-item-6">OSMACC</a>
+      <!-- <p class="hide">Organizational Social Media Accounts Cybersecurity Controls</p> -->
+      
+      <a href="otcc.html" class="nav-item-7">OTCC</a>
+      <!-- <p class="hide">Operational Technology Cybersecurity Controls</p> -->
+      
+      <a href="cscc.html" class="nav-item-8">CSCC</a>
+      <!-- <p class="hide">Critical Systems Cybersecurity Controls</p> -->
+    </div>
+  </div>
+  <div class="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0e8b5b"><path d="M480-114.37q-153.59 0-259.61-47.89Q114.37-210.15 114.37-280v-400q0-68.35 107.14-116.99T480-845.63q150.61 0 258.12 48.64Q845.63-748.35 845.63-680v400q0 69.35-106.39 117.49T480-114.37Zm0-490.37q86.26 0 174.28-24.63T760.02-683q-17.72-29-105.73-54.01-88.01-25.01-174.29-25.01-87.78 0-174.04 24.38Q219.7-713.26 199.98-683q19.98 30.5 105.62 54.38 85.64 23.88 174.4 23.88Zm0 202.52q39.78 0 78.54-4.12 38.76-4.12 74.64-11.74 35.89-7.62 68.62-18.6 32.74-10.99 60.22-25.47v-120.98q-27.48 14.5-59.73 25.88-32.25 11.38-68.01 19.26-35.76 7.88-74.52 11.76T480-522.35q-40.52 0-79.91-3.88-39.39-3.88-75.52-11.88-36.14-8-68.12-19.38-31.99-11.38-58.47-25.64v120.98q26.74 13.74 58.98 25.1 32.24 11.35 68.61 18.97 36.36 7.62 75.51 11.74 39.14 4.12 78.92 4.12Zm0 204.24q45.28 0 92.8-7.13 47.53-7.13 87.54-18.76 40.01-11.63 67.87-26.63 27.86-15 33.81-30v-96.83q-27.24 13.74-59.74 24.98t-68.75 18.49q-36.25 7.25-74.76 11.25-38.51 4-78.77 4-40.52 0-79.91-4-39.39-4-75.39-11.74t-68.24-18.61q-32.24-10.87-58.48-25.11v98.57q5.72 14.76 32.94 29.26 27.23 14.5 67.24 26.13 40.01 11.63 87.79 18.88 47.77 7.25 94.05 7.25Z"/></svg>
+    <h1 class="Main-H">Data Cybersecurity Controls</h1>
+    
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="siteSearch" placeholder="Search..." oninput="searchSite()" />
+  </div>
+  <!-- ------------------------- CONSTANT Ends --------------- -->
+
+
+
+  <div class="main-domain">
+    <h1>1. Cybersecurity Governance</h1>
+    <div class="subdomain">
+      <h2>1-1 Cybersecurity Periodical Review and Audit</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that cybersecurity controls are implemented and in compliance with organizational policies and
+        procedures, as well as related national and international laws, regulations and agreements.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-1-1</strong></p>
+        <p>With reference to ECC control 1-8-1, the cybersecurity function in the organization must review the
+          implementation of the Data Cybersecurity Controls periodically as specified for each data classification
+          level.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Template for Cybersecurity Auditing Procedure</p>
+          <p>&#8226; Template for Cybersecurity Reviewing and Auditing Policy</p>
+          <p>&#8226; Template for Cybersecurity Auditing Plan Log</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Review the implementation of all Data Cybersecurity requirements in the organization as per the
+            data classification level.</p>
+          <p>&#8226; Review must be conducted at least annually across all data classification levels.</p>
+          <p>&#8226; Review must be conducted at least annually for the implementation of Data Cybersecurity Controls
+            across all data classification levels.</p>
+          <p>&#8226; An approved audit plan based on the specified period of time shouldbe documented and approved to
+            ensure that cybersecurity controls are effectively implemented and operate in accordance with the
+            organizational policies and procedures, as well as related national and international laws, regulations and
+            agreements.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g. a
+            policy and/or procedure approved by the authorizing officials).</p>
+          <p>&#8226; Annual review report for all data classification levels at least once a year.</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>1-1-2</strong></p>
+        <p>With reference to ECC control 1-8-2, cybersecurity review and audit must be conducted periodically by
+          independent parties outside the organization’s cybersecurity function as specified for each data
+          classification level.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Template for Cybersecurity Reviewing and Auditing Policy</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Identify the independent parties outside the organization's cybersecurity function, such as
+            internal audit management or third party auditors, to review and audit the implementation of Data
+            Cybersecurity Controls in the organization.</p>
+          <p>&#8226; Review must be conducted at least every 2 years or less for Public or Confidential data
+            classification level and at least annually or less for Secret or Top Secret data classification level.</p>
+          <p>&#8226; Implement Data Cybersecurity Controls by independent parties separate from the cybersecurity
+            management within the organization, according to the specified timeframe for each level.</p>
+          <p>&#8226; An approved audit plan based on the specified period of time shouldbe documented to ensure that the
+            cybersecurity controls are effectively implemented and operate in line with the organizational policies and
+            procedures of the authority, the relevant national legal and regulatory requirements, and international
+            requirements.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g. a
+            policy and/or procedure approved by the authorizing officials).</p>
+          <p>&#8226; Independent auditor's report that were carried out on all data cybersecurity requirements in the
+            organization.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-2 Cybersecurity in Human Resources</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that cybersecurity risks and requirements related to personnel (employees and contractors) are
+        managed efficiently prior to employment, during employment and after termination/separation as per
+        organizational policies and procedures, and related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-2-1</strong></p>
+        <p>In addition to the subcontrols in the ECC control 1-9-3, personnel's cybersecurity requirements prior to
+          employment, during employment and after termination/separation must include at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-2-1-1</strong></p>
+            <p>Screening and vetting candidates in jobs related to data handling.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Human Resources Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the suitable candidates for secret and top secret data handling jobs based on the
+                skillset and CV screening.</p>
+              <p>&#8226; Review their skillset using various methodologies including interviews, skill based test, both
+                oral as well as written. Also, develop a background verification process for the selected candidates
+                either by an internal or third party vendor team.</p>
+              <p>&#8226; Develop, document and approve an action plan for granting new access to the candidates
+                according to the roles and permissions required.</p>
+              <p>&#8226; Develop a periodic review process to delete unused and unjustified roles and permissions.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; A recruitment and onboardingprocess which includes screening and vetting as per the skillset of
+                the candidate.</p>
+              <p>&#8226; Selection of background verification vendor or internal team.</p>
+              <p>&#8226; Periodically verified and approved list of users with their permissions(e.g.Privacy/Data
+                Protection Officer).</p>
+              <p>&#8226; Review of HR Cybersecurity policy in line with data cybersecurity policies.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-2-1-2</strong></p>
+            <p>A signed agreement by personnel pledging to not use social media, communication applications or personal
+              cloud storage to create, store or share the organization’s data, with the exception of secure
+              communication applications approved by relevant authorities.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Human Resources Policy</p>
+              <p>&#8226; Template for Cybersecurity Policies Compliance</p>
+              <p>&#8226; Template for Confidentiality Agreement</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the personnel who shouldbe working on the confidential, secret or top secret data,
+                based on the classification.</p>
+              <p>&#8226; Review the employment agreement of the personnel and develop and document a clause with the
+                help of legal department, pledging to not use generative artificial intelligencesystems,social media, or
+                communication applications to create, store or share the organization’s data, with the exception
+                ofgenerative artificial intelligencesystems, andsecure communication applications approved by relevant
+                authorities.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Signed agreement by the personnel onthe use of generative artificial intelligencesystems,social
+                media, and communication applications.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>1-3 Cybersecurity Awareness and Training Program</h2>
+      <h3>Objective:</h3>
+      <p>To ensure that personnel are aware of their cybersecurity responsibilities and have the essential cybersecurity
+        awareness. It is also to ensure that personnel are provided with the required cybersecurity training, skills and
+        credentials needed to accomplish their cybersecurity responsibilities and to protect the organization's
+        information and technology assets.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>1-3-1</strong></p>
+        <p>In addition to the subcontrols in ECC control 1-10-3, the cybersecurity awareness program must cover topics
+          related to data protection, including the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>1-3-1-1</strong></p>
+            <p>Risks of data leakage and unauthorized access to data during its lifecycle.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Awareness Program Plan</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; All the personnel in the organization shouldbe undergoing the cybersecurity awareness program
+                for data protectionand data classification, with designated awareness sessions for new personnel before
+                granting accessto organization’sdata.</p>
+              <p>&#8226; Develop and document a data protection cybersecurity awareness program, which shouldinclude
+                topics such as introduction to data leakage, what counts as a data leakagesuch as using unapproved
+                generative artificial intelligence systems,, risks associated with data leakage,andaction plan to be
+                followed if a leakage happens orunauthorized access to data during itslifecycle.</p>
+              <p>&#8226; Conduct the data protection cybersecurity awareness program on a periodic basis and maintain
+                record of training.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved customized awareness programfor data protection which includes risks of
+                data leakage and unauthorized access to data during its lifecycle.</p>
+              <p>&#8226; Sample of the related awareness program components (awareness emails, awareness sessions,
+                awareness test campaigns, etc.)</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-2</strong></p>
+            <p>Secure handling of classified data while traveling and outside the workplace.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Awareness ProgramPlan</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; All the personnel in the organization shouldbe undergoing the cybersecurity awareness program
+                for data protection.</p>
+              <p>&#8226; Develop and document a data protection cybersecurity awareness program, which shouldinclude
+                topics such as data introduction to data classification, data classification policy, secure handling of
+                classified data while outside the workplace and travel.</p>
+              <p>&#8226; Conduct the data protection cybersecurity awareness program on a periodic basis and maintain
+                record of training.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved customized awareness programfor data protection which includes secure
+                handling of classified datawhile traveling and outside the workplace.</p>
+              <p>&#8226; Sample of the awareness program components (educational email messages, awareness sessions,
+                phishing awareness campaigns, etc.).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-3</strong></p>
+            <p>Secure handling of data during meetings (virtual and in-person).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Awareness Program Plan</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; All the personnel in the organization shouldbe undergoing the cybersecurity awareness program
+                for data protection.</p>
+              <p>&#8226; Develop and document a data protection cybersecurity awareness program, which shouldinclude
+                topics such as protocols for virtual and in person meeting, meeting etiquettes, exchange of data with
+                wider audience, proper disposal of information post recording the data during meetings.</p>
+              <p>&#8226; Conduct the data protection cybersecurity awareness program on a periodic basis and maintain
+                record of training.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved customized awareness programfor data protection which includes secure
+                handling of dataduring meetings.</p>
+              <p>&#8226; Sample of the awareness program components (educational email messages, awareness sessions,
+                phishing awareness campaigns, etc.).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-4</strong></p>
+            <p>Secure handling when using printers, scanners and copiers.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Awareness Program Plan</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; All the personnel in the organization shouldbe undergoing the cybersecurity awareness program
+                for data protection.</p>
+              <p>&#8226; Develop and document a data protection cybersecurity awareness program, which shouldinclude
+                topics such as restricted printer use from unauthorized access, remote configurations for printers and
+                scanners, attentive to the printed data and proper disposal if data is no longer required.</p>
+              <p>&#8226; Conduct the data protection cybersecurity awareness program on a periodic basis and maintain
+                record of training.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved customized awareness programfor data protection which includes secure
+                use of printers, scanners and copy machines.</p>
+              <p>&#8226; Sample of the awareness program components (educational email messages, awareness sessions,
+                phishing awareness campaigns, etc.).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-5</strong></p>
+            <p>Procedures for secure data disposal.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Awareness Program Plan</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; All the personnel in the organization shouldbe undergoing the cybersecurity awareness program
+                for data protection.</p>
+              <p>&#8226; Develop and document a data protection cybersecurity awareness program, which shouldinclude
+                topics such as introduction to secure data disposal, data disposal policy, data disposal process,
+                shredding and information about data disposal vendor, if any.</p>
+              <p>&#8226; Conduct the data protection cybersecurity awareness program on a periodic basis and maintain
+                record of training.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved customized awareness programfor data protection which includes secure
+                data disposal.</p>
+              <p>&#8226; Sample of the awareness program components (educational email messages, awareness sessions,
+                phishing awareness campaigns, etc.).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-6</strong></p>
+            <p>Risks of sharing documents and information through non-secure channels.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Awareness Program Plan</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; All the personnel in the organization shouldbe undergoing the cybersecurity awareness program
+                for data protection.</p>
+              <p>&#8226; Develop and document a data protection cybersecurity awareness program, which shouldinclude
+                topics such as proper channels to share documents in the organization, risk associated with data
+                leakagesuch as using generative artificial intelligence systems, and penalties associated with sharing
+                documents through non-secure channels.</p>
+              <p>&#8226; Conduct the data protection cybersecurity awareness program on a periodic basis and maintain
+                record of training.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved customized awareness programfor data protection which includes risk of
+                sharing documents through non-secure channels.</p>
+              <p>&#8226; Sample of the awareness program components (educational email messages, awareness sessions,
+                phishing awareness campaigns, etc.).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>1-3-1-7</strong></p>
+            <p>Cybersecurity risks related to the use of external storage media.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Cybersecurity Awareness Program Plan</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; All the personnel in the organization shouldbe undergoing the cybersecurity awareness program
+                for data protection.</p>
+              <p>&#8226; Develop and document a data protection cybersecurity awareness program, which shouldinclude
+                topics such as storage media policy, usage of external storage media units in the organization, risk
+                associated with data leakage from storage device, approval process for using external storage media, if
+                required.</p>
+              <p>&#8226; Conduct the data protection cybersecurity awareness program on a periodic basis and maintain
+                record of training.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved customized awareness programfor data protection which includes risk
+                related to the use of external storage media.</p>
+              <p>&#8226; Sample of the awareness program components (educational email messages, awareness sessions,
+                phishing awareness campaigns, etc.).</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>2. Cybersecurity Defense</h1>
+    <div class="subdomain">
+      <h2>2-1 Identity and Access Management</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the secure and restricted logical access to information and technology assets in order to prevent
+        unauthorized access and allow only authorized access for users which are necessary to accomplish assigned tasks.
+      </p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-1-1</strong></p>
+        <p>In addition to the subcontrols in ECC control 2-2-3, the cybersecurity requirements for identity and access
+          management must cover at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-1-1-1</strong></p>
+            <p>Strict restriction to allow only the minimum number of personnel accessing, viewing and sharing data
+              based on lists of privileges limited to Saudi-national employees unless exempted by the Authorizing
+              Official (the head of the organization or his/her delegate) and those lists are approved by the
+              Authorizing Official.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+              <p>&#8226; Template for Identity and Access Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the list of personnel in the organization who have access to Secret and Top Secret
+                data, and ensure that they have Saudi nationalities.</p>
+              <p>&#8226; List of privileged accesses to secret and top secret data shouldbe approved, maintained and
+                reviewed by the authorized person.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved Privileged Access Management Policy.</p>
+              <p>&#8226; Approved list of privileges for Secret and Top Secret data from the authorized person.</p>
+              <p>&#8226; Review of CS roles &amp; Responsibilitiespolicy in line with data cybersecurity policies.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-1-1-2</strong></p>
+            <p>Prohibiting the sharing of approved lists of privileges with unauthorized persons.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+              <p>&#8226; Template for Identity and Access Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Inventory the approved list of privilegesand work on preventing the sharing of these lists with
+                unauthorized individuals.</p>
+              <p>&#8226; Review the access provisioning process for the approved list of privileges and verify that
+                proper approval mechanism is in place.</p>
+              <p>&#8226; Periodic review of privileged access permissions to confidential, secret and top secret data
+                shouldbe performed.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented and approved Identity and Access Management Policy.</p>
+              <p>&#8226; Maintained list of users having approved privileged accesses.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-1-2</strong></p>
+        <p>Managing identities and access rights to view data using Privileged Access Management systems.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+          <p>&#8226; Template for Identity and Access Management Policy</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Access to confidential, secret and top secret data shouldbe managed using a Privileged Access
+            Management system.</p>
+          <p>&#8226; Define and implement a privileged access management system, as per the requirements of the
+            organization, to manage identities who have access rights to view data.</p>
+          <p>&#8226; Verify that proper access management solution is in place for access to privileged access rights.
+          </p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g.a
+            policy and/or procedure approved by the authorizing officials).</p>
+          <p>&#8226; Logs tracking identities with access rights to Restricted, Secret, Top secret data.</p>
+          <p>&#8226; Periodically prepared review and evaluation reports.</p>
+          <p>&#8226; Implementation plan for Privileged Access Management system.</p>
+          <p>&#8226; Conduct regular tests on Privileged Access Management systemto ensure its effectiveness.</p>
+          <p>&#8226; Documents illustrating how to use asset management techniques to manageprivileged accesses.</p>
+          <p>&#8226; Documents illustrating maintenance and monitoring procedures for access management technologies.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-1-3</strong></p>
+        <p>In addition to ECC subcontrol 2-2-3-5, the approved lists of privileges and privileges used to handle data
+          must be reviewed as specified for each data classification level.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; TemplateforIdentity and Access Management Standards, encompassing password management</p>
+          <p>&#8226; Template for Identity and Access Management Policy</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Develop and document procedures and an action plan for periodic review of users’ privileged access
+            rights in case of personnel roles changes.</p>
+          <p>&#8226; Review should be conducted at least annually for Public or Confidential data classification level
+            and at least every three months or less for Secret or Top Secret data classification level.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g. a
+            policy and/or procedure approved by the authorizing officials).</p>
+          <p>&#8226; Action plan for periodic review of users' identities and access rights.</p>
+          <p>&#8226; Sample reports of the periodic review of users' identities and access rightsthat have been
+            conducted.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-2 Information System and Information Processing Facilities Protection</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of information systems and information processing facilities (including workstations
+        and infrastructures) against cyber risks.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-2-1</strong></p>
+        <p>In addition to the subcontrols in ECC control 2-3-3, cybersecurity requirements for Information System and
+          Processing Facilities Protection must include at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-2-1-1</strong></p>
+            <p>Applying security patches and updates from the time of announcement on systems used to handle data as
+              specified for each data classification level.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforPatch and Update Management Policy</p>
+              <p>&#8226; Template for Patch and Update Management Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the systems and services handling data across all classification.</p>
+              <p>&#8226; Review the patching guidance with respect to the systems and services utilized and document the
+                patching procedures to be followed in line with the guidance.</p>
+              <p>&#8226; Periodic security patching and updates shouldbe conducted at least every month or earlier for
+                systems and services handling Public or Confidential data and immediately for systems and services
+                handling Secret or Top Secret data.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented security patching procedures for systems and services handling data.</p>
+              <p>&#8226; Patching review report for periodic security patching.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-2</strong></p>
+            <p>Reviewing the secure configuration and hardening of systems used to handle data as specified for each
+              data classification level.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforPatch and Update Management Policy</p>
+              <p>&#8226; Template for Configuration and Hardening Policy</p>
+              <p>&#8226; Template for Configuration and Hardening Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the systems handling data across all classification.</p>
+              <p>&#8226; Review the security configuration guidance with respect to the systems utilized and document
+                the hardening procedures to be followed in line with the guidance.</p>
+              <p>&#8226; Periodic security configuration and hardening shouldbe conducted at least annually or earlier
+                for systems handling Public or Confidential data and at least every 6 months or earlier for systems and
+                services handling Secret or Top Secret data.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Approved standard for reviewing security configuration and hardening for data processing
+                systems (e.g., approved hard copy or electronic version).</p>
+              <p>&#8226; Reports indicating that security configuration and hardeningfor systems used for data handling
+                are reviewed according to the timeframe for each level.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-3</strong></p>
+            <p>Reviewing and hardening the default configuration (e.g., default passwords and backgrounds) of the
+              technology assets used to handle the data.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; TemplateforPatch and Update Management Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the technology assets and systems handling data across all classification.</p>
+              <p>&#8226; Review the default configurations which includes, but not limited to,default passwords, guests
+                accounts, service accounts, backgrounds, default administrators, legacy protocols, open ports in the
+                system.</p>
+              <p>&#8226; Verify and ensure that the security configurations shouldnot be set as default for the
+                technology assets.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Default configuration review report for technology assets.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-2-1-4</strong></p>
+            <p>Disabling the Print Screen or Screen Capture features on the devices that create or process documents.
+            </p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the devices that process Secret and Top Secret data of the organization.</p>
+              <p>&#8226; Review and verify the Print Screen or Screen Capture features on the devices and ensure that
+                they are disabled in the system.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Review report that verifies thatdevices' print screen featureis disabled on devices that
+                handles Secret and Top secret documents.</p>
+              <p>&#8226; Sample of the system security configurations.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-3 Mobile Devices Security</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of mobile devices (including laptops, smartphones, tablets) from cyber risks and to
+        ensure the secure handling of the organization’s information (including sensitive information) while utilizing
+        Bring Your Own Device (BYOD) policy.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-3-1</strong></p>
+        <p>In addition to the subcontrols in ECC control 2-6-3, cybersecurity requirements for mobile devices must cover
+          at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-3-1-1</strong></p>
+            <p>Centrally managing the organization's owned mobile devices using Mobile Device Management (MDM) system
+              and activating the remote wipe feature.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for User Devices, Mobile Devices, and Personal Devices Security Policy</p>
+              <p>&#8226; Template for Mobile Devices Security Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the list of mobile devices in the organization that store, use and process
+                organization's data.</p>
+              <p>&#8226; Define and implement a Mobile Device Management (MDM) system, as per the requirements of the
+                organization, to manage the mobile devices who have access to data.</p>
+              <p>&#8226; Review that the MDM system shouldhave remote swipe functionality enabled in all the devices.
+              </p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented list of all the mobile devices in the organization handling the data.</p>
+              <p>&#8226; Implementation plan for Mobile Device Management (MDM) system.</p>
+              <p>&#8226; Screenshot of Mobile Device Management (MDM)system in use.</p>
+              <p>&#8226; Sample of related Mobile Device Management (MDM)configurations.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-3-1-2</strong></p>
+            <p>Centrally managing BYOD devices using Mobile Device Management (MDM) system and activating the remote
+              wipe feature.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for User Devices, Mobile Devices, and Personal Devices Security Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the list of personnel's mobile devices outside the organization that store, use and
+                process organization's data.</p>
+              <p>&#8226; Define and implement a Mobile Device Management(MDM) system, as per the requirements of the
+                organization, to manage the mobile devices who have access to organization's public and confidential
+                data.</p>
+              <p>&#8226; Review that the MDM system must have remote swipe/delete functionality enabled in all the BYOD
+                devices.</p>
+              <p>&#8226; Verify that BYOD devices shouldnot have access to any secret or top secret data of the
+                organization.</p>
+              <p>&#8226; Ensure that BYOD devicesare not used for any secret or top secret data.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented list of all the personnel's mobile devices outside the organization handling the
+                organization's data.</p>
+              <p>&#8226; Implementation plan for Mobile Device Management (MDM) system for BYOD devices.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-4 Data and Information Protection</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the confidentiality, integrity and availability of organization’s data and information as per
+        organizational policies and procedures, and related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-4-1</strong></p>
+        <p>In addition to the subcontrols in ECC control 2-7-3, cybersecurity requirements for data and information
+          protection must cover at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-4-1-1</strong></p>
+            <p>Using Watermark feature to label the whole document when creating, storing, printing on the screen and on
+              each copy so that the symbol can be traced to the user or device level.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Data Protection Policy</p>
+              <p>&#8226; Template for Cybersecurity Data Protection Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review and select the software or system, used to create, store, print and display data in the
+                organization, that has the capability to label data using watermark as per the data classification and
+                unique traceable number throughout the document's lifecycle.</p>
+              <p>&#8226; Implement the above saidfeatures for all the secret and top secretdata documents while
+                creating, storing, printing or displaying the document.</p>
+              <p>&#8226; Identify and define the data classification policy to include the watermark labelling and
+                unique traceable features for the organization's documents.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Implementation plan for Watermark and unique traceable number feature in document software or
+                system.</p>
+              <p>&#8226; Documented and approved data cybersecuritypolicy which includes the documentation features for
+                secret and top secret data.</p>
+              <p>&#8226; Sample of a document labelled with watermark.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-2</strong></p>
+            <p>Using Data Leakage Prevention technologies and Rights Management technologies.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Data Protection Policy</p>
+              <p>&#8226; Template for Cybersecurity Data Protection Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Define and document Data Leakage Prevention (DLP) and Rights Management standards.</p>
+              <p>&#8226; Identify and implement the Data Leakage Prevention (DLP) and Rights Management systemsas per
+                the requirements for confidential, secret and top secret data.</p>
+              <p>&#8226; Review the Data Leakage Prevention techniques that shouldinclude, but not limited to, rule for
+                incident identification, message filtering mechanism, data leak prevention for endpoints, network, cloud
+                and/or storage, content filtering capabilities, incident response and remediation.</p>
+              <p>&#8226; Review the Rights Management techniques that shouldinclude, but not limited to, automated
+                provisioning, privileged activity monitoring, login auditing, password management utilities, LDAP entry
+                management, two factor authentication.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented Data Leakage Prevention standard.</p>
+              <p>&#8226; Implementation plan for Data Leakage Prevention (DLP) system.</p>
+              <p>&#8226; Implementation plan for Rights Management system.</p>
+              <p>&#8226; Screenshot of Data Leakage Prevention (DLP)and Rights Management systems in use.</p>
+              <p>&#8226; Sample of Data Leakage Prevention (DLP) and Rights Management systems’ configurations.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-3</strong></p>
+            <p>Prohibiting the use of data in any environment other than the production environment, except after
+              conducting a risk assessment and applying controls to protect that data, such as: data masking or data
+              scrambling techniques.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Data Protection Policy</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify and maintain record of all the environments other than production environment.</p>
+              <p>&#8226; Review and verify that migration of restricted, secret and top secret data in the production
+                environment is not allowed in the non-productionenvironments. However, in case of business requirements,
+                appropriate checks and controls shouldbe applied, which includes, but not limited to, data masking/data
+                scrambling, data purging, data anonymization, appropriate business and technical approvals of
+                requirements, information security assessment.</p>
+              <p>&#8226; Develop and document cybersecurity controls that include data migration risk assessment,
+                protection of data during migration through protection techniques (e.g. data masking, data scrambling,
+                etc.)</p>
+              <p>&#8226; Develop anddocument procedures about migration of production data in
+                non-productionenvironments.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedures and controls about migration of production data into otherenvironments.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-4-1-4</strong></p>
+            <p>Using brand protection service to protect the organization’s identity from impersonation.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Data Loss Prevention Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify and maintain record of all the identities in the organization brand online that might
+                be prone to impersonation.</p>
+              <p>&#8226; Review the available vendors that provide brand protection services and analyse the suitability
+                of the service based on the requirements of the organization.</p>
+              <p>&#8226; Review and implement the brand protection service for the organization's identities.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented list of identities in the organization that are prone to impersonation.</p>
+              <p>&#8226; Implementation plan for vendor brand protection service.</p>
+              <p>&#8226; Sample of brand protection reports and alerts.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-5 Cryptography</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the proper and effcient use of cryptography to protect information assets as per
+        organizationalpolicies and procedures, and related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-5-1</strong></p>
+        <p>In addition to the subcontrols in ECC control 2-8-3, cybersecurity requirements for cryptography must cover
+          at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-5-1-1</strong></p>
+            <p>Using secure and up-to-date cryptographic methods and algorithms when creating, storing, transmitting
+              data, and for overall network communication medium; as per the requirements of the “advanced level” in the
+              National Cryptographic Standards (NCS-1:2020).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Encryption Standard</p>
+              <p>&#8226; Template for Encryption Policy</p>
+              <p>&#8226; Template for Encryption Key Management Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify and document all the cryptographic algorithms for both data at rest and data in
+                transit state of the secret and top secret data of the organization.</p>
+              <p>&#8226; Review and verify the cryptographic algorithms used in the organization for the abovementioned
+                data are aligned with the requirements of the "advanced level" in NCA National Cryptographic Standards
+                (NCS-1:2020).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented cryptographic technologies used for secret and top secret data of the organization.
+              </p>
+              <p>&#8226; Sample of encryptionsystem’s configurations.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-5-1-2</strong></p>
+            <p>Using secure and up-to-date cryptographic methods and algorithms when creating, storing, transmitting
+              data, and for overall network communication medium; as per the requirements of the “moderate level” in the
+              National Cryptographic Standards (NCS-1:2020).</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Encryption Policy</p>
+              <p>&#8226; Template for Encryption Key Management Standard</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify and document all the cryptographic algorithms for both data at rest and data in
+                transit state of the confidential data of the organization.</p>
+              <p>&#8226; Review and verify the cryptographic algorithms used in the organization for the abovementioned
+                data are aligned with the requirements of the "moderate level" in NCA National Cryptographic Standards
+                (NCS-1:2020).</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented cryptographic technologies used for confidential data of the organization.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-6 Secure Data Disposal</h2>
+      <h3>Objective:</h3>
+      <p>To ensure a secure data disposal as per organizational policies and procedures, and related laws and
+        regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-6-1</strong></p>
+        <p>Cybersecurity requirements for secure data disposal must cover at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-6-1-1</strong></p>
+            <p>Identification of technologies, tools and procedures for the implementation of secure data disposal
+              according to the data classification level.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Physical Security Cybersecurity Policy</p>
+              <p>&#8226; Template for Physical Security Standards</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Identify the list of on premises and mobile storage physical assets such as external hard
+                drives, tape drives, optical storage devices, flash storage etc. in use for storage of confidential,
+                secret and top secret data of the organization.</p>
+              <p>&#8226; Define and document the data disposal planfor the above mentionedstorage devices in a secured
+                manner.</p>
+              <p>&#8226; Review the data disposal techniques used for secure data disposal which shouldinclude, but not
+                limited to, data wiping using third party software, overwriting, reformatting; data destruction using
+                physical destructionof storage asset using vendor services.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented list of storage assets handling confidential, secret or top secret data.</p>
+              <p>&#8226; Documented data disposal planfor storage equipments.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-2</strong></p>
+            <p>When storage media is no longer needed, it must be securely disposed by using the technologies, tools and
+              procedures identified in subcontrol 2-6-1-1.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Physical Security Standards</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Implement secure destruction of storage media when they are no longer in need for use.</p>
+              <p>&#8226; Define and document the data disposal planfor the above mentioned storage devices in a secured
+                manner.</p>
+              <p>&#8226; Review and implement the device destruction techniques used in the process for device disposal
+                that ensure permanent destruction beyond recovery. Further, in case of third party service to be
+                utilized, review, verify and approve as per the requirements of the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented list of on premises and mobile storage physical assets in use for storage of
+                confidential, secret and top secret data of the organization.</p>
+              <p>&#8226; Documented data disposal procedurefor storage media.</p>
+              <p>&#8226; Implementation plan of third party service for data device disposal, if required.</p>
+              <p>&#8226; Sample of disposalrecords/reports.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-3</strong></p>
+            <p>When storage media needs to be re-used, data must be securely erased (secure erasure) in a manner it
+              cannot be recovered.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Physical Security Standards</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Define and document the data erasureplanfor the above mentioneddata in a secured manner.</p>
+              <p>&#8226; Review and implement the data wiping techniques used in the process for data wiping that ensure
+                permanent wiping of data beyond recovery, without any damage to the usability of the device. Further, in
+                case of third party softwareor service to be utilized, review, verify and approve as per the
+                requirements of the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented list of storage assets handling restricted, secret or top secret data.</p>
+              <p>&#8226; Documented data erasureplanfor storage equipments.</p>
+              <p>&#8226; Implementation plan for data erasure, including actions of third party software or service for
+                data wiping, if required.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-4</strong></p>
+            <p>Implementation of secure data disposal or erasure operations referred to in sub-controls 2-6-1-2and
+              2-6-1-3must be verified.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Physical Security Standards</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review the implementation plan secure data disposal operations in the organization for the
+                storage media handling confidential, secret or top secret data.</p>
+              <p>&#8226; Verify that for all the storage media, appropriate implementation plan steps are followed as
+                per the requirement of either data erasure or media disposal. Further, verify that all the proper
+                approvals and sign offs are provided prior to the hand off and conorganizationation of data disposal is
+                provided.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Implementation plan data erasure, including actions of third party software or service for data
+                wiping, if required.</p>
+              <p>&#8226; Document trail of proper data disposal steps is maintained.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-6-1-5</strong></p>
+            <p>Keeping a record of all secure data disposal and erasure operations that have been conducted.</p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review the data disposal action plan in place and conorganizationthat it shouldinclude the
+                monitoring and logging of data and devices in the organization. It shouldalso maintain the status of all
+                the in scope data storage assets and log any changes to the status as per the defined rules by the
+                organization.</p>
+              <p>&#8226; Review and implement any third party software or service to be utilized to monitor and log the
+                data storage assets' operations.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Maintained list of all the data storage assets in the organization with their status and other
+                relevant parameters.</p>
+              <p>&#8226; Implementation plan of monitoring of data disposal, including actions of third party service
+                for data storage assets' operations, if required.</p>
+              <p>&#8226; Sample of disposal and erasure records/reports.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-6-2</strong></p>
+        <p>The implementation of the secure data disposal requirements must be reviewed as specified for each data
+          classification level.</p>
+        <div class="relevant-tools">
+          <p><strong>Relevant cybersecurity tools:</strong></p>
+          <p>&#8226; Template for Physical Security Cybersecurity Policy</p>
+        </div>
+
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Review the process of secure data disposal techniques with respect to the implementation plan and
+            data disposal policy.</p>
+          <p>&#8226; Periodic review of data disposal process for storage devices must be conducted at least annually or
+            less for Public or Confidential data classification level and at least every 6 months or less for Secret or
+            Top Secret data classification level, to ensurethat the requirements are effectively implemented.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g.a
+            policy and/or procedure approved by the authorizing officials).</p>
+          <p>&#8226; Review report of secure data disposal process.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="subdomain">
+      <h2>2-7 Cybersecurity for Printers and Scanners and Copy Machines</h2>
+      <h3>Objective:</h3>
+      <p>To ensure secure handling of data when using Printers, Scanners and Copy Machines.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>2-7-1</strong></p>
+        <p>Cybersecurity requirements for printers, scanners and copy machines must be defined, documented and approved.
+        </p>
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Review the cybersecurity requirements for printers, scanners and copy machines handling
+            confidential, secret and top secret data of the organization.</p>
+          <p>&#8226; Define, document and approve the security configuration and hardeningpolicy for the organization to
+            ensure appropriate use of organization's printers, scanners and copy machines by authorized personnel.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g. a
+            policy and/or procedure approved by the authorizing officials).</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-7-2</strong></p>
+        <p>Cybersecurity requirements for printers, scanners and copy machines must be implemented.</p>
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Review the cybersecurity requirements for printers, scanners and copy machines handling
+            confidential, secret and top secret data of the organization.</p>
+          <p>&#8226; Implement the security configuration and hardeningpolicy for the organization to ensure appropriate
+            use of organization's printers, scanners and copy machines by authorized personnel. This shouldinclude, but
+            not limited to, placement of the devices, configuration of the devices, access management to the devices,
+            patching, logging and monitoring, disabling default configurations among other requirements.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g. a
+            policy and/or procedure approved by the authorizing officials).</p>
+          <p>&#8226; Implemented cybersecurity requirements for printers, scanners, and copy machineswithin the
+            organization.</p>
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-7-3</strong></p>
+        <p>Cybersecurity requirements for printers, scanners and copy machines must cover at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>2-7-3-1</strong></p>
+            <p>Disabling the temporary storage feature.</p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review and implement the printers, scanners and copy machine devices' settings for temporary
+                storage and ensure that the feature is disabled for devices handling confidential, secret and top secret
+                data of the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Implementation of disabling temporary storage feature in printers, scanners and copy machines
+                of the organization.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-7-3-2</strong></p>
+            <p>Enabling authentication on centralized printers, scanners and copy machines and requiring it before
+              usage.</p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review and implement the printers, scanners and copy machine devices' authentication settings
+                and ensure that it is enabled for all the authorized personnel accessing the confidential, secret and
+                top secret data of the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Implementation of enabling authentication for centralized printers, scanners and copy machines.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-7-3-3</strong></p>
+            <p>Securely retaining (for a period not less than 12 months) logs of printers, scanners and copy machines
+              usage.</p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review and implement the printers, scanners and copy machine devices' logging settings and
+                ensure that it is logs are retained for devices handlingsecret and top secret data of the organization
+                for a period not less than 12 months.</p>
+              <p>&#8226; The electronic log should contain records of what has been printed, scanned, copied.
+                Additionally, Hashing can be used to create a digital signature for documents or files and to verify
+                their integrity by determining if they were altered or modified.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Implementation of retention of logs for printers, scanners and copy machines.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-7-3-4</strong></p>
+            <p>Enabling and protecting CCTV logs which are used to monitor centralized printers, scanners and copy
+              machines areas.</p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review and implement the CCTV setup in the organization to ensure that monitoring of assets
+                related to secret and top secret data such as centralized printers, scanners and copy machines.</p>
+              <p>&#8226; Verify that the logging of CCTV of the above mentioned setup is enabled and stored as per the
+                data disposal policy.</p>
+              <p>&#8226; Review that the access to the CCTV logs is restricted only to authorized personnel.</p>
+              <p>&#8226; Periodic review of access to CCTV logs shouldbe performed to ensure that only authorized
+                personnel have access to them.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Implementing logging of CCTV cameras monitoring centralized printers, scanners and copy
+                machines.</p>
+              <p>&#8226; Review of access to CCTV logs to authorized personnel only.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>2-7-3-5</strong></p>
+            <p>Using cross-shredding devices, to securely dispose documents when no longer needed.</p>
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document for securedata disposal in all its forms, both soft and hard copies, followed by approval from
+                the authorizing officials.</p>
+              <p>&#8226; Ensure that physical copies of secret and top secret data are shredded, if not in use. This
+                shouldbe implemented by placing cross-shredding devices in the organization premises.</p>
+              <p>&#8226; Review the data retention policy for shredding of physical copies in case of end of retention
+                period of data.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Providing shredding devices in the organization’s buildings for proper disposal of paper
+                documents.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>2-7-4</strong></p>
+        <p>Implementation of cybersecurity requirements for printers, scanners and copy machines must be reviewed as
+          specified for each data classification level.</p>
+        <div class="impl-guidelines">
+          <p><strong>Control implementation guidelines:</strong></p>
+          <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+            document, followed by approval from the authorizing officials.</p>
+          <p>&#8226; Periodic review of printers, scanners and copy machine devices' cybersecurity requirements shouldbe
+            carried out on at least annually for devices handling public and confidential data and at least every 3
+            months for devices handling secret and top secret data.</p>
+        </div>
+
+        <div class="expected-deliverables">
+          <p><strong>Expected deliverables:</strong></p>
+          <p>&#8226; Document detailing the identification and documentation of the requirements of this control (e.g. a
+            policy and/or procedure approved by the authorizing officials).</p>
+          <p>&#8226; Implementation of periodic reviews for printers, scanners and copy machines.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main-domain">
+    <h1>3. Third-Party Cybersecurity and Cloud Computing Cybersecurity</h1>
+    <div class="subdomain">
+      <h2>3-1 Third-Party Cybersecurity</h2>
+      <h3>Objective:</h3>
+      <p>To ensure the protection of assets against the cybersecurity risks related to third parties including
+        outsourcing, managed services, and consultancy services as per organizational policies and procedures, and
+        related laws and regulations.</p>
+      <p><strong>Controls:</strong></p>
+      <div class="control">
+        <p><strong>3-1-1</strong></p>
+        <p>In addition to the controls in ECC subdomain 4-1, cybersecurity requirements for third parties cybersecurity
+          must include at least the following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>3-1-1-1</strong></p>
+            <p>Screening or vetting third-party employees who have access to the data.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review their skillset using various methodologies including RFPs, candidate CV, accreditation
+                among others. Also, develop a background verification process for the selected outsourced employees
+                either by an internal or third party vendor team.</p>
+              <p>&#8226; Develop, document and approve an action plan for granting new access to the candidates
+                according to the roles and permissions required.</p>
+              <p>&#8226; Develop a periodic review process to delete unused and unjustified roles and permissions.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; A recruitment and onboarding process which includes screening and vetting as per the skillset
+                of the third-party employees.</p>
+              <p>&#8226; Selection of background verification vendor or internal team.</p>
+              <p>&#8226; Periodically verified and approved list of users with their permissions.</p>
+              <p>&#8226; Review of HR Cybersecurity policy in line with data cybersecurity policies.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-1-2</strong></p>
+            <p>Requiring contractual commitment by third-parties to securely dispose the organization's data at the end
+              of the contract or in case of contract termination, including providing evidences of such disposal to the
+              organization.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review the service level agreement between the organization and the third parties with respect
+                to the confidential, secret and top secret data handling of the organization.</p>
+              <p>&#8226; Verify that the end of service clause in the agreement defines and documents proper data
+                disposal of organization's data as per the data disposal policy. Further, verify that the third parties
+                shouldalso provide evidence of data disposal to the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedures for third parties in data disposal policy of the organization for
+                confidential, secret and top secret data.</p>
+              <p>&#8226; Review of service level agreement for proper data disposal in the end of service.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-1-3</strong></p>
+            <p>Documenting all data sharing operations within third-parties, including data sharing justification.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review the service level agreement between the organization and the third parties with respect
+                to the confidential, secret and top secret data sharing operations of the organization within the
+                third-parties.</p>
+              <p>&#8226; Define and implement the clause related to data sharing in the agreement., which shouldinclude,
+                but not limited to, description of data shared, restrictions of data usage, required data protection
+                safeguards and justification related to sharing of data.</p>
+              <p>&#8226; Verify and document the organization's data flow to the third parties only after appropriate
+                data sharing justification is provided.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for data sharing operations with the third-parties.</p>
+              <p>&#8226; Review of service level agreement for proper process for data sharing operations with the
+                third-parties.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-1-4</strong></p>
+            <p>When transferring data outside the kingdom, the capability of the hosting organization abroad to
+              safeguard data must be verified, approval of the Authorizing Official must be obtained and complying with
+              related laws and regulations.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review the service level agreement between the organization and the third parties with respect
+                to the cross border data transfer of the organization's confidential, secret and top secret data outside
+                thekingdom.</p>
+              <p>&#8226; Verify and define the data protection standards and laws followed by hosting organization
+                outside the kingdom, to safeguard the organization's data. Further, obtain the written approval from the
+                Authorizing Official to transfer the data outside the kingdom, in accordance with the related laws and
+                regulations.</p>
+              <p>&#8226; Verify the other required regulatory requirement such as data subject consent requirements,
+                impact assessment for cross border data transfer outside the kingdom.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for cross border data transfer of the organization outside the kingdom.
+              </p>
+              <p>&#8226; Review of service level agreement for proper process for cross border data transfer with the
+                third-parties.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-1-5</strong></p>
+            <p>Requiring third-parties to notify the organization immediately in case of cybersecurity incident that may
+              affect data that has been shared or created.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Review the service level agreement between the organization and the third parties with respect
+                to the incident that may affect confidential, secret and top secret data.</p>
+              <p>&#8226; Verify and define the process to notify the organization in case of a cybersecurity incident
+                which might have led to an exposure to the organization's data. Further, also define specific SLA
+                timelines that third-parties have to follow for prompt notification to the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for cybersecurity incident notification related to the dataof the
+                organization.</p>
+              <p>&#8226; Review of service level agreement for proper process for cybersecurity incident notification
+                with the third-parties.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-1-6</strong></p>
+            <p>Reclassifying data to the least level to achieve the objective before sharing it with third-parties using
+              data masking or data scrambling techniques.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Verify and define the process to reclassify the data to the least level to make sure that only
+                required data is sent across to the third -party and any unintended data for them must not be sent. This
+                can be achieved by various data hiding techniques, such as, but notlimited to, data masking, data
+                anonymization, data scrambling, data filtering.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for data hiding on outgoingdata sent by the organization.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="control">
+        <p><strong>3-1-2</strong></p>
+        <p>In alignment with related laws and regulations, and in addition to the applicable controls in ECC and
+          controls within DCC domain (1), (2), and (3); cybersecurity requirements when dealing with consultancy
+          services that works on high-sensitivity strategic projects at the national level must cover at least the
+          following:</p>
+        <div class="subcontrols">
+          <div class="subcontrol">
+            <p><strong>3-1-2-1</strong></p>
+            <p>Screening or vetting consultancy services employees who have access to the data.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; Enforce consultancy servicescompanies that are working on strategic projects to provide
+                screening or vettingdata for employees wokring on thsse projects, and consultancy servicescompanies
+                should coaporate with the organization in this matter.</p>
+              <p>&#8226; Review and assess the candidates’ skills and competencies using various methodologiesincluding
+                interviews, and oral and written test. Furthermore, consider the candidate’ screening or vettingresults
+                that are selected either by an internal or third party vendor team.</p>
+              <p>&#8226; Review their skillset using various methodologies including RFPs, candidate CV, accreditation
+                among others. Also, develop a background verification process for the selected outsourced employees
+                either by an internal or third party vendor team.</p>
+              <p>&#8226; Develop, document and approve an action plan for granting new access to the candidates
+                according to the roles and permissions required.</p>
+              <p>&#8226; Develop a periodic review process to delete unused and unjustified roles and permissions.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Document outlining the provision of employee data by consulting services company required to
+                conduct screening for personnel working on strategic projects within the organization.</p>
+              <p>&#8226; Document outlining the completion of the security screening process for employees of consulting
+                services companies by the organization.</p>
+              <p>&#8226; A recruitment and onboarding process which includes screening and vetting as per the skillset
+                of the consultancy services employees.</p>
+              <p>&#8226; Selection of background verification vendor or internal team.</p>
+              <p>&#8226; Verified list of users with their permissions.</p>
+              <p>&#8226; Review of HR Cybersecurity policy in line with data cybersecurity policies.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-2-2</strong></p>
+            <p>Requiring contractual commitment by consultancy services including employees non-disclosure agreements
+              and secure disposal the organization's data at the end of the contract or in case of contract termination,
+              including providing evidences of such disposalto the organization.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; The organization should work on obtaining assurances from consulting services companies and
+                their employees working on strategic projects regarding non-disclosure of information and their ability
+                to securely delete the organization’s data upon the termination of the contractual relationship.
+                Additionally, they should refrain from disclosing any information before obtaining written consent from
+                the organization. Consulting services companies are required to cooperate with the organization in
+                implementing this procedure.</p>
+              <p>&#8226; Review the service level agreement between the organization and the consultancyservices
+                organizationwith respect to the confidential, secret and top secret data handling of the organization.
+              </p>
+              <p>&#8226; Verify that the end of service clause in the agreement defines and documents proper data
+                disposal of organization's data as per the data disposal policy. Further, verify that the consultancy
+                services organizationshouldalso provide evidence of data disposal to the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Document outlining the inclusion of clauses regarding confidentiality, non-disclosure of data,
+                and secure data deletion to ensure consulting services companies and their employees do not disclose the
+                organization’s information (Hard or soft copy).</p>
+              <p>&#8226; Documented procedures for consultancy services organizationin data disposal policy of the
+                organization for confidential, secret and top secret data.</p>
+              <p>&#8226; Review of service level agreement for proper data disposal in the end of service.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-2-3</strong></p>
+            <p>Documenting all data sharing operations within consultancy services, including data sharing
+              justification.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; The organization should document the process of sharing data with consulting services companies
+                involved in strategic projects based on the principle of Need-to-Know.</p>
+              <p>&#8226; Consulting services companies involved in strategic projects should ensure the documentation of
+                data sharing with authorized employees based on the principle of Need-to-Know.</p>
+              <p>&#8226; Review the service level agreement between the organization and the consultancy services with
+                respect to the confidential, secret and top secret data sharing operations of the organization within
+                the third-parties.</p>
+              <p>&#8226; Define and implement the clause related to data sharing in the agreement., which shouldinclude,
+                but not limited to, description of data shared, restrictions of data usage, required data protection
+                safeguards and justification related to sharing of data.</p>
+              <p>&#8226; Verify and document the organization's data flow to the consultancy services only after
+                appropriate data sharing justification is provided.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for data sharing operations with the consultancy services.</p>
+              <p>&#8226; Review of service level agreement for proper process for data sharing operations with the
+                consultancy services.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-2-4</strong></p>
+            <p>Requiring consultancy services to notify the organization immediately in case of cybersecurity incident
+              that may affect data that has been shared or created.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; The organization must mandate consulting services companies working onstrategic projects to
+                inform them in the event of a cybersecurity incident affecting the shared data,and to cooperate with the
+                organization in implementing this procedure.</p>
+              <p>&#8226; Review the service level agreement between the organization and the consultancy services with
+                respect to the incident that may affect confidential, secret and top secret cross border data.</p>
+              <p>&#8226; Verify and define the process to notify the organization in case ofa cybersecurity incident
+                which might have led to an exposure to the organization's data. Further, also define specific SLA
+                timelines that consultancy services have to follow for prompt notification to the organization.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for cybersecurity incident notification related to the dataof the
+                organization.</p>
+              <p>&#8226; Review of service level agreement for proper process for cybersecurity incident notification
+                with the consultancy services.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-2-5</strong></p>
+            <p>Reclassifying data to the least level to achieve the objective before sharing it with consultancy
+              services using data masking or data scrambling techniques.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; The organization must mandate consulting services companies working on strategic projects to
+                use data within the scope defined by the organization,and to cooperate with the organization in
+                implementing this procedure.</p>
+              <p>&#8226; Verify and define the process to reclassify the data to the least level to make sure that only
+                required data is sent across to the consultancy services and any unintended data for themmust not be
+                sent. This can be achieved by various data hiding techniques, such as, but not limited to, data masking,
+                data anonymization, data scrambling, data filtering.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g. a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for reclassifying data to the lowest level that achieves the objective
+                before sharing it (e.g. data masking, data anonymization, data scrambling, data filtering).</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-2-6</strong></p>
+            <p>Dedicating a closed room for the consultancy services employees to perform their work, in addition to
+              providing dedicated organization owned devices to share and process data.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; The organization must mandate consulting services companies working on strategic projects
+                involving secret and top secret data not to use open and non-designated rooms for consultancy services
+                employees, and not to use devices not owned by the organization. It is also the responsibility of the
+                consulting services companies to cooperate with the organization in implementing this procedure.</p>
+              <p>&#8226; Review the service level agreement between the organization and the consultancy services with
+                respect to the dedicated closed room and devices that utilize secret and top secret organization data.
+              </p>
+              <p>&#8226; Verify and define a dedicated closed room where the consultancy services employees can
+                dedicatedly provide service to the organization. Further, provide organization's devices for them to
+                share and process data.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for handling closed room workspace and data handling devices for
+                consultancy services employees.</p>
+              <p>&#8226; Evidence illustrating that the consulting services companies arecompliantwith not using
+                non-designated rooms for consultancy services employees.</p>
+              <p>&#8226; Review of service level agreement for using dedicated workspace and devices for the consultancy
+                services employees.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-2-7</strong></p>
+            <p>Activating access control system to allow only authorized access to the closed room.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; The organization must mandate consulting services companies working on strategic projects
+                involving secret and top secret data to use access control systems for entryand exit from designated
+                rooms for authorized consultancy services employees, according to their permissions. Consulting services
+                companies should cooperate with the organization in implementing this procedure.</p>
+              <p>&#8226; Review the service level agreement between the organization and the consultancy services with
+                respect to the access control to the closed room for handling secret and top secret organization data.
+              </p>
+              <p>&#8226; Verify and define a dedicated closed room as an access controlledspace where only authorized
+                consultancy services employees can have access to the organization's data and data storage devices.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for activating access control system to the closed room workspace for
+                consultancy services employees.</p>
+              <p>&#8226; Review of service level agreement for using dedicated access controlled workspace for the
+                consultancy services employees.</p>
+            </div>
+
+          </div>
+
+          <div class="subcontrol">
+            <p><strong>3-1-2-8</strong></p>
+            <p>Preventing carrying out of devices, storage media and documents outside the closed room, as well as the
+              entry of any other electronic devices.</p>
+            <div class="relevant-tools">
+              <p><strong>Relevant cybersecurity tools:</strong></p>
+              <p>&#8226; Template for Cybersecurity Policy Related to Third-Parties</p>
+            </div>
+
+            <div class="impl-guidelines">
+              <p><strong>Control implementation guidelines:</strong></p>
+              <p>&#8226; Identify the requirements of this control and document them in a cybersecurity requirements
+                document, followed by approval from the authorizing officials.</p>
+              <p>&#8226; The organization must mandate consulting services companies working on strategic projects
+                involving secret and top secret data to prohibit the entry of devices not owned by the organization and
+                to preventtaking out storage media and devices from the closed rooms designated for consultancy services
+                employees.</p>
+              <p>&#8226; Review the service level agreement between the organization and the consultancy services with
+                respect to the storage media and device used to handle secret and top secret organization data.</p>
+              <p>&#8226; Verify and define the procedures which prevent carrying the storage devices and media dealing
+                with organization's data outside the closed room. Further, verify that no other storage media must be
+                allowed to enter the closed room. This shouldbe implemented using security checks at the entry and exit
+                from the closed room.</p>
+            </div>
+
+            <div class="expected-deliverables">
+              <p><strong>Expected deliverables:</strong></p>
+              <p>&#8226; Document detailing the identification and documentation of the requirements of this control
+                (e.g.a policy and/or procedure approved by the authorizing officials).</p>
+              <p>&#8226; Documented procedure for restrictions on storage devices during the entry and exit of closed
+                room workspace for consultancy services employees.</p>
+              <p>&#8226; Review of service level agreement for proper usage of organization's storage media by
+                consultancy services employees.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
